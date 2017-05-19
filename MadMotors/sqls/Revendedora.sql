@@ -5,7 +5,7 @@ CREATE TABLE Revendedora (
  telefone2 int,
  razaoSocial text(50),
  email varchar(150),
- banner varchar,
+ banner varchar(300),
  idUsuario int,
  cep int
 );
