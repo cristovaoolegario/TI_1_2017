@@ -1,6 +1,6 @@
 CREATE TABLE Modelo (
-idModelo int serial,
+idModelo int PRIMARY KEY,
 idMarca int,
-nome Text(20)
+nome varchar(20)
 )
 ALTER TABLE Modelo ADD FOREIGN KEY(idMarca) REFERENCES Marca (idMarca);
