@@ -7,7 +7,7 @@ CREATE TABLE Usuario (
  nacionalidade text(20),
  naturalidade text(20),
  email text(50),
- foto varchar,
+ foto varchar(300),
  telefone1 int,
  telefone2 int,
  cep int
