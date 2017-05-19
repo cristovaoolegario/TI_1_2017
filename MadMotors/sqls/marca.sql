@@ -1,4 +1,4 @@
 CREATE TABLE Marca (
-idMarca int serial,
-nome Text(15)
+idMarca int PRIMARY KEY,
+nome varchar(15)
 );
