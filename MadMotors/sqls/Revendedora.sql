@@ -3,7 +3,7 @@ CREATE TABLE Revendedora (
  cnpj varchar(14),
  telefone1 int,
  telefone2 int,
- razaoSocial text(50),
+ razaoSocial varchar(50),
  email varchar(150),
  banner varchar(300),
  idUsuario int,
