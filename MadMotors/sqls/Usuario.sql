@@ -3,7 +3,7 @@ CREATE TABLE Usuario (
  nome text(50),
  sexo char(1),
  dtNascimento date,
- rg int, 
+ rg varcahr(11), 
  nacionalidade text(20),
  naturalidade text(20),
  email text(50),
