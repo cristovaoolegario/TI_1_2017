@@ -1,5 +1,5 @@
 CREATE TABLE Usuario (
- idUsuario int PRIMARY KEY,
+ idUsuario int PRIMARY KEY AUTO_INCREMENT,
  nome varchar(50),
  sexo char(1),
  dtNascimento date,

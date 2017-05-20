@@ -1,5 +1,5 @@
 CREATE TABLE Anuncio (
- idAnuncio int PRIMARY KEY,
+ idAnuncio int PRIMARY KEY AUTO_INCREMENT,
  estadoVeiculo varchar(10),
  ano date,
  cor varchar(10),

@@ -1,5 +1,5 @@
 CREATE TABLE Revendedora (
- idRevendedora int PRIMARY KEY,
+ idRevendedora int PRIMARY KEY AUTO_INCREMENT,
  cnpj varchar(14),
  telefone1 int,
  telefone2 int,

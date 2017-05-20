@@ -1,5 +1,5 @@
 CREATE TABLE Modelo (
-idModelo int PRIMARY KEY,
+idModelo int PRIMARY KEY AUTO_INCREMENT,
 idMarca int,
 nome varchar(20)
 )
