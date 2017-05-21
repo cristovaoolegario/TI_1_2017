@@ -1,5 +1,6 @@
 CREATE TABLE Endereco (
- cep int PRIMARY KEY,
+ id int PRIMARY KEY,
+ cep int NOT NULL,
  rua varchar(30),
  bairro varchar(20),
  numero int,

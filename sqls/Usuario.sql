@@ -1,5 +1,5 @@
 CREATE TABLE Usuario (
- idUsuario int PRIMARY KEY AUTO_INCREMENT,
+ id int PRIMARY KEY AUTO_INCREMENT,
  nome varchar(50),
  sexo char(1),
  dtNascimento date,
@@ -10,7 +10,7 @@ CREATE TABLE Usuario (
  foto varchar(300),
  telefone1 int,
  telefone2 int,
- cep int
+ id_Endereco int
 );
 
-ALTER TABLE Usuario ADD FOREIGN KEY(cep) REFERENCES Endereco (cep);
+ALTER TABLE Usuario ADD FOREIGN KEY(id_Endereco) REFERENCES Endereco (id);
