@@ -4,7 +4,7 @@
 SELECT mo.nome
 FROM Modelo mo LEFT JOIN Marca ma
 	ON mo.idMarca = ma.idMarca
-WHERE(idMarca = marca selecionada);
+WHERE(idMarca = $marcaSelecionada);
 
 /*Seleciona todas as marcas, para o select de marcas*/
 SELECT ma.nome
