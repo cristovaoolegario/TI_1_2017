@@ -59,7 +59,7 @@ $opcionais
 				     WHERE(ma.nome = ".$marcaSelecionada.");");
 
  /*Retorna o id do endereço do usuário*/
- $id_Endereco = $mySQL -> executaQuery("SELECT id 
+ $id_Endereco = $mySQL -> executaQuery("SELECT end.id 
 					FROM endereco end INNER JOIN usuario us
 					 ON end.id = us.id_Endereco
 					WHERE us.id = ".$idUsuarioAtual.";");
