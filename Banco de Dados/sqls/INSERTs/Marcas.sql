@@ -1,4 +1,3 @@
-INSERT INTO marca(id,nome) VALUES ('ID','NOME');
 INSERT INTO marca(id,nome) VALUES ('1','CHEVROLET');
 INSERT INTO marca(id,nome) VALUES ('2','VOLKSWAGEN');
 INSERT INTO marca(id,nome) VALUES ('3','FIAT');
