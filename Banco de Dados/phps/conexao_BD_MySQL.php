@@ -44,7 +44,8 @@ class MySQL
    if($this -> result = mysql_query($this->query))
    {
     $this -> disconnect(); 
-    return ($this -> result);
+    /*Retorna um vetor com os dados*/
+    return (mysql_fetch_object($this -> result));
    }
    else
    {
