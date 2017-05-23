@@ -1,5 +1,6 @@
 <?php
 include('IModelo.php');
+include('MySQL.php');
 
 class Marca implements IModelo
 {	

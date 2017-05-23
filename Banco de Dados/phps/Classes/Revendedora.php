@@ -1,6 +1,7 @@
 <?php
 include('IModelo.php');
 include('Usuario.php');
+include('MySQL.php');
 
 class Revendedora implements IModelo
 {

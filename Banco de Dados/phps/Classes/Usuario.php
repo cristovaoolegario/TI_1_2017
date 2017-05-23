@@ -1,6 +1,7 @@
 <?php
 include('IModelo.php');
 include('Endereco.php');
+include('MySQL.php');
 
 class Usuario
 {
