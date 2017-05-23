@@ -12,7 +12,8 @@ CREATE TABLE Anuncio (
  dataAnuncio date,
  id_Endereco int,
  id_Modelo int,
- id_Usuario int
+ id_Usuario int,
+ preco int
 );
 
 ALTER TABLE Anuncio ADD FOREIGN KEY(id_Endereco) REFERENCES Endereco (id);
