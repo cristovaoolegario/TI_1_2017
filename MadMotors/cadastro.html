@@ -12,15 +12,12 @@
 	   <!-- Custom CSS -->
     <link href="css/modern-business.css" rel="stylesheet">
 
-<<<<<<< HEAD
-=======
     <!-- AngularJS (obrigatório para utilizar o AngularJS -->
     <script type="text/javascript" src="js/angular.js"></script>
 
     <!-- homeCtrl -->
     <script type="text/javascript" src="js/homeCtrl.js"></script>
 
->>>>>>> Atualização do index com aplicação do angular e desenvolvimento da tela de cadastro
   </head>
 
   <body ng-controller="homeCtrl">
@@ -96,80 +93,32 @@
 			<div class="panel panel-default">
 				<div class="panel-body" style="padding:20px">
 					<div class="row">
-						<div class="col-lg-4" style="margin-top:10px">
-							<select class="form-control">
-								<option value="">Selecione uma marca</option>
-								<option ng-repeat="marca in marcas | orderBy:'nome'">{{marca.nome}}</option>
-							</select>
+						<div class="col-xs-4 .col-sm-6" style="margin-top:10px">
+							<label for="imagem">Imagem:</label>
+							<input type="file" name="imagem"/>
 						</div>
 						<div class="col-lg-8" style="margin-top:10px">
-							<div class="input-group">
-								<input type="text" class="form-control" placeholder="Pesquisar...">
-								<span class="input-group-btn">
-									<button class="btn btn-default" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
-								</span>
-							</div>
+							<form name="contatoForm">
+
+								<input class="form-control" style="margin-bottom:10px" type="text" ng-model="cadastro.modelo" name="modelo" placeholder="Modelo"/>
+								<input class="form-control" style="margin-bottom:10px" type="text" ng-model="cadastro.estado" name="estado" placeholder="Estado"/>
+								<input class="form-control" style="margin-bottom:10px" type="text" ng-model="cadastro.marca" name="marca" placeholder="Marca"/>
+								<input class="form-control" style="margin-bottom:10px" type="text" ng-model="cadastro.ano" name="ano" placeholder="Ano"/>
+								<input class="form-control" style="margin-bottom:10px" type="text" ng-model="cadastro.cor" name="cor" placeholder="Cor"/>
+								<input class="form-control" style="margin-bottom:10px" type="text" ng-model="cadastro.portas" name="portas" placeholder="Portas"/>
+								<input class="form-control" style="margin-bottom:10px" type="text" ng-model="cadastro.km" name="km" placeholder="KM"/>
+								<input class="form-control" style="margin-bottom:10px" type="text" ng-model="cadastro.cambio" name="cambio" placeholder="Cambio"/>
+								<input class="form-control" style="margin-bottom:10px" type="text" ng-model="cadastro.combustivel" name="combustivel" placeholder="Combustivel"/>
+								<input class="form-control" style="margin-bottom:10px" type="text" ng-model="cadastro.carroceria" name="carroceria" placeholder="Carroceria"/>
+								<input class="form-control" style="margin-bottom:10px" type="text" ng-model="cadastro.localizacao" name="localizacao" placeholder="Localizacao"/>
+								<textarea class="form-control" style="margin-bottom:10px" type="text" ng-model="cadastro.comentarios" name="comentarios" placeholder="Comentarios">
+								</textarea>
+								
+								  
+								<button type="submit" class="btn btn-primary" ng-click="">Enviar</button>
+								
+							</form>	
 						</div>
-					</div>
-					<div class="row">
-						<div class="col-lg-4" style="margin-top:10px">
-							<select class="form-control">
-								<option value="">Selecione um modelo</option>
-								<option ng-repeat="modelo in modelos | orderBy:'nome'">{{modelo.nome}}</option>
-							</select>
-						</div>
-						<div class="col-lg-4" style="margin-top:10px">
-							<center>Preço<span id="valueRangePreco"></span></center>
-							<input id="rangePreco" type="range" min="1000.00" max="2000000.00" step="1000">
-						</div>
-						<div class="col-lg-4" style="margin-top:10px">
-							<center>Ano<span id="valueRangeAno"></span></center>
-							<input id="rangeAno" type="range" min="1910" max="2017">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-lg-4 col-md-4 col-sm-6">
-				<div class="panel panel-default">
-					<div class="panel-body">
-						Notícia sobre automóvel
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-4 col-sm-6">
-				<div class="panel panel-default">
-					<div class="panel-body">
-						Notícia sobre automóvel
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-4 col-sm-6">
-				<div class="panel panel-default">
-					<div class="panel-body">
-						Notícia sobre automóvel
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-4 col-sm-6">
-				<div class="panel panel-default">
-					<div class="panel-body">
-						Notícia sobre automóvel
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-4 col-sm-6">
-				<div class="panel panel-default">
-					<div class="panel-body">
-						Notícia sobre automóvel
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-4 col-sm-6">
-				<div class="panel panel-default">
-					<div class="panel-body">
-						Notícia sobre automóvel
 					</div>
 				</div>
 			</div>
