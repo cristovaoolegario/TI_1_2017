@@ -1,25 +1,31 @@
 <?php
-include('IModelo.php');
-include('MySQL.php');
 
-class Modelo implements IModelo
-{	
-	$id_Marca;
-	$nome;
+    include('IModelo.php');
+    include('MySQL.php');
 
-	public function __construct()
-	{
-		 $mySQL = new MySQL;
-	}
+    class Modelo implements IModelo
+    {
 
-	public function insert()
-	{
-		
+        public $id_Marca;
+        public $nome;
 
-		 $insereModelo = $mySQL -> executaQuery("INSERT INTO modelo(id_Marca,nome) VALUES(".$id_Marca.",".$nome.");");
-	}
-	public function update();
-	public function delete();
-	public function select();
-}
+        public function __construct()
+        {
+            $mySQL = new MySQL;
+        }
+
+        public function insert()
+        {
+
+
+            $insereModelo = $mySQL->executaQuery("INSERT INTO modelo(id_Marca,nome) VALUES(" . $id_Marca . "," . $nome . ");");
+        }
+
+        public function update();
+
+        public function delete();
+
+        public function select();
+    }
+
 ?>
