@@ -5,6 +5,8 @@
 
     class Marca //implements IModelo
     {
+
+        public $id;
         public $nome;
         private static $mySQL;
 
@@ -25,10 +27,11 @@
 
         public static function delete()
         {
-            
-        }
-
-        public static function select()
+			$this->mySQL->connect();
+            $deleteEndereco = $mySQL -> executeQuery("DELETE FROM Marca WHERE id = ".$id."");   
+		}
+		
+		public function select()
         {
             $mySQL = new MySQL;
             $response = $mySQL->executeQuery("Select * from Marca");

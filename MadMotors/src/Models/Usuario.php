@@ -19,24 +19,36 @@
         public $telefone1;
         public $telefone2;
         public $idEndereco;
+        private $mySQL;
 
         public function __construct()
         {
-            
+            $mySQL = new MySQL;
         }
 
         public function insert()
         {
-            $mySQL = new MySQL();
-            /* Insere no banco o usuario fornecido */
-            $insereUsuario = $mySQL->executaQuery("INSERT INTO 'usuario'('nome','sexo','dtNascimento','rg','nacionalidade','naturalidade','email','foto','telefone1','telefone2','id_Endereco') VALUES (" . $nome . "," . $sexo . "," . $dtNascimento . "," . $rg . "," . $nacionalidade . "," . $naturalidade . "," . $email . ",1," . $telefone1 . "," . $telefone2 . "," . $idEndereco . ");");
+			$this->mySQL->connect();
+            $insereUsuario = $mySQL->executeQuery("INSERT INTO 'usuario'('nome','sexo','dtNascimento','rg','nacionalidade','naturalidade','email','foto','telefone1','telefone2','id_Endereco') VALUES (" . $nome . "," . $sexo . "," . $dtNascimento . "," . $rg . "," . $nacionalidade . "," . $naturalidade . "," . $email . ",1," . $telefone1 . "," . $telefone2 . "," . $idEndereco . ");");
         }
+        public function update()
+        {
+			$this->mySQL->connect();
+			$updateModelo = $mySQL->executeQuery("UPDATE Usuario SET  nome =  '".$nome."', sexo = '".$sexo."', dtNascimento = ".$dtNascimento.", rg = ".$rg.", nacionalidade = '".$nacionalidade."', naturalidade = '".$naturalidade."', email = '".$email."', foto = ".$foto.", telefone1 = '".$telefone1."', telefone2 = '".$telefone2."', id_Endereco = ".$id_Endereco."");
+		}
 
-        public function update();
+        public function delete()
+        {
+			$this->mySQL->connect();
+			$deleteModelo = $mySQL->executeQuery("DELETE FROM Usuario WHERE rg = ".$rg." AND nome = '".$nome."'");
+		}
 
-        public function delete();
-
-        public function select();
+        public function select()
+        {
+			$this->mySQL->connect();
+			$selectModelo = $mySQL->executeQuery("SELECT * FROM Usuario WHERE rg = ".$rg." AND nome = '".$nome."'");
+			return($selectModelo);
+		}        
     }
 
 ?>

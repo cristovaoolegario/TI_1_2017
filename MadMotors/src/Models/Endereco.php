@@ -14,6 +14,7 @@
         public $cidade;
         public $estado;
         public $pais;
+        private $mySQL;
 
         public function __construct()
         {
@@ -24,14 +25,27 @@
         public function insert()
         {
             /* Insere no banco o endereço fornecido */
+            $this->mySQL->connect();
             $insereEndereco = $mySQL->executaQuery("INSERT INTO `endereco` (`cep`,`rua`,`bairro`,`numero`,`cidade`,`estado`,`pais`) VALUES (" . $cep . "," . $rua . "," . $bairro . "," . $numero . "," . $cidade . "," . $estado . "," . $pais . ");");
         }
 
-        public function update();
+        public function update()
+        {
+			$this->mySQL->connect();
+            $insereEndereco = $mySQL->executaQuery("UPDATE Endereco SET cep = ".$cep.", rua = ".$rua.", bairro = ".$bairro.", numero = ".$numero.", cidade = ".$cidade.", estado = ".$estado.", pais = ".$pais." WHERE id = ".$id."");
+		}
 
-        public function delete();
+        public function delete()
+        {
+			$this->mySQL->connect();
+            $deleteEndereco = $mySQL -> executeQuery("DELETE FROM Endereco WHERE id = ".$id."");   
+		}
 
-        public function select();
+        public function select()
+        {
+			$this->mySQL->connect();
+			$selectEndereco = $mySQL -> executeQuery("SELECT * FROM Endereco");
+		}
     }
 
 ?>

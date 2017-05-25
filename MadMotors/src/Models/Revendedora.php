@@ -6,7 +6,7 @@
 
     class Revendedora implements IModelo
     {
-
+		public $id;
         public $cnpj;
         public $telefone1;
         public $telefone2;
@@ -15,6 +15,7 @@
         public $banner;
         public $id_Usuario;
         public $id_Endereco;
+        private $mySQL;
 
         public function __construct()
         {
@@ -25,14 +26,26 @@
         public function insert()
         {
             /* Insere no banco a revendedora fornecida */
+            $this->mySQL->connect();
             $insereRevendedora = $mySQL->executaQuery("INSERT INTO `revendedora` (`cnpj`,`telefone1`,`telefone2`,`razaoSocial`,`email`,`banner`,`id_Usuario`,`id_Endereco`) VALUES (" . $cnpj . "," . $telefone1 . "," . $telefone2 . "," . $razaoSocial . "," . $email . "," . $banner . "," . $id_Usuario . "," . $id_Endereco . ");");
         }
 
-        public function update();
+        public function update()
+        {
+			
+		}
 
-        public function delete();
+        public function delete()
+        {
+			$this->mySQL->connect();
+            $deleteRevendedora = $mySQL -> executeQuery("DELETE FROM Revendedora WHERE id = ".$id."");   
+		}
 
-        public function select();
+        public function select()
+        {
+			$this->mySQL->connect();
+			$selectRevendedora = $mySQL -> executeQuery("SELECT * FROM Revendedora");
+		}
     }
 
 ?>
