@@ -26,13 +26,13 @@
         {
             /* Insere no banco o endereço fornecido */
             $this->mySQL->connect();
-            $insereEndereco = $mySQL->executaQuery("INSERT INTO `endereco` (`cep`,`rua`,`bairro`,`numero`,`cidade`,`estado`,`pais`) VALUES (" . $cep . "," . $rua . "," . $bairro . "," . $numero . "," . $cidade . "," . $estado . "," . $pais . ");");
+            $insereEndereco = $mySQL->executaQuery("INSERT INTO `endereco` (`cep`,`rua`,`bairro`,`numero`,`cidade`,`estado`,`pais`) VALUES ('" . $cep . "','" . $rua . "','" . $bairro . "'," . $numero . ",'" . $cidade . "','" . $estado . "','" . $pais . "');");
         }
 
         public function update()
         {
 			$this->mySQL->connect();
-            $insereEndereco = $mySQL->executaQuery("UPDATE Endereco SET cep = ".$cep.", rua = ".$rua.", bairro = ".$bairro.", numero = ".$numero.", cidade = ".$cidade.", estado = ".$estado.", pais = ".$pais." WHERE id = ".$id."");
+            $insereEndereco = $mySQL->executaQuery("UPDATE Endereco SET cep = ".$cep.", rua = '".$rua."', bairro = '".$bairro."', numero = ".$numero.", cidade = '".$cidade."', estado = '".$estado."', pais = '".$pais."' WHERE id = ".$id."");
 		}
 
         public function delete()
@@ -43,8 +43,18 @@
 
         public function select()
         {
+			$selectEndereco  = "SELECT * FROM Endereco ";
+			
 			$this->mySQL->connect();
-			$selectEndereco = $mySQL -> executeQuery("SELECT * FROM Endereco");
+			
+			if(!empty($id))
+			{
+				$selectEndereco  .= "WHERE id = ".$id." ";
+				
+			}
+			
+			$mySQL -> executeQuery($selectEndereco);
+			return($mySQL);
 		}
     }
 

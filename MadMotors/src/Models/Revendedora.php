@@ -32,7 +32,9 @@
 
         public function update()
         {
-			
+			$this->mySQL->connect();
+			//Deu preguiça de terminar esse daqui:
+			//$updateRevendedora = $mySQL->executeQuery();
 		}
 
         public function delete()
@@ -43,8 +45,18 @@
 
         public function select()
         {
+			$selectRevendedora  = "SELECT * FROM Revendedora ";
+			
 			$this->mySQL->connect();
-			$selectRevendedora = $mySQL -> executeQuery("SELECT * FROM Revendedora");
+			
+			if(!empty($id))
+			{
+				$selectRevendedora  .= "WHERE id = ".$id." ";
+				
+			}
+			
+			$mySQL -> executeQuery($selectRevendedora);
+			
 		}
     }
 

@@ -35,9 +35,18 @@
 
         public function select()
         {
+			$selectModelo  = "SELECT * FROM Modelo ";
+			
 			$this->mySQL->connect();
-			$selectModelo = $mySQL->executeQuery("SELECT * FROM Modelo WHERE id_Marca = ".$id_Marca." AND nome = '".$nome."'");
-			return($selectModelo);
+			
+			if(!empty($id))
+			{
+				$selectModelo  .= "WHERE id = ".$id." ";
+				
+			}
+			
+			$mySQL -> executeQuery($selectModelo);
+			return($mySQL);
 		}
     }
 

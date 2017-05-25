@@ -49,8 +49,18 @@
 
         public function select()
         {
-            $this->mySQL->connect();
-            $selectAnuncio = $mySQL -> executeQuery("SELECT * FROM Anuncio");
+            $selectAnuncio  = "SELECT * FROM Anuncio ";
+			
+			$this->mySQL->connect();
+			
+			if(!empty($id))
+			{
+				$selectAnuncio .= "WHERE id = ".$id." ";
+				
+			}
+			
+			$mySQL -> executeQuery($selectAnuncio);
+			return($mySQL);
         }
     }
 

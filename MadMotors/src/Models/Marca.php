@@ -1,9 +1,9 @@
 <?php
 
-    //include('IModelo.php');
+    include('IModelo.php');
     include('MySQL.php');
 
-    class Marca //implements IModelo
+    class Marca implements IModelo
     {
 
         public $id;
@@ -17,25 +17,35 @@
 
         public static function insert()
         {
-            
+            $this->mySQL->connect();
+            $insertMarca = $mySQL -> executeQuery("INSERT INTO Marca(nome) VALUES('".$nome."')");        
         }
 
         public static function update()
         {
-            
+            $this->mySQL->connect();
+            $updateMarca = $mySQL -> executeQuery("UPDATE Marca SET nome = ".$nome." WHERE id = ".$id."");
         }
 
         public static function delete()
         {
 			$this->mySQL->connect();
-            $deleteEndereco = $mySQL -> executeQuery("DELETE FROM Marca WHERE id = ".$id."");   
+            $deleteMarca = $mySQL -> executeQuery("DELETE FROM Marca WHERE id = ".$id."");   
 		}
 		
 		public function select()
         {
-            $mySQL = new MySQL;
-            $response = $mySQL->executeQuery("Select * from Marca");
-            return $response;
+            $selectMarca  = "SELECT * FROM Marca ";
+			
+			$this->mySQL->connect();
+			
+			if(!empty($id))
+			{
+				$selectMarca  .= "WHERE id = ".$id." ";				
+			}
+			
+			$mySQL -> executeQuery($selectMarca);
+			return($mySQL);
         }
     }
 ?>
