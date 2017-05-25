@@ -20,9 +20,8 @@
         }
 
         public static function select()
-        {
-            
-            $array = array("Batata" => "Value");
+        {            
+            $array = Revendedora::select();
             $json = json_encode($array);
             echo $json;
         }
