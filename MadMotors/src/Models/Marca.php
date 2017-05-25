@@ -1,41 +1,38 @@
 <?php
 
-    include('IModelo.php');
-
+    //include('IModelo.php');
     include('MySQL.php');
 
-    class Marca implements IModelo
+    class Marca //implements IModelo
     {
-
         public $nome;
+        private static $mySQL;
 
         public function __construct()
         {
             $mySQL = new MySQL;
         }
 
-        public function insert()
-        {
-            $insereMarca = $mySQL->executaQuery("INSERT INTO marca(nome) VALUES(" . $nome . ");");
-        }
-
-        public function update()
+        public static function insert()
         {
             
         }
 
-        public function delete()
+        public static function update()
         {
             
         }
 
-        public function select()
+        public static function delete()
         {
-            $array = array("Batata" => "Value");
-            $json = json_encode($array);
-            echo $json;
+            
         }
 
+        public static function select()
+        {
+            $mySQL = new MySQL;
+            $response = $mySQL->executeQuery("Select * from Marca");
+            return $response;
+        }
     }
-
 ?>

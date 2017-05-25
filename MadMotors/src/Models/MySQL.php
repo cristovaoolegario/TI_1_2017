@@ -3,13 +3,12 @@
     class MySQL
     {
 
-        var $host = "pucsi.mysql.database.azure.com";
-        var $user = "usuario_rale";
-        var $password = "Sistemas123";
-        var $database = "ti_testes";
-        var $query;
-        var $link;
-        var $result;
+        private $host = "pucsi.mysql.database.azure.com";
+        private $user = "pucsi@pucsi";
+        private $password = "Sistemas123";
+        private $database = "ti_testes";
+        private $conn;
+        private $result;
 
         function MySQL()
         {
@@ -18,35 +17,30 @@
 
         function connect()
         {
-            $this->link = mysql_connect($this->host, $this->user, $this->password);
-            if (!$this->link)
+            $this->conn = new mysqli($this->host, $this->user, $this->password, $this->database);
+            if ($this->conn->connect_error)
             {
-                echo "Falha na conexao com o Banco de Dados!<br/>";
-                echo "Erro: " . mysql_error();
-                die();
-            }
-            elseif (!mysql_select_db($this->database, $this->link))
-            {
-                echo "O Banco de Dados solicitado não pode ser aberto!<br/>";
-                echo "Erro: " . mysql_error();
-                die();
+                 die("Connection failed: " . $conn->connect_error);
             }
         }
 
         function disconnect()
         {
-            return mysql_close($this->link);
+            return mysqli_close($this->conn);
         }
 
-        function executeSelect($query)
+        function executeQuery($query)
         {
             $this->connect();
-            $this->query = $query;
-            if ($this->result = mysql_query($this->query))
+            $result = $this->conn->query($query);
+            if ($result)
             {
+                $obj = mysqli_fetch_all($result, MYSQLI_ASSOC);
+
+                //$obj = mysqli_fetch_array($result);
                 $this->disconnect();
                 /* Retorna um vetor com os dados */
-                return (mysql_fetch_object($this->result));
+                return ($obj);
             }
             else
             {
@@ -57,12 +51,6 @@
                 disconnect();
             }
         }
-
-        function executeUpdate($query)
-        {
-            
-        }
-
     }
 
     /*

@@ -1,6 +1,5 @@
 <?php
-include('../../Models/Marca.php');
-$a = new Marca;
-$a -> select();
+include('../../Controllers/MarcaController.php');
 
+MarcaController::select();
 ?>
