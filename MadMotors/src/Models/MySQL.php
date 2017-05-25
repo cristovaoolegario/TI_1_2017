@@ -52,21 +52,4 @@
             }
         }
     }
-
-    /*
-      Forma de uso da Classe MySQL:
-
-      include("class.MySQL.php");
-
-      $mySQL = new MySQL;
-      $usuarios = $mySQL -> executaQuery("SELECT * FROM Usuario;");
-      $usuarios_totalRows = mysql_num_rows($usuarios);
-      $mySQL->disconnect;
-
-      while ($row_usuarios = mysql_fetch_array($usuarios))
-      {
-      echo $row_usuarios["nome"];
-      }
-
-     */
 ?>

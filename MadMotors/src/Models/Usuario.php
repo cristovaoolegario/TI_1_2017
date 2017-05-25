@@ -54,8 +54,8 @@
 				$selectUsuario .= "WHERE id = ".$id." ";				
 			}
 			
-			$mySQL -> executeQuery($selectUsuario);
-			return($mySQL);			
+			$result = $mySQL -> executeQuery($selectUsuario);
+			return($result);			
 		}        
     }
 

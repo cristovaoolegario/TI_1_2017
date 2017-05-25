@@ -26,35 +26,36 @@
         {
             /* Insere no banco o endereço fornecido */
             $this->mySQL->connect();
-            $insereEndereco = $mySQL->executaQuery("INSERT INTO `endereco` (`cep`,`rua`,`bairro`,`numero`,`cidade`,`estado`,`pais`) VALUES ('" . $cep . "','" . $rua . "','" . $bairro . "'," . $numero . ",'" . $cidade . "','" . $estado . "','" . $pais . "');");
+            $insereEndereco = $mySQL->executaQuery("INSERT INTO `endereco` (`cep`,`rua`,`bairro`,`numero`,`cidade`,`estado`,`pais`) VALUES ('".$cep."','".$rua."','".$bairro."',".$numero.",'".$cidade."','".$estado."','".$pais."');");
         }
 
         public static function update()
         {
-			$this->mySQL->connect();
+            $this->mySQL->connect();
             $insereEndereco = $mySQL->executaQuery("UPDATE Endereco SET cep = ".$cep.", rua = '".$rua."', bairro = '".$bairro."', numero = ".$numero.", cidade = '".$cidade."', estado = '".$estado."', pais = '".$pais."' WHERE id = ".$id."");
-		}
+        }
 
         public static function delete()
         {
-			$this->mySQL->connect();
-            $deleteEndereco = $mySQL -> executeQuery("DELETE FROM Endereco WHERE id = ".$id."");   
-		}
+            $this->mySQL->connect();
+            $deleteEndereco = $mySQL->executeQuery("DELETE FROM Endereco WHERE id = ".$id."");
+        }
 
         public static function select()
         {
-			$selectEndereco  = "SELECT * FROM Endereco ";
-			
-			$this->mySQL->connect();
-			
-			if(!empty($id))
-			{
-				$selectEndereco  .= "WHERE id = ".$id." ";				
-			}
-			
-			$mySQL -> executeQuery($selectEndereco);
-			return($mySQL);
-		}
+            $selectEndereco = "SELECT * FROM Endereco ";
+
+            $this->mySQL->connect();
+
+            if (!empty($id))
+            {
+                $selectEndereco .= "WHERE id = ".$id." ";
+            }
+
+            $result = $mySQL->executeQuery($selectEndereco);
+            return($result);
+        }
+
     }
 
 ?>
