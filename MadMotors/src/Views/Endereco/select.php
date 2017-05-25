@@ -1,6 +1,5 @@
 <?php
-include('Endereco.php');
-$a = new Endereco;
-$a -> select();
+include '../../Controllers/EnderecoController.php';
 
+EnderecoController::select();
 ?>

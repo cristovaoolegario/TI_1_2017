@@ -14,38 +14,41 @@
         public $cidade;
         public $estado;
         public $pais;
-        private $mySQL;
+        
+        private static $mySQL;
 
         public function __construct()
         {
-            /* Nova conexão MySQL */
-            $mySQL = new MySQL;
+            
         }
 
         public static function insert()
         {
-            /* Insere no banco o endereço fornecido */
-            $this->mySQL->connect();
+            $mySQL = new MySQL;
+            $mySQL->connect();
             $insereEndereco = $mySQL->executaQuery("INSERT INTO `endereco` (`cep`,`rua`,`bairro`,`numero`,`cidade`,`estado`,`pais`) VALUES ('".$cep."','".$rua."','".$bairro."',".$numero.",'".$cidade."','".$estado."','".$pais."');");
         }
 
         public static function update()
         {
-            $this->mySQL->connect();
+            $mySQL = new MySQL;
+            $mySQL->connect();
             $insereEndereco = $mySQL->executaQuery("UPDATE Endereco SET cep = ".$cep.", rua = '".$rua."', bairro = '".$bairro."', numero = ".$numero.", cidade = '".$cidade."', estado = '".$estado."', pais = '".$pais."' WHERE id = ".$id."");
         }
 
         public static function delete()
         {
-            $this->mySQL->connect();
+            $mySQL = new MySQL;
+            $mySQL->connect();
             $deleteEndereco = $mySQL->executeQuery("DELETE FROM Endereco WHERE id = ".$id."");
         }
 
         public static function select()
         {
+            $mySQL = new MySQL;
             $selectEndereco = "SELECT * FROM Endereco ";
 
-            $this->mySQL->connect();
+            $mySQL->connect();
 
             if (!empty($id))
             {

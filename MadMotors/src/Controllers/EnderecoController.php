@@ -21,7 +21,6 @@
 
         public static function select()
         {
-            
             $array = Endereco::select();
             $json = json_encode($array);
             echo $json;
