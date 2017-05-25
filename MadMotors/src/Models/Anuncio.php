@@ -21,46 +21,53 @@
         public $id_Modelo;
         public $id_Usuario;
         public $preco;
-        private $mySQL;
+        
+        private static $mySQL;
 
         public function __construct()
         {
-            /* Nova conexão MySQL */
-            $mySQL = new MySQL;
+                       
         }
 
         public static function insert()
         {
-            $this->mySQL->connect();
-            $insereAnuncio = $mySQL -> executeQuery("INSERT INTO anuncio  (`estadoVeiculo`,`ano`,`cor`,`numeroPortas`,`quilometragem`,`cambio`,`combustivel`,`finalPlaca`,`tipoCarroceria`,`dataAnuncio`,`id_Endereco`,`id_Modelo`,`id_Usuario`,`preco`) VALUES ('".$estado."',".$ano.",'".$cor."',".$numPortas.",".$quilometragem.",'".$cambio."','".$combustivel."','".$finalPlaca."','".$carroceria."',".$dtAnuncio.",".$id_Endereco.",".$id_Modelo.",".$id_Usuario.",".$preco.");");
+            $mySQL = new MySQL;
+            $mySQL->connect();
+            $insereAnuncio = $mySQL->executeQuery("INSERT INTO anuncio  (`estadoVeiculo`,`ano`,`cor`,`numeroPortas`,`quilometragem`,`cambio`,`combustivel`,`finalPlaca`,`tipoCarroceria`,`dataAnuncio`,`id_Endereco`,`id_Modelo`,`id_Usuario`,`preco`) VALUES ('".$estado."',".$ano.",'".$cor."',".$numPortas.",".$quilometragem.",'".$cambio."','".$combustivel."','".$finalPlaca."','".$carroceria."',".$dtAnuncio.",".$id_Endereco.",".$id_Modelo.",".$id_Usuario.",".$preco.");");
         }
 
         public static function update()
         {
-			$this->mySQL->connect();
-            $updateAnuncio = $mySQL -> executeQuery("UPDATE Anuncio SET estadoVeiculo = '".$estado."', ano = ".$ano.", cor = '".$cor."', numeroPortas = ".$numPortas.", quilometragem = ".$quilometragem.", cambio = '".$cambio."', combustivel = '".$combustivel."', finalPlaca = '".$finalPlaca."', tipoCarroceria = '".$carroceria."', dataAnuncio = ".$dtAnuncio." WHERE id = ".$id."");
+            $mySQL = new MySQL;
+            $mySQL->connect();
+            $updateAnuncio = $mySQL->executeQuery("UPDATE Anuncio SET estadoVeiculo = '".$estado."', ano = ".$ano.", cor = '".$cor."', numeroPortas = ".$numPortas.", quilometragem = ".$quilometragem.", cambio = '".$cambio."', combustivel = '".$combustivel."', finalPlaca = '".$finalPlaca."', tipoCarroceria = '".$carroceria."', dataAnuncio = ".$dtAnuncio." WHERE id = ".$id."");
         }
 
         public static function delete()
         {
-            $this->mySQL->connect();
-            $deleteAnuncio = $mySQL -> executeQuery("DELETE FROM Anuncio WHERE id = ".$id."");   
+            $mySQL = new MySQL;
+            $mySQL->connect();
+            $deleteAnuncio = $mySQL->executeQuery("DELETE FROM Anuncio WHERE id = ".$id."");
         }
 
         public static function select()
         {
-            $selectAnuncio  = "SELECT * FROM Anuncio ";
-			
-			$this->mySQL->connect();
-			
-			if(!empty($id))
-			{
-				$selectAnuncio .= "WHERE id = ".$id." ";
-				
-			}
-			
-			$mySQL -> executeQuery($selectAnuncio);
-			return($mySQL);
+            $mySQL = new MySQL;
+            $selectAnuncio = "Select * from anuncio A Join usuario U 
+                ON(A.id_Usuario = U.id) Join endereco E 
+                ON(A.id_Endereco = E.id) Join modelo Mo
+                ON(A.id_Modelo = Mo.id) JOIN marca Ma
+                ON(Mo.id_Marca = Ma.id) ";
+
+            $mySQL->connect();
+
+            if (!empty($id))
+            {
+                $selectAnuncio .= "WHERE id = ".$id." ";
+            }
+
+            $result = $mySQL->executeQuery($selectAnuncio);
+            return($result);
         }
     }
 

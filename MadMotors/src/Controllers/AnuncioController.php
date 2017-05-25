@@ -1,6 +1,6 @@
 <?php
     include '../../Models/Anuncio.php';
-
+    
     class AnuncioController
     {
 

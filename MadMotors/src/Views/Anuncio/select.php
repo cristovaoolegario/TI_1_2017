@@ -1,7 +1,5 @@
 <?php
-include('Anuncio.php');
+include '../../Controllers/AnuncioController.php';
 
-$a = new Anuncio;
-$a -> select();
-
+AnuncioController::select();
 ?>
