@@ -1,6 +1,5 @@
 <?php
-include('Modelo.php');
-$a = new Modelo;
-$a -> select();
+include '../../Controllers/ModeloController.php';
 
+ModeloController::select();
 ?>

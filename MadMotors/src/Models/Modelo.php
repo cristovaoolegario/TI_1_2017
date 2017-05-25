@@ -8,36 +8,41 @@
 
         public $id_Marca;
         public $nome;
-        private $mySQL;
+        
+        private static $mySQL;
 
         public function __construct()
         {
-            $mySQL = new MySQL;
+            
         }
 
         public static function insert()
         {
-            $this->mySQL->connect();
+            $mySQL = new MySQL;
+            $mySQL->connect();
             $insereModelo = $mySQL->executeQuery("INSERT INTO modelo(id_Marca,nome) VALUES(".$id_Marca.",'".$nome."');");
         }
 
         public static function update()
         {
-            $this->mySQL->connect();
+            $mySQL = new MySQL;
+            $mySQL->connect();
             $updateModelo = $mySQL->executeQuery("UPDATE modelo SET id_Marca = ".$id_Marca.", nome = '".$nome."'");
         }
 
         public static function delete()
         {
-            $this->mySQL->connect();
+            $mySQL = new MySQL;
+            $mySQL->connect();
             $deleteModelo = $mySQL->executeQuery("DELETE FROM Modelo WHERE id = ".$id."");
         }
 
         public static function select()
         {
+            $mySQL = new MySQL;
             $selectModelo = "SELECT * FROM Modelo ";
 
-            $this->mySQL->connect();
+            $mySQL->connect();
 
             if (!empty($id))
             {
