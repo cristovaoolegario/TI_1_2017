@@ -27,14 +27,13 @@
         {
             /* Insere no banco a revendedora fornecida */
             $this->mySQL->connect();
-            $insereRevendedora = $mySQL->executaQuery("INSERT INTO `revendedora` (`cnpj`,`telefone1`,`telefone2`,`razaoSocial`,`email`,`banner`,`id_Usuario`,`id_Endereco`) VALUES (" . $cnpj . "," . $telefone1 . "," . $telefone2 . "," . $razaoSocial . "," . $email . "," . $banner . "," . $id_Usuario . "," . $id_Endereco . ");");
+            $insereRevendedora = $mySQL->executaQuery("INSERT INTO `revendedora` (`cnpj`,`telefone1`,`telefone2`,`razaoSocial`,`email`,`banner`,`id_Usuario`,`id_Endereco`) VALUES ('" . $cnpj . "'," . $telefone1 . "," . $telefone2 . ",'" . $razaoSocial . "','" . $email . "','" . $banner . "'," . $id_Usuario . "," . $id_Endereco . ");");
         }
 
         public function update()
         {
 			$this->mySQL->connect();
-			//Deu preguiça de terminar esse daqui:
-			//$updateRevendedora = $mySQL->executeQuery();
+			$updateRevendedora = $mySQL->executeQuery("UPDATE Revendedora SET cnpj = '".$cnpj."', telefone1 = ".$telefone1.", telefone2 = "..$telefone2", razaoSocial = '".$razaoSocial."', email = '".$email."', banner = '".$banner."' WHERE id = ".$id."");
 		}
 
         public function delete()
@@ -51,8 +50,7 @@
 			
 			if(!empty($id))
 			{
-				$selectRevendedora  .= "WHERE id = ".$id." ";
-				
+				$selectRevendedora  .= "WHERE id = ".$id." ";				
 			}
 			
 			$mySQL -> executeQuery($selectRevendedora);

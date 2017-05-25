@@ -29,12 +29,12 @@
         public function insert()
         {
 			$this->mySQL->connect();
-            $insereUsuario = $mySQL->executeQuery("INSERT INTO 'Usuario'('nome','sexo','dtNascimento','rg','nacionalidade','naturalidade','email','foto','telefone1','telefone2','id_Endereco') VALUES (" . $nome . "," . $sexo . "," . $dtNascimento . "," . $rg . "," . $nacionalidade . "," . $naturalidade . "," . $email . ",1," . $telefone1 . "," . $telefone2 . "," . $idEndereco . ");");
+            $insereUsuario = $mySQL->executeQuery("INSERT INTO 'Usuario'('nome','sexo','dtNascimento','rg','nacionalidade','naturalidade','email','foto','telefone1','telefone2','id_Endereco') VALUES ('" . $nome . "','" . $sexo . "'," . $dtNascimento . ",'" . $rg . "','" . $nacionalidade . "','" . $naturalidade . "','" . $email . "',1," . $telefone1 . "," . $telefone2 . "," . $idEndereco . ");");
         }
         public function update()
         {
 			$this->mySQL->connect();
-			$updateModelo = $mySQL->executeQuery("UPDATE Usuario SET  nome =  '".$nome."', sexo = '".$sexo."', dtNascimento = ".$dtNascimento.", rg = ".$rg.", nacionalidade = '".$nacionalidade."', naturalidade = '".$naturalidade."', email = '".$email."', foto = ".$foto.", telefone1 = '".$telefone1."', telefone2 = '".$telefone2."', id_Endereco = ".$id_Endereco." WHERE id = ".$id."");
+			$updateModelo = $mySQL->executeQuery("UPDATE Usuario SET  nome =  '".$nome."', sexo = '".$sexo."', dtNascimento = ".$dtNascimento.", rg = '".$rg."', nacionalidade = '".$nacionalidade."', naturalidade = '".$naturalidade."', email = '".$email."', foto = ".$foto.", telefone1 = ".$telefone1.", telefone2 = ".$telefone2.", id_Endereco = ".$id_Endereco." WHERE id = ".$id."");
 		}
 
         public function delete()

@@ -38,7 +38,7 @@
         public function update()
         {
 			$this->mySQL->connect();
-            $updateAnuncio = $mySQL -> executeQuery("UPDATE Anuncio SET estadoVeiculo = ".$estado.", ano = ".$ano.", cor = ".$cor", numeroPortas = ".$numPortas.", quilometragem = ".$quilometragem.", cambio = ".$cambio.", combustivel = ".$combustivel.", finalPlaca = ".$finalPlaca.", tipoCarroceria = ".$carroceria.", dataAnuncio = ".$dtAnuncio." WHERE id = ".$id."");
+            $updateAnuncio = $mySQL -> executeQuery("UPDATE Anuncio SET estadoVeiculo = '".$estado."', ano = ".$ano.", cor = '".$cor"', numeroPortas = ".$numPortas.", quilometragem = ".$quilometragem.", cambio = '".$cambio."', combustivel = '".$combustivel."', finalPlaca = '".$finalPlaca."', tipoCarroceria = '".$carroceria."', dataAnuncio = ".$dtAnuncio." WHERE id = ".$id."");
         }
 
         public function delete()

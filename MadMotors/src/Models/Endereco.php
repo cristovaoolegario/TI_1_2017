@@ -49,8 +49,7 @@
 			
 			if(!empty($id))
 			{
-				$selectEndereco  .= "WHERE id = ".$id." ";
-				
+				$selectEndereco  .= "WHERE id = ".$id." ";				
 			}
 			
 			$mySQL -> executeQuery($selectEndereco);

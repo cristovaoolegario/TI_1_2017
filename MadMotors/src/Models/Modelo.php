@@ -18,7 +18,7 @@
         public function insert()
         {
 			$this->mySQL->connect();
-            $insereModelo = $mySQL->executeQuery("INSERT INTO modelo(id_Marca,nome) VALUES(" . $id_Marca . "," . $nome . ");");
+            $insereModelo = $mySQL->executeQuery("INSERT INTO modelo(id_Marca,nome) VALUES(" . $id_Marca . ",'" . $nome . "');");
         }
 
         public function update()
@@ -41,8 +41,7 @@
 			
 			if(!empty($id))
 			{
-				$selectModelo  .= "WHERE id = ".$id." ";
-				
+				$selectModelo  .= "WHERE id = ".$id." ";				
 			}
 			
 			$mySQL -> executeQuery($selectModelo);
