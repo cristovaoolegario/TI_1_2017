@@ -1,7 +1,7 @@
 <?php
-
-    include('IModelo.php');
+    
     include('Usuario.php');
+    include('IModelo.php');
     include('MySQL.php');
 
     class Revendedora implements IModelo
@@ -23,26 +23,26 @@
             $mySQL = new MySQL;
         }
 
-        public function insert()
+        public static function insert()
         {
             /* Insere no banco a revendedora fornecida */
             $this->mySQL->connect();
             $insereRevendedora = $mySQL->executaQuery("INSERT INTO `revendedora` (`cnpj`,`telefone1`,`telefone2`,`razaoSocial`,`email`,`banner`,`id_Usuario`,`id_Endereco`) VALUES ('" . $cnpj . "'," . $telefone1 . "," . $telefone2 . ",'" . $razaoSocial . "','" . $email . "','" . $banner . "'," . $id_Usuario . "," . $id_Endereco . ");");
         }
 
-        public function update()
+        public static function update()
         {
 			$this->mySQL->connect();
-			$updateRevendedora = $mySQL->executeQuery("UPDATE Revendedora SET cnpj = '".$cnpj."', telefone1 = ".$telefone1.", telefone2 = "..$telefone2", razaoSocial = '".$razaoSocial."', email = '".$email."', banner = '".$banner."' WHERE id = ".$id."");
+			$updateRevendedora = $mySQL->executeQuery("UPDATE Revendedora SET cnpj = '".$cnpj."', telefone1 = ".$telefone1.", telefone2 = ".$telefone2.", razaoSocial = '".$razaoSocial."', email = '".$email."', banner = '".$banner."' WHERE id = ".$id."");
 		}
 
-        public function delete()
+        public static function delete()
         {
 			$this->mySQL->connect();
             $deleteRevendedora = $mySQL -> executeQuery("DELETE FROM Revendedora WHERE id = ".$id."");   
 		}
 
-        public function select()
+        public static function select()
         {
 			$selectRevendedora  = "SELECT * FROM Revendedora ";
 			

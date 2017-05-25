@@ -22,26 +22,26 @@
             $mySQL = new MySQL;
         }
 
-        public function insert()
+        public static function insert()
         {
             /* Insere no banco o endereço fornecido */
             $this->mySQL->connect();
             $insereEndereco = $mySQL->executaQuery("INSERT INTO `endereco` (`cep`,`rua`,`bairro`,`numero`,`cidade`,`estado`,`pais`) VALUES ('" . $cep . "','" . $rua . "','" . $bairro . "'," . $numero . ",'" . $cidade . "','" . $estado . "','" . $pais . "');");
         }
 
-        public function update()
+        public static function update()
         {
 			$this->mySQL->connect();
             $insereEndereco = $mySQL->executaQuery("UPDATE Endereco SET cep = ".$cep.", rua = '".$rua."', bairro = '".$bairro."', numero = ".$numero.", cidade = '".$cidade."', estado = '".$estado."', pais = '".$pais."' WHERE id = ".$id."");
 		}
 
-        public function delete()
+        public static function delete()
         {
 			$this->mySQL->connect();
             $deleteEndereco = $mySQL -> executeQuery("DELETE FROM Endereco WHERE id = ".$id."");   
 		}
 
-        public function select()
+        public static function select()
         {
 			$selectEndereco  = "SELECT * FROM Endereco ";
 			

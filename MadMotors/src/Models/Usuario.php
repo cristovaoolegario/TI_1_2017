@@ -4,7 +4,7 @@
     include('Endereco.php');
     include('MySQL.php');
 
-    class Usuario
+    class Usuario implements IModelo
     {
         /* Serão cadastrados em Usuário */
 
@@ -26,24 +26,24 @@
             $mySQL = new MySQL;
         }
 
-        public function insert()
+        public static function insert()
         {
 			$this->mySQL->connect();
             $insereUsuario = $mySQL->executeQuery("INSERT INTO 'Usuario'('nome','sexo','dtNascimento','rg','nacionalidade','naturalidade','email','foto','telefone1','telefone2','id_Endereco') VALUES ('" . $nome . "','" . $sexo . "'," . $dtNascimento . ",'" . $rg . "','" . $nacionalidade . "','" . $naturalidade . "','" . $email . "',1," . $telefone1 . "," . $telefone2 . "," . $idEndereco . ");");
         }
-        public function update()
+        public static function update()
         {
 			$this->mySQL->connect();
 			$updateModelo = $mySQL->executeQuery("UPDATE Usuario SET  nome =  '".$nome."', sexo = '".$sexo."', dtNascimento = ".$dtNascimento.", rg = '".$rg."', nacionalidade = '".$nacionalidade."', naturalidade = '".$naturalidade."', email = '".$email."', foto = ".$foto.", telefone1 = ".$telefone1.", telefone2 = ".$telefone2.", id_Endereco = ".$id_Endereco." WHERE id = ".$id."");
 		}
 
-        public function delete()
+        public static function delete()
         {
 			$this->mySQL->connect();
 			$deleteModelo = $mySQL->executeQuery("DELETE FROM Usuario WHERE id = ".$id."");
 		}
 
-        public function select()
+        public static function select()
         {			
 			$selectUsuario = "SELECT * FROM Usuario ";
 			

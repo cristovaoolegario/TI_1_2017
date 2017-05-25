@@ -15,25 +15,25 @@
             $mySQL = new MySQL;
         }
 
-        public function insert()
+        public static function insert()
         {
 			$this->mySQL->connect();
             $insereModelo = $mySQL->executeQuery("INSERT INTO modelo(id_Marca,nome) VALUES(" . $id_Marca . ",'" . $nome . "');");
         }
 
-        public function update()
+        public static function update()
         {
 			$this->mySQL->connect();
 			$updateModelo = $mySQL->executeQuery("UPDATE modelo SET id_Marca = ".$id_Marca.", nome = '".$nome."'");
 		}
 
-        public function delete()
+        public static function delete()
         {
 			$this->mySQL->connect();
             $deleteModelo = $mySQL -> executeQuery("DELETE FROM Modelo WHERE id = ".$id."");   
 		}
 
-        public function select()
+        public static function select()
         {
 			$selectModelo  = "SELECT * FROM Modelo ";
 			

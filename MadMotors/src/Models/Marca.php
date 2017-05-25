@@ -33,7 +33,7 @@
             $deleteMarca = $mySQL -> executeQuery("DELETE FROM Marca WHERE id = ".$id."");   
 		}
 		
-		public function select()
+		public static function select()
         {
             $selectMarca  = "SELECT * FROM Marca ";
 			
