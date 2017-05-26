@@ -16,30 +16,32 @@
         public $banner;
         public $id_Usuario;
         public $id_Endereco;
-        private $mySQL;
+        private static $mySQL;
 
         public function __construct()
         {
-            /* Nova conexão MySQL */
-            $mySQL = new MySQL;
+            
         }
-
+        
         public static function insert()
         {
             /* Insere no banco a revendedora fornecida */
-            $this->mySQL->connect();
+            $mySQL = new MySQL;
+            $mySQL->connect();
             $insereRevendedora = $mySQL->executaQuery("INSERT INTO `revendedora` (`cnpj`,`telefone1`,`telefone2`,`razaoSocial`,`email`,`banner`,`id_Usuario`,`id_Endereco`) VALUES ('".$cnpj."',".$telefone1.",".$telefone2.",'".$razaoSocial."','".$email."','".$banner."',".$id_Usuario.",".$id_Endereco.");");
         }
 
         public static function update()
         {
-            $this->mySQL->connect();
+            $mySQL = new MySQL;
+            $mySQL->connect();
             $updateRevendedora = $mySQL->executeQuery("UPDATE Revendedora SET cnpj = '".$cnpj."', telefone1 = ".$telefone1.", telefone2 = ".$telefone2.", razaoSocial = '".$razaoSocial."', email = '".$email."', banner = '".$banner."' WHERE id = ".$id."");
         }
 
         public static function delete()
         {
-            $this->mySQL->connect();
+            $mySQL = new MySQL;
+            $mySQL->connect();
             $deleteRevendedora = $mySQL->executeQuery("DELETE FROM Revendedora WHERE id = ".$id."");
         }
 
@@ -47,7 +49,8 @@
         {
             $selectRevendedora = "SELECT * FROM Revendedora ";
 
-            $this->mySQL->connect();
+            $mySQL = new MySQL;
+            $mySQL->connect();
 
             if (!empty($id))
             {
