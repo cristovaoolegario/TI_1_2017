@@ -42,7 +42,7 @@
                             <a href="about.html"><i class="fa fa-user"></i> Login</a>
                         </li>
                         <li>
-                            <a href="services.html">Cadastrar</a>
+                            <a href="cadastro.html">Cadastrar</a>
                         </li>
                     </ul>
                 </div>
@@ -130,45 +130,26 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-6">
+                <div ng-repeat="anuncio in anuncios" class="col-lg-4 col-md-4 col-sm-6">
                     <div class="panel panel-default">
-                        <div class="panel-body">
-                            Notícia sobre automóvel
+                        <div class="panel-heading">
+                            {{anuncio.nomeMarca}} {{anuncio.nomeModelo}} - {{anuncio.ano}}
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6">
-                    <div class="panel panel-default">
                         <div class="panel-body">
-                            Notícia sobre automóvel
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6">
-                    <div class="panel panel-default">
-                        <div class="panel-body">
-                            Notícia sobre automóvel
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6">
-                    <div class="panel panel-default">
-                        <div class="panel-body">
-                            Notícia sobre automóvel
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6">
-                    <div class="panel panel-default">
-                        <div class="panel-body">
-                            Notícia sobre automóvel
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6">
-                    <div class="panel panel-default">
-                        <div class="panel-body">
-                            Notícia sobre automóvel
+                            <image class="img-rounded" src="http://g1.globo.com/Noticias/Carros/foto/0,,14530395-EX,00.jpg" style="width: 100%; height: auto"/>
+                            <hr style="width: 100%"/>
+                            <b>Combustível:</b> {{anuncio.combustivel}}<br/>
+                            <b>Cambio:</b>{{anuncio.cambio}}<br/>
+                            <b>Km: </b>{{anuncio.quilometragem}} <br/><br/>
+                            
+                            <b>Contatos</b><br/>
+                            <b>Email:</b> {{anuncio.email}}<tr/><br/>
+                            <b>Telefone:</b> {{anuncio.telefone1}}<br/>
+                            <span>{{anuncio.estado}} - {{anuncio.bairro+", "+anuncio.cidade}}</span> <br/><br/>
+                            
+                            <h3 style="text-align: right">R${{anuncio.preco}},00</h3>
+                            <hr style="width: 100%"/>
+                            <b>Data do anuncio: </b>{{anuncio.dataAnuncio}}<br/>
                         </div>
                     </div>
                 </div>

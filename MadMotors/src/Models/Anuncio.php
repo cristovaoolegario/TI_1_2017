@@ -53,11 +53,15 @@
         public static function select()
         {
             $mySQL = new MySQL;
-            $selectAnuncio = "Select * from anuncio A Join usuario U 
-                ON(A.id_Usuario = U.id) Join endereco E 
-                ON(A.id_Endereco = E.id) Join modelo Mo
-                ON(A.id_Modelo = Mo.id) JOIN marca Ma
-                ON(Mo.id_Marca = Ma.id) ";
+            $selectAnuncio = "select id_Anuncio, estadoVeiculo, ano, cor, numeroPortas, quilometragem, 
+            cambio, combustivel, dataAnuncio, A.id_Modelo, A.id_Usuario, preco,
+            nomeUsuario, sexo, rg, nacionalidade, email, telefone1, telefone2, 
+            E.id_Endereco As id_Endereco, E.cep, E.rua, E.bairro, E.numero, E.cidade, 
+            E.estado, E.pais, nomeModelo, Mo.id_Marca, nomeMarca from anuncio A Join usuario U
+            ON(A.id_Usuario = U.id_Usuario) Join endereco E
+            ON(A.id_Endereco = E.id_Endereco) Join modelo Mo
+            ON(A.id_Modelo = Mo.id_Modelo) JOIN marca Ma
+            ON(Mo.id_Marca = Ma.id_Marca);";
 
             $mySQL->connect();
 
