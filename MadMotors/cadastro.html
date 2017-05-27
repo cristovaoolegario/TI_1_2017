@@ -13,7 +13,7 @@
     <link href="css/modern-business.css" rel="stylesheet">
 
     <!-- AngularJS (obrigatório para utilizar o AngularJS -->
-    <script type="text/javascript" src="js/angular.js"></script>
+    <script type="text/javascript" src="js/angular.min.js"></script>
 
     <!-- homeCtrl -->
     <script type="text/javascript" src="js/homeCtrl.js"></script>
@@ -35,21 +35,18 @@
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-					<li>
-                        <a href="about.html"><i class="fa fa-user"></i> Login</a>
-                    </li>
-                    <li>
-                        <a href="services.html">Cadastrar</a>
-                    </li>
-                </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li>
+                  <a href="about.html"><i class="fa fa-user"></i> Login</a>
+                </li>
+              </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
     </nav>
 
-	<header id="myCarousel" class="carousel slide" style="margin-top:10px">
+	<header id="myCarousel" class="carousel slide" style="margin-top:10px; height:25%;">
         <!-- Indicators -->
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -62,19 +59,19 @@
             <div class="item active">
                 <div class="fill" style="background-image:url('images/slide-one.png');"></div>
                 <div class="carousel-caption">
-                    <h2>Banner 1</h2>
+                    <!-- h2>Banner 1</h2 -->
                 </div>
             </div>
             <div class="item">
                 <div class="fill" style="background-image:url('images/slide-two.png');"></div>
                 <div class="carousel-caption">
-                    <h2>Banner 2</h2>
+                    <!-- h2>Banner 2</h2 -->
                 </div>
             </div>
             <div class="item">
                 <div class="fill" style="background-image:url('images/slide-three.png');"></div>
                 <div class="carousel-caption">
-                    <h2>Banner 3</h2>
+                    <!-- h2>Banner 3</h2 -->
                 </div>
             </div>
         </div>
@@ -98,7 +95,7 @@
 							<input type="file" name="imagem"/>
 						</div>
 						<div class="col-lg-8" style="margin-top:10px">
-							<form name="contatoForm">
+							<form name="cadastroForm">
 
 								<input class="form-control" style="margin-bottom:10px" type="text" ng-model="cadastro.modelo" name="modelo" placeholder="Modelo"/>
 								<input class="form-control" style="margin-bottom:10px" type="text" ng-model="cadastro.estado" name="estado" placeholder="Estado"/>
@@ -110,14 +107,13 @@
 								<input class="form-control" style="margin-bottom:10px" type="text" ng-model="cadastro.cambio" name="cambio" placeholder="Cambio"/>
 								<input class="form-control" style="margin-bottom:10px" type="text" ng-model="cadastro.combustivel" name="combustivel" placeholder="Combustivel"/>
 								<input class="form-control" style="margin-bottom:10px" type="text" ng-model="cadastro.carroceria" name="carroceria" placeholder="Carroceria"/>
-								<input class="form-control" style="margin-bottom:10px" type="text" ng-model="cadastro.localizacao" name="localizacao" placeholder="Localizacao"/>
-								<textarea class="form-control" style="margin-bottom:10px" type="text" ng-model="cadastro.comentarios" name="comentarios" placeholder="Comentarios">
-								</textarea>
+								<input class="form-control" style="margin-bottom:10px" type="text" ng-model="cadastro.localizacao" name="localizacao" placeholder="Localização"/>
+								<textarea class="form-control" style="margin-bottom:10px" type="text" ng-model="cadastro.comentarios" name="comentarios" placeholder="Comentarios"></textarea>
 								
-								  
-								<button type="submit" class="btn btn-primary" ng-click="">Enviar</button>
+								<button  class="btn btn-primary" ng-click="carregarModelos" ng-disabled="!cadastro.modelo || !cadastro.estado || !cadastro.marca || !cadastro.ano || !cadastro.cor || !cadastro.portas
+								|| !cadastro.km || !cadastro.cambio || !cadastro.combustivel || !cadastro.carroceria || !cadastro.localizacao">Cadastrar</button>	
 								
-							</form>	
+							</form>						
 						</div>
 					</div>
 				</div>
