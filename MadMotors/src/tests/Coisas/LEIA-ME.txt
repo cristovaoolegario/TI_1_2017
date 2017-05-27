@@ -1,0 +1,10 @@
+Para execução dos testes:
+
+./vendor/bin/phpunit --colors -v tests/MarcaTest.php
+./vendor/bin/phpunit --colors -v tests/ModeloTest.php
+./vendor/bin/phpunit --colors -v tests/EnderecoTest.php
+./vendor/bin/phpunit --colors -v tests/AnuncioTest.php
+./vendor/bin/phpunit --colors -v tests/UsuarioTest.php
+
+
+

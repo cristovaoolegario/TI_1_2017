@@ -1,0 +1,1708 @@
+<?xml version="1.0"?>
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="ti_testes">
+	
+	<table_data name="anuncio">
+	<row>
+		<field name="id_Anuncio">1</field>
+		<field name="estadoVeiculo">Novo</field>
+		<field name="ano">1985-06-06</field>
+		<field name="cor">verde</field>
+		<field name="numeroPortas">4</field>
+		<field name="quilometragem">65589</field>
+		<field name="cambio">automatico</field>
+		<field name="combustivel">diesel</field>
+		<field name="finalPlaca">1178</field>
+		<field name="tipoCarroceria">Van</field>
+		<field name="dataAnuncio">2008-04-18</field>
+		<field name="id_Endereco">20</field>
+		<field name="id_Modelo">1380</field>
+		<field name="id_Usuario">45</field>
+		<field name="preco">414887</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">2</field>
+		<field name="estadoVeiculo">Usado</field>
+		<field name="ano">1955-03-25</field>
+		<field name="cor">laranjado</field>
+		<field name="numeroPortas">4</field>
+		<field name="quilometragem">53199</field>
+		<field name="cambio">automatico</field>
+		<field name="combustivel">gasolina</field>
+		<field name="finalPlaca">2992</field>
+		<field name="tipoCarroceria">PickUp</field>
+		<field name="dataAnuncio">2017-02-28</field>
+		<field name="id_Endereco">38</field>
+		<field name="id_Modelo">755</field>
+		<field name="id_Usuario">90</field>
+		<field name="preco">446313</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">3</field>
+		<field name="estadoVeiculo">Usado</field>
+		<field name="ano">1969-08-22</field>
+		<field name="cor">verde</field>
+		<field name="numeroPortas">2</field>
+		<field name="quilometragem">93633</field>
+		<field name="cambio">automatico</field>
+		<field name="combustivel">gasolina</field>
+		<field name="finalPlaca">9902</field>
+		<field name="tipoCarroceria">Perua</field>
+		<field name="dataAnuncio">2014-02-07</field>
+		<field name="id_Endereco">38</field>
+		<field name="id_Modelo">704</field>
+		<field name="id_Usuario">44</field>
+		<field name="preco">391717</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">4</field>
+		<field name="estadoVeiculo">Usado</field>
+		<field name="ano">1969-07-30</field>
+		<field name="cor">vermelho</field>
+		<field name="numeroPortas">4</field>
+		<field name="quilometragem">166852</field>
+		<field name="cambio">manual</field>
+		<field name="combustivel">alcool</field>
+		<field name="finalPlaca">5255</field>
+		<field name="tipoCarroceria">Hatch</field>
+		<field name="dataAnuncio">2012-02-01</field>
+		<field name="id_Endereco">99</field>
+		<field name="id_Modelo">2270</field>
+		<field name="id_Usuario">22</field>
+		<field name="preco">492622</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">5</field>
+		<field name="estadoVeiculo">Usado</field>
+		<field name="ano">1983-04-12</field>
+		<field name="cor">branco</field>
+		<field name="numeroPortas">2</field>
+		<field name="quilometragem">142039</field>
+		<field name="cambio">manual</field>
+		<field name="combustivel">diesel</field>
+		<field name="finalPlaca">7500</field>
+		<field name="tipoCarroceria">Perua</field>
+		<field name="dataAnuncio">2015-09-19</field>
+		<field name="id_Endereco">25</field>
+		<field name="id_Modelo">182</field>
+		<field name="id_Usuario">16</field>
+		<field name="preco">397480</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">6</field>
+		<field name="estadoVeiculo">Usado</field>
+		<field name="ano">1966-03-06</field>
+		<field name="cor">verde</field>
+		<field name="numeroPortas">2</field>
+		<field name="quilometragem">16281</field>
+		<field name="cambio">automatico</field>
+		<field name="combustivel">flex</field>
+		<field name="finalPlaca">6652</field>
+		<field name="tipoCarroceria">PickUp</field>
+		<field name="dataAnuncio">2014-04-15</field>
+		<field name="id_Endereco">58</field>
+		<field name="id_Modelo">727</field>
+		<field name="id_Usuario">55</field>
+		<field name="preco">291635</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">7</field>
+		<field name="estadoVeiculo">Usado</field>
+		<field name="ano">1997-08-20</field>
+		<field name="cor">amarelo</field>
+		<field name="numeroPortas">2</field>
+		<field name="quilometragem">123770</field>
+		<field name="cambio">manual</field>
+		<field name="combustivel">diesel</field>
+		<field name="finalPlaca">1459</field>
+		<field name="tipoCarroceria">Van</field>
+		<field name="dataAnuncio">2016-04-04</field>
+		<field name="id_Endereco">77</field>
+		<field name="id_Modelo">1984</field>
+		<field name="id_Usuario">39</field>
+		<field name="preco">135617</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">8</field>
+		<field name="estadoVeiculo">Novo</field>
+		<field name="ano">1983-03-11</field>
+		<field name="cor">verde</field>
+		<field name="numeroPortas">2</field>
+		<field name="quilometragem">91480</field>
+		<field name="cambio">manual</field>
+		<field name="combustivel">diesel</field>
+		<field name="finalPlaca">8636</field>
+		<field name="tipoCarroceria">Van</field>
+		<field name="dataAnuncio">2014-05-10</field>
+		<field name="id_Endereco">1</field>
+		<field name="id_Modelo">2933</field>
+		<field name="id_Usuario">53</field>
+		<field name="preco">33703</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">9</field>
+		<field name="estadoVeiculo">Novo</field>
+		<field name="ano">2008-04-11</field>
+		<field name="cor">verde</field>
+		<field name="numeroPortas">4</field>
+		<field name="quilometragem">35960</field>
+		<field name="cambio">automatico</field>
+		<field name="combustivel">diesel</field>
+		<field name="finalPlaca">4412</field>
+		<field name="tipoCarroceria">Seda</field>
+		<field name="dataAnuncio">2008-12-14</field>
+		<field name="id_Endereco">9</field>
+		<field name="id_Modelo">288</field>
+		<field name="id_Usuario">69</field>
+		<field name="preco">371952</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">10</field>
+		<field name="estadoVeiculo">Novo</field>
+		<field name="ano">1963-04-12</field>
+		<field name="cor">azul</field>
+		<field name="numeroPortas">2</field>
+		<field name="quilometragem">82272</field>
+		<field name="cambio">manual</field>
+		<field name="combustivel">flex</field>
+		<field name="finalPlaca">9170</field>
+		<field name="tipoCarroceria">Seda</field>
+		<field name="dataAnuncio">2009-06-22</field>
+		<field name="id_Endereco">38</field>
+		<field name="id_Modelo">276</field>
+		<field name="id_Usuario">77</field>
+		<field name="preco">472265</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">11</field>
+		<field name="estadoVeiculo">Novo</field>
+		<field name="ano">2009-12-25</field>
+		<field name="cor">indigo</field>
+		<field name="numeroPortas">2</field>
+		<field name="quilometragem">125974</field>
+		<field name="cambio">manual</field>
+		<field name="combustivel">flex</field>
+		<field name="finalPlaca">8802</field>
+		<field name="tipoCarroceria">PickUp</field>
+		<field name="dataAnuncio">2009-12-30</field>
+		<field name="id_Endereco">31</field>
+		<field name="id_Modelo">5012</field>
+		<field name="id_Usuario">52</field>
+		<field name="preco">291641</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">12</field>
+		<field name="estadoVeiculo">Usado</field>
+		<field name="ano">1977-12-12</field>
+		<field name="cor">violeta</field>
+		<field name="numeroPortas">2</field>
+		<field name="quilometragem">135522</field>
+		<field name="cambio">manual</field>
+		<field name="combustivel">flex</field>
+		<field name="finalPlaca">6185</field>
+		<field name="tipoCarroceria">Cupe</field>
+		<field name="dataAnuncio">2017-11-18</field>
+		<field name="id_Endereco">56</field>
+		<field name="id_Modelo">1372</field>
+		<field name="id_Usuario">85</field>
+		<field name="preco">342841</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">13</field>
+		<field name="estadoVeiculo">Usado</field>
+		<field name="ano">2008-10-25</field>
+		<field name="cor">laranjado</field>
+		<field name="numeroPortas">2</field>
+		<field name="quilometragem">46957</field>
+		<field name="cambio">manual</field>
+		<field name="combustivel">gasolina</field>
+		<field name="finalPlaca">3922</field>
+		<field name="tipoCarroceria">Cupe</field>
+		<field name="dataAnuncio">2013-09-16</field>
+		<field name="id_Endereco">12</field>
+		<field name="id_Modelo">2607</field>
+		<field name="id_Usuario">67</field>
+		<field name="preco">233330</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">14</field>
+		<field name="estadoVeiculo">Novo</field>
+		<field name="ano">1978-03-24</field>
+		<field name="cor">verde</field>
+		<field name="numeroPortas">2</field>
+		<field name="quilometragem">68471</field>
+		<field name="cambio">automatico</field>
+		<field name="combustivel">diesel</field>
+		<field name="finalPlaca">6184</field>
+		<field name="tipoCarroceria">Van</field>
+		<field name="dataAnuncio">2010-01-06</field>
+		<field name="id_Endereco">80</field>
+		<field name="id_Modelo">722</field>
+		<field name="id_Usuario">98</field>
+		<field name="preco">342871</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">15</field>
+		<field name="estadoVeiculo">Novo</field>
+		<field name="ano">2003-01-03</field>
+		<field name="cor">vermelho</field>
+		<field name="numeroPortas">4</field>
+		<field name="quilometragem">93195</field>
+		<field name="cambio">manual</field>
+		<field name="combustivel">alcool</field>
+		<field name="finalPlaca">1726</field>
+		<field name="tipoCarroceria">Seda</field>
+		<field name="dataAnuncio">2010-12-23</field>
+		<field name="id_Endereco">16</field>
+		<field name="id_Modelo">264</field>
+		<field name="id_Usuario">23</field>
+		<field name="preco">377342</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">16</field>
+		<field name="estadoVeiculo">Usado</field>
+		<field name="ano">1996-11-27</field>
+		<field name="cor">violeta</field>
+		<field name="numeroPortas">2</field>
+		<field name="quilometragem">144201</field>
+		<field name="cambio">automatico</field>
+		<field name="combustivel">diesel</field>
+		<field name="finalPlaca">5378</field>
+		<field name="tipoCarroceria">Hatch</field>
+		<field name="dataAnuncio">2017-08-27</field>
+		<field name="id_Endereco">64</field>
+		<field name="id_Modelo">247</field>
+		<field name="id_Usuario">89</field>
+		<field name="preco">225317</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">17</field>
+		<field name="estadoVeiculo">Novo</field>
+		<field name="ano">1984-04-03</field>
+		<field name="cor">azul</field>
+		<field name="numeroPortas">2</field>
+		<field name="quilometragem">35027</field>
+		<field name="cambio">automatico</field>
+		<field name="combustivel">gasolina</field>
+		<field name="finalPlaca">5651</field>
+		<field name="tipoCarroceria">PickUp</field>
+		<field name="dataAnuncio">2012-09-25</field>
+		<field name="id_Endereco">46</field>
+		<field name="id_Modelo">1988</field>
+		<field name="id_Usuario">91</field>
+		<field name="preco">456391</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">18</field>
+		<field name="estadoVeiculo">Novo</field>
+		<field name="ano">1965-01-24</field>
+		<field name="cor">branco</field>
+		<field name="numeroPortas">2</field>
+		<field name="quilometragem">159395</field>
+		<field name="cambio">manual</field>
+		<field name="combustivel">gasolina</field>
+		<field name="finalPlaca">1392</field>
+		<field name="tipoCarroceria">Cupe</field>
+		<field name="dataAnuncio">2008-09-06</field>
+		<field name="id_Endereco">73</field>
+		<field name="id_Modelo">1428</field>
+		<field name="id_Usuario">40</field>
+		<field name="preco">139803</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">19</field>
+		<field name="estadoVeiculo">Usado</field>
+		<field name="ano">2000-09-14</field>
+		<field name="cor">azul</field>
+		<field name="numeroPortas">4</field>
+		<field name="quilometragem">11050</field>
+		<field name="cambio">manual</field>
+		<field name="combustivel">gasolina</field>
+		<field name="finalPlaca">5211</field>
+		<field name="tipoCarroceria">Hatch</field>
+		<field name="dataAnuncio">2016-11-27</field>
+		<field name="id_Endereco">94</field>
+		<field name="id_Modelo">2648</field>
+		<field name="id_Usuario">51</field>
+		<field name="preco">140154</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">20</field>
+		<field name="estadoVeiculo">Usado</field>
+		<field name="ano">1966-08-08</field>
+		<field name="cor">prata</field>
+		<field name="numeroPortas">2</field>
+		<field name="quilometragem">130174</field>
+		<field name="cambio">manual</field>
+		<field name="combustivel">flex</field>
+		<field name="finalPlaca">9381</field>
+		<field name="tipoCarroceria">Cupe</field>
+		<field name="dataAnuncio">2011-03-20</field>
+		<field name="id_Endereco">42</field>
+		<field name="id_Modelo">178</field>
+		<field name="id_Usuario">8</field>
+		<field name="preco">90658</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">21</field>
+		<field name="estadoVeiculo">Usado</field>
+		<field name="ano">1963-11-10</field>
+		<field name="cor">indigo</field>
+		<field name="numeroPortas">2</field>
+		<field name="quilometragem">83453</field>
+		<field name="cambio">manual</field>
+		<field name="combustivel">gasolina</field>
+		<field name="finalPlaca">1886</field>
+		<field name="tipoCarroceria">Cupe</field>
+		<field name="dataAnuncio">2015-07-18</field>
+		<field name="id_Endereco">80</field>
+		<field name="id_Modelo">725</field>
+		<field name="id_Usuario">69</field>
+		<field name="preco">225877</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">22</field>
+		<field name="estadoVeiculo">Usado</field>
+		<field name="ano">2003-04-10</field>
+		<field name="cor">amarelo</field>
+		<field name="numeroPortas">2</field>
+		<field name="quilometragem">196069</field>
+		<field name="cambio">manual</field>
+		<field name="combustivel">diesel</field>
+		<field name="finalPlaca">6033</field>
+		<field name="tipoCarroceria">Cupe</field>
+		<field name="dataAnuncio">2015-02-28</field>
+		<field name="id_Endereco">62</field>
+		<field name="id_Modelo">725</field>
+		<field name="id_Usuario">33</field>
+		<field name="preco">13108</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">23</field>
+		<field name="estadoVeiculo">Novo</field>
+		<field name="ano">2004-06-24</field>
+		<field name="cor">violeta</field>
+		<field name="numeroPortas">4</field>
+		<field name="quilometragem">69396</field>
+		<field name="cambio">automatico</field>
+		<field name="combustivel">gasolina</field>
+		<field name="finalPlaca">1827</field>
+		<field name="tipoCarroceria">Seda</field>
+		<field name="dataAnuncio">2014-06-25</field>
+		<field name="id_Endereco">51</field>
+		<field name="id_Modelo">2756</field>
+		<field name="id_Usuario">83</field>
+		<field name="preco">314452</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">24</field>
+		<field name="estadoVeiculo">Usado</field>
+		<field name="ano">2001-11-24</field>
+		<field name="cor">cinza</field>
+		<field name="numeroPortas">2</field>
+		<field name="quilometragem">97495</field>
+		<field name="cambio">automatico</field>
+		<field name="combustivel">alcool</field>
+		<field name="finalPlaca">4714</field>
+		<field name="tipoCarroceria">Perua</field>
+		<field name="dataAnuncio">2016-12-09</field>
+		<field name="id_Endereco">56</field>
+		<field name="id_Modelo">240</field>
+		<field name="id_Usuario">44</field>
+		<field name="preco">325474</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">25</field>
+		<field name="estadoVeiculo">Usado</field>
+		<field name="ano">1986-01-25</field>
+		<field name="cor">verde</field>
+		<field name="numeroPortas">2</field>
+		<field name="quilometragem">2879</field>
+		<field name="cambio">automatico</field>
+		<field name="combustivel">gasolina</field>
+		<field name="finalPlaca">4156</field>
+		<field name="tipoCarroceria">SUV</field>
+		<field name="dataAnuncio">2012-11-25</field>
+		<field name="id_Endereco">25</field>
+		<field name="id_Modelo">713</field>
+		<field name="id_Usuario">25</field>
+		<field name="preco">55099</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">26</field>
+		<field name="estadoVeiculo">Novo</field>
+		<field name="ano">1964-01-14</field>
+		<field name="cor">azul</field>
+		<field name="numeroPortas">2</field>
+		<field name="quilometragem">152216</field>
+		<field name="cambio">manual</field>
+		<field name="combustivel">flex</field>
+		<field name="finalPlaca">3518</field>
+		<field name="tipoCarroceria">Hatch</field>
+		<field name="dataAnuncio">2011-07-04</field>
+		<field name="id_Endereco">25</field>
+		<field name="id_Modelo">256</field>
+		<field name="id_Usuario">51</field>
+		<field name="preco">199267</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">27</field>
+		<field name="estadoVeiculo">Usado</field>
+		<field name="ano">1957-07-30</field>
+		<field name="cor">indigo</field>
+		<field name="numeroPortas">4</field>
+		<field name="quilometragem">99349</field>
+		<field name="cambio">manual</field>
+		<field name="combustivel">gasolina</field>
+		<field name="finalPlaca">8810</field>
+		<field name="tipoCarroceria">SUV</field>
+		<field name="dataAnuncio">2009-02-02</field>
+		<field name="id_Endereco">31</field>
+		<field name="id_Modelo">283</field>
+		<field name="id_Usuario">63</field>
+		<field name="preco">385530</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">28</field>
+		<field name="estadoVeiculo">Novo</field>
+		<field name="ano">1979-07-05</field>
+		<field name="cor">azul</field>
+		<field name="numeroPortas">4</field>
+		<field name="quilometragem">48443</field>
+		<field name="cambio">automatico</field>
+		<field name="combustivel">flex</field>
+		<field name="finalPlaca">2564</field>
+		<field name="tipoCarroceria">SUV</field>
+		<field name="dataAnuncio">2009-08-15</field>
+		<field name="id_Endereco">78</field>
+		<field name="id_Modelo">238</field>
+		<field name="id_Usuario">67</field>
+		<field name="preco">84941</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">29</field>
+		<field name="estadoVeiculo">Usado</field>
+		<field name="ano">1953-01-12</field>
+		<field name="cor">amarelo</field>
+		<field name="numeroPortas">4</field>
+		<field name="quilometragem">143215</field>
+		<field name="cambio">manual</field>
+		<field name="combustivel">alcool</field>
+		<field name="finalPlaca">3142</field>
+		<field name="tipoCarroceria">Cupe</field>
+		<field name="dataAnuncio">2013-06-17</field>
+		<field name="id_Endereco">37</field>
+		<field name="id_Modelo">531</field>
+		<field name="id_Usuario">12</field>
+		<field name="preco">419740</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">30</field>
+		<field name="estadoVeiculo">Novo</field>
+		<field name="ano">1959-12-06</field>
+		<field name="cor">laranjado</field>
+		<field name="numeroPortas">4</field>
+		<field name="quilometragem">75979</field>
+		<field name="cambio">manual</field>
+		<field name="combustivel">flex</field>
+		<field name="finalPlaca">5770</field>
+		<field name="tipoCarroceria">Seda</field>
+		<field name="dataAnuncio">2016-02-16</field>
+		<field name="id_Endereco">8</field>
+		<field name="id_Modelo">2755</field>
+		<field name="id_Usuario">22</field>
+		<field name="preco">445586</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">31</field>
+		<field name="estadoVeiculo">Novo</field>
+		<field name="ano">1979-10-15</field>
+		<field name="cor">amarelo</field>
+		<field name="numeroPortas">2</field>
+		<field name="quilometragem">176211</field>
+		<field name="cambio">automatico</field>
+		<field name="combustivel">alcool</field>
+		<field name="finalPlaca">9772</field>
+		<field name="tipoCarroceria">Hatch</field>
+		<field name="dataAnuncio">2015-01-12</field>
+		<field name="id_Endereco">27</field>
+		<field name="id_Modelo">276</field>
+		<field name="id_Usuario">80</field>
+		<field name="preco">131308</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">32</field>
+		<field name="estadoVeiculo">Novo</field>
+		<field name="ano">1975-02-06</field>
+		<field name="cor">prata</field>
+		<field name="numeroPortas">4</field>
+		<field name="quilometragem">186783</field>
+		<field name="cambio">manual</field>
+		<field name="combustivel">gasolina</field>
+		<field name="finalPlaca">3892</field>
+		<field name="tipoCarroceria">SUV</field>
+		<field name="dataAnuncio">2016-02-29</field>
+		<field name="id_Endereco">44</field>
+		<field name="id_Modelo">2931</field>
+		<field name="id_Usuario">76</field>
+		<field name="preco">9166</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">33</field>
+		<field name="estadoVeiculo">Usado</field>
+		<field name="ano">2006-05-16</field>
+		<field name="cor">violeta</field>
+		<field name="numeroPortas">4</field>
+		<field name="quilometragem">61008</field>
+		<field name="cambio">manual</field>
+		<field name="combustivel">gasolina</field>
+		<field name="finalPlaca">7876</field>
+		<field name="tipoCarroceria">SUV</field>
+		<field name="dataAnuncio">2012-01-06</field>
+		<field name="id_Endereco">46</field>
+		<field name="id_Modelo">2884</field>
+		<field name="id_Usuario">89</field>
+		<field name="preco">35765</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">34</field>
+		<field name="estadoVeiculo">Usado</field>
+		<field name="ano">1976-11-06</field>
+		<field name="cor">prata</field>
+		<field name="numeroPortas">4</field>
+		<field name="quilometragem">51552</field>
+		<field name="cambio">manual</field>
+		<field name="combustivel">alcool</field>
+		<field name="finalPlaca">6700</field>
+		<field name="tipoCarroceria">SUV</field>
+		<field name="dataAnuncio">2011-01-01</field>
+		<field name="id_Endereco">63</field>
+		<field name="id_Modelo">188</field>
+		<field name="id_Usuario">34</field>
+		<field name="preco">89644</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">35</field>
+		<field name="estadoVeiculo">Usado</field>
+		<field name="ano">1973-08-22</field>
+		<field name="cor">laranjado</field>
+		<field name="numeroPortas">2</field>
+		<field name="quilometragem">135752</field>
+		<field name="cambio">automatico</field>
+		<field name="combustivel">alcool</field>
+		<field name="finalPlaca">9134</field>
+		<field name="tipoCarroceria">Hatch</field>
+		<field name="dataAnuncio">2009-09-12</field>
+		<field name="id_Endereco">43</field>
+		<field name="id_Modelo">1380</field>
+		<field name="id_Usuario">89</field>
+		<field name="preco">59798</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">36</field>
+		<field name="estadoVeiculo">Novo</field>
+		<field name="ano">1987-08-29</field>
+		<field name="cor">prata</field>
+		<field name="numeroPortas">4</field>
+		<field name="quilometragem">196796</field>
+		<field name="cambio">manual</field>
+		<field name="combustivel">alcool</field>
+		<field name="finalPlaca">6926</field>
+		<field name="tipoCarroceria">PickUp</field>
+		<field name="dataAnuncio">2012-08-01</field>
+		<field name="id_Endereco">73</field>
+		<field name="id_Modelo">243</field>
+		<field name="id_Usuario">63</field>
+		<field name="preco">286251</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">37</field>
+		<field name="estadoVeiculo">Usado</field>
+		<field name="ano">1969-03-10</field>
+		<field name="cor">indigo</field>
+		<field name="numeroPortas">2</field>
+		<field name="quilometragem">180938</field>
+		<field name="cambio">manual</field>
+		<field name="combustivel">gasolina</field>
+		<field name="finalPlaca">5560</field>
+		<field name="tipoCarroceria">Cupe</field>
+		<field name="dataAnuncio">2016-10-15</field>
+		<field name="id_Endereco">70</field>
+		<field name="id_Modelo">284</field>
+		<field name="id_Usuario">4</field>
+		<field name="preco">332559</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">38</field>
+		<field name="estadoVeiculo">Usado</field>
+		<field name="ano">1974-05-27</field>
+		<field name="cor">vermelho</field>
+		<field name="numeroPortas">2</field>
+		<field name="quilometragem">198918</field>
+		<field name="cambio">automatico</field>
+		<field name="combustivel">alcool</field>
+		<field name="finalPlaca">5726</field>
+		<field name="tipoCarroceria">Cupe</field>
+		<field name="dataAnuncio">2017-08-22</field>
+		<field name="id_Endereco">81</field>
+		<field name="id_Modelo">3032</field>
+		<field name="id_Usuario">30</field>
+		<field name="preco">260135</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">39</field>
+		<field name="estadoVeiculo">Usado</field>
+		<field name="ano">2017-03-10</field>
+		<field name="cor">branco</field>
+		<field name="numeroPortas">4</field>
+		<field name="quilometragem">18275</field>
+		<field name="cambio">manual</field>
+		<field name="combustivel">gasolina</field>
+		<field name="finalPlaca">4731</field>
+		<field name="tipoCarroceria">Cupe</field>
+		<field name="dataAnuncio">2014-05-02</field>
+		<field name="id_Endereco">42</field>
+		<field name="id_Modelo">1972</field>
+		<field name="id_Usuario">7</field>
+		<field name="preco">303888</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">40</field>
+		<field name="estadoVeiculo">Usado</field>
+		<field name="ano">2008-04-07</field>
+		<field name="cor">verde</field>
+		<field name="numeroPortas">4</field>
+		<field name="quilometragem">177183</field>
+		<field name="cambio">automatico</field>
+		<field name="combustivel">flex</field>
+		<field name="finalPlaca">9193</field>
+		<field name="tipoCarroceria">Cupe</field>
+		<field name="dataAnuncio">2015-03-03</field>
+		<field name="id_Endereco">90</field>
+		<field name="id_Modelo">271</field>
+		<field name="id_Usuario">73</field>
+		<field name="preco">73547</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">41</field>
+		<field name="estadoVeiculo">Usado</field>
+		<field name="ano">2004-05-25</field>
+		<field name="cor">laranjado</field>
+		<field name="numeroPortas">2</field>
+		<field name="quilometragem">67136</field>
+		<field name="cambio">manual</field>
+		<field name="combustivel">gasolina</field>
+		<field name="finalPlaca">2123</field>
+		<field name="tipoCarroceria">Seda</field>
+		<field name="dataAnuncio">2015-04-16</field>
+		<field name="id_Endereco">68</field>
+		<field name="id_Modelo">183</field>
+		<field name="id_Usuario">91</field>
+		<field name="preco">246795</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">42</field>
+		<field name="estadoVeiculo">Usado</field>
+		<field name="ano">2012-01-22</field>
+		<field name="cor">branco</field>
+		<field name="numeroPortas">4</field>
+		<field name="quilometragem">180490</field>
+		<field name="cambio">automatico</field>
+		<field name="combustivel">diesel</field>
+		<field name="finalPlaca">3384</field>
+		<field name="tipoCarroceria">Seda</field>
+		<field name="dataAnuncio">2014-10-07</field>
+		<field name="id_Endereco">71</field>
+		<field name="id_Modelo">242</field>
+		<field name="id_Usuario">49</field>
+		<field name="preco">218603</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">43</field>
+		<field name="estadoVeiculo">Usado</field>
+		<field name="ano">2003-05-28</field>
+		<field name="cor">vermelho</field>
+		<field name="numeroPortas">4</field>
+		<field name="quilometragem">50050</field>
+		<field name="cambio">automatico</field>
+		<field name="combustivel">gasolina</field>
+		<field name="finalPlaca">1362</field>
+		<field name="tipoCarroceria">Hatch</field>
+		<field name="dataAnuncio">2015-12-16</field>
+		<field name="id_Endereco">42</field>
+		<field name="id_Modelo">700</field>
+		<field name="id_Usuario">61</field>
+		<field name="preco">278332</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">44</field>
+		<field name="estadoVeiculo">Novo</field>
+		<field name="ano">1972-03-16</field>
+		<field name="cor">vermelho</field>
+		<field name="numeroPortas">4</field>
+		<field name="quilometragem">35502</field>
+		<field name="cambio">automatico</field>
+		<field name="combustivel">alcool</field>
+		<field name="finalPlaca">4742</field>
+		<field name="tipoCarroceria">SUV</field>
+		<field name="dataAnuncio">2017-03-06</field>
+		<field name="id_Endereco">47</field>
+		<field name="id_Modelo">2270</field>
+		<field name="id_Usuario">40</field>
+		<field name="preco">166346</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">45</field>
+		<field name="estadoVeiculo">Usado</field>
+		<field name="ano">1959-07-25</field>
+		<field name="cor">violeta</field>
+		<field name="numeroPortas">2</field>
+		<field name="quilometragem">13692</field>
+		<field name="cambio">manual</field>
+		<field name="combustivel">alcool</field>
+		<field name="finalPlaca">6264</field>
+		<field name="tipoCarroceria">Seda</field>
+		<field name="dataAnuncio">2010-08-21</field>
+		<field name="id_Endereco">5</field>
+		<field name="id_Modelo">191</field>
+		<field name="id_Usuario">9</field>
+		<field name="preco">415083</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">46</field>
+		<field name="estadoVeiculo">Usado</field>
+		<field name="ano">1960-07-25</field>
+		<field name="cor">verde</field>
+		<field name="numeroPortas">2</field>
+		<field name="quilometragem">145884</field>
+		<field name="cambio">automatico</field>
+		<field name="combustivel">diesel</field>
+		<field name="finalPlaca">8368</field>
+		<field name="tipoCarroceria">Perua</field>
+		<field name="dataAnuncio">2010-03-18</field>
+		<field name="id_Endereco">98</field>
+		<field name="id_Modelo">2937</field>
+		<field name="id_Usuario">21</field>
+		<field name="preco">254652</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">47</field>
+		<field name="estadoVeiculo">Usado</field>
+		<field name="ano">1958-02-20</field>
+		<field name="cor">amarelo</field>
+		<field name="numeroPortas">2</field>
+		<field name="quilometragem">21065</field>
+		<field name="cambio">manual</field>
+		<field name="combustivel">alcool</field>
+		<field name="finalPlaca">4592</field>
+		<field name="tipoCarroceria">Perua</field>
+		<field name="dataAnuncio">2009-12-17</field>
+		<field name="id_Endereco">40</field>
+		<field name="id_Modelo">467</field>
+		<field name="id_Usuario">88</field>
+		<field name="preco">161382</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">48</field>
+		<field name="estadoVeiculo">Usado</field>
+		<field name="ano">2015-02-10</field>
+		<field name="cor">vermelho</field>
+		<field name="numeroPortas">4</field>
+		<field name="quilometragem">174555</field>
+		<field name="cambio">automatico</field>
+		<field name="combustivel">diesel</field>
+		<field name="finalPlaca">5718</field>
+		<field name="tipoCarroceria">Cupe</field>
+		<field name="dataAnuncio">2015-07-30</field>
+		<field name="id_Endereco">91</field>
+		<field name="id_Modelo">1429</field>
+		<field name="id_Usuario">46</field>
+		<field name="preco">469965</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">49</field>
+		<field name="estadoVeiculo">Usado</field>
+		<field name="ano">1983-04-03</field>
+		<field name="cor">verde</field>
+		<field name="numeroPortas">2</field>
+		<field name="quilometragem">136367</field>
+		<field name="cambio">automatico</field>
+		<field name="combustivel">diesel</field>
+		<field name="finalPlaca">5965</field>
+		<field name="tipoCarroceria">Cupe</field>
+		<field name="dataAnuncio">2015-06-14</field>
+		<field name="id_Endereco">68</field>
+		<field name="id_Modelo">171</field>
+		<field name="id_Usuario">15</field>
+		<field name="preco">64329</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">50</field>
+		<field name="estadoVeiculo">Novo</field>
+		<field name="ano">1961-02-04</field>
+		<field name="cor">branco</field>
+		<field name="numeroPortas">2</field>
+		<field name="quilometragem">160434</field>
+		<field name="cambio">automatico</field>
+		<field name="combustivel">gasolina</field>
+		<field name="finalPlaca">2155</field>
+		<field name="tipoCarroceria">Cupe</field>
+		<field name="dataAnuncio">2016-01-17</field>
+		<field name="id_Endereco">48</field>
+		<field name="id_Modelo">271</field>
+		<field name="id_Usuario">89</field>
+		<field name="preco">470559</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">51</field>
+		<field name="estadoVeiculo">Usado</field>
+		<field name="ano">1985-07-07</field>
+		<field name="cor">cinza</field>
+		<field name="numeroPortas">4</field>
+		<field name="quilometragem">59316</field>
+		<field name="cambio">automatico</field>
+		<field name="combustivel">alcool</field>
+		<field name="finalPlaca">9266</field>
+		<field name="tipoCarroceria">Perua</field>
+		<field name="dataAnuncio">2011-04-12</field>
+		<field name="id_Endereco">80</field>
+		<field name="id_Modelo">182</field>
+		<field name="id_Usuario">60</field>
+		<field name="preco">249398</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">52</field>
+		<field name="estadoVeiculo">Usado</field>
+		<field name="ano">1996-02-25</field>
+		<field name="cor">cinza</field>
+		<field name="numeroPortas">2</field>
+		<field name="quilometragem">127247</field>
+		<field name="cambio">manual</field>
+		<field name="combustivel">flex</field>
+		<field name="finalPlaca">4540</field>
+		<field name="tipoCarroceria">Van</field>
+		<field name="dataAnuncio">2011-11-13</field>
+		<field name="id_Endereco">94</field>
+		<field name="id_Modelo">276</field>
+		<field name="id_Usuario">100</field>
+		<field name="preco">65492</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">53</field>
+		<field name="estadoVeiculo">Usado</field>
+		<field name="ano">1953-03-21</field>
+		<field name="cor">amarelo</field>
+		<field name="numeroPortas">2</field>
+		<field name="quilometragem">50317</field>
+		<field name="cambio">automatico</field>
+		<field name="combustivel">alcool</field>
+		<field name="finalPlaca">9330</field>
+		<field name="tipoCarroceria">Seda</field>
+		<field name="dataAnuncio">2015-02-01</field>
+		<field name="id_Endereco">60</field>
+		<field name="id_Modelo">5008</field>
+		<field name="id_Usuario">65</field>
+		<field name="preco">416523</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">54</field>
+		<field name="estadoVeiculo">Usado</field>
+		<field name="ano">1965-10-15</field>
+		<field name="cor">indigo</field>
+		<field name="numeroPortas">2</field>
+		<field name="quilometragem">142849</field>
+		<field name="cambio">manual</field>
+		<field name="combustivel">alcool</field>
+		<field name="finalPlaca">6857</field>
+		<field name="tipoCarroceria">Hatch</field>
+		<field name="dataAnuncio">2009-04-13</field>
+		<field name="id_Endereco">16</field>
+		<field name="id_Modelo">1989</field>
+		<field name="id_Usuario">75</field>
+		<field name="preco">70042</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">55</field>
+		<field name="estadoVeiculo">Novo</field>
+		<field name="ano">1972-09-07</field>
+		<field name="cor">branco</field>
+		<field name="numeroPortas">4</field>
+		<field name="quilometragem">147541</field>
+		<field name="cambio">automatico</field>
+		<field name="combustivel">diesel</field>
+		<field name="finalPlaca">4491</field>
+		<field name="tipoCarroceria">Hatch</field>
+		<field name="dataAnuncio">2013-05-22</field>
+		<field name="id_Endereco">83</field>
+		<field name="id_Modelo">700</field>
+		<field name="id_Usuario">57</field>
+		<field name="preco">32303</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">56</field>
+		<field name="estadoVeiculo">Novo</field>
+		<field name="ano">1951-05-22</field>
+		<field name="cor">azul</field>
+		<field name="numeroPortas">4</field>
+		<field name="quilometragem">65452</field>
+		<field name="cambio">automatico</field>
+		<field name="combustivel">alcool</field>
+		<field name="finalPlaca">4563</field>
+		<field name="tipoCarroceria">SUV</field>
+		<field name="dataAnuncio">2012-11-14</field>
+		<field name="id_Endereco">39</field>
+		<field name="id_Modelo">288</field>
+		<field name="id_Usuario">18</field>
+		<field name="preco">168377</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">57</field>
+		<field name="estadoVeiculo">Novo</field>
+		<field name="ano">2005-04-30</field>
+		<field name="cor">azul</field>
+		<field name="numeroPortas">4</field>
+		<field name="quilometragem">59684</field>
+		<field name="cambio">manual</field>
+		<field name="combustivel">alcool</field>
+		<field name="finalPlaca">5805</field>
+		<field name="tipoCarroceria">Hatch</field>
+		<field name="dataAnuncio">2016-03-17</field>
+		<field name="id_Endereco">77</field>
+		<field name="id_Modelo">1990</field>
+		<field name="id_Usuario">41</field>
+		<field name="preco">19810</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">58</field>
+		<field name="estadoVeiculo">Novo</field>
+		<field name="ano">1991-10-19</field>
+		<field name="cor">violeta</field>
+		<field name="numeroPortas">4</field>
+		<field name="quilometragem">168051</field>
+		<field name="cambio">automatico</field>
+		<field name="combustivel">alcool</field>
+		<field name="finalPlaca">8670</field>
+		<field name="tipoCarroceria">Van</field>
+		<field name="dataAnuncio">2016-03-05</field>
+		<field name="id_Endereco">90</field>
+		<field name="id_Modelo">1992</field>
+		<field name="id_Usuario">57</field>
+		<field name="preco">491965</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">59</field>
+		<field name="estadoVeiculo">Novo</field>
+		<field name="ano">1954-03-23</field>
+		<field name="cor">branco</field>
+		<field name="numeroPortas">2</field>
+		<field name="quilometragem">28154</field>
+		<field name="cambio">manual</field>
+		<field name="combustivel">alcool</field>
+		<field name="finalPlaca">6342</field>
+		<field name="tipoCarroceria">SUV</field>
+		<field name="dataAnuncio">2012-11-07</field>
+		<field name="id_Endereco">15</field>
+		<field name="id_Modelo">702</field>
+		<field name="id_Usuario">79</field>
+		<field name="preco">334039</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">60</field>
+		<field name="estadoVeiculo">Usado</field>
+		<field name="ano">2003-07-14</field>
+		<field name="cor">amarelo</field>
+		<field name="numeroPortas">2</field>
+		<field name="quilometragem">166056</field>
+		<field name="cambio">automatico</field>
+		<field name="combustivel">gasolina</field>
+		<field name="finalPlaca">5809</field>
+		<field name="tipoCarroceria">SUV</field>
+		<field name="dataAnuncio">2017-11-27</field>
+		<field name="id_Endereco">20</field>
+		<field name="id_Modelo">196</field>
+		<field name="id_Usuario">92</field>
+		<field name="preco">160008</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">61</field>
+		<field name="estadoVeiculo">Novo</field>
+		<field name="ano">1975-02-09</field>
+		<field name="cor">laranjado</field>
+		<field name="numeroPortas">4</field>
+		<field name="quilometragem">57082</field>
+		<field name="cambio">manual</field>
+		<field name="combustivel">alcool</field>
+		<field name="finalPlaca">3037</field>
+		<field name="tipoCarroceria">Cupe</field>
+		<field name="dataAnuncio">2010-09-24</field>
+		<field name="id_Endereco">30</field>
+		<field name="id_Modelo">1369</field>
+		<field name="id_Usuario">87</field>
+		<field name="preco">477828</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">62</field>
+		<field name="estadoVeiculo">Novo</field>
+		<field name="ano">2001-04-28</field>
+		<field name="cor">branco</field>
+		<field name="numeroPortas">4</field>
+		<field name="quilometragem">169567</field>
+		<field name="cambio">automatico</field>
+		<field name="combustivel">flex</field>
+		<field name="finalPlaca">1119</field>
+		<field name="tipoCarroceria">SUV</field>
+		<field name="dataAnuncio">2008-08-01</field>
+		<field name="id_Endereco">14</field>
+		<field name="id_Modelo">292</field>
+		<field name="id_Usuario">9</field>
+		<field name="preco">485810</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">63</field>
+		<field name="estadoVeiculo">Novo</field>
+		<field name="ano">1994-12-31</field>
+		<field name="cor">laranjado</field>
+		<field name="numeroPortas">2</field>
+		<field name="quilometragem">86803</field>
+		<field name="cambio">manual</field>
+		<field name="combustivel">gasolina</field>
+		<field name="finalPlaca">6326</field>
+		<field name="tipoCarroceria">SUV</field>
+		<field name="dataAnuncio">2014-06-15</field>
+		<field name="id_Endereco">49</field>
+		<field name="id_Modelo">181</field>
+		<field name="id_Usuario">2</field>
+		<field name="preco">148326</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">64</field>
+		<field name="estadoVeiculo">Usado</field>
+		<field name="ano">1951-07-01</field>
+		<field name="cor">violeta</field>
+		<field name="numeroPortas">4</field>
+		<field name="quilometragem">109209</field>
+		<field name="cambio">automatico</field>
+		<field name="combustivel">gasolina</field>
+		<field name="finalPlaca">7788</field>
+		<field name="tipoCarroceria">Hatch</field>
+		<field name="dataAnuncio">2016-08-02</field>
+		<field name="id_Endereco">40</field>
+		<field name="id_Modelo">467</field>
+		<field name="id_Usuario">9</field>
+		<field name="preco">229071</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">65</field>
+		<field name="estadoVeiculo">Usado</field>
+		<field name="ano">1954-05-29</field>
+		<field name="cor">prata</field>
+		<field name="numeroPortas">4</field>
+		<field name="quilometragem">132052</field>
+		<field name="cambio">automatico</field>
+		<field name="combustivel">alcool</field>
+		<field name="finalPlaca">4631</field>
+		<field name="tipoCarroceria">Hatch</field>
+		<field name="dataAnuncio">2012-05-15</field>
+		<field name="id_Endereco">100</field>
+		<field name="id_Modelo">269</field>
+		<field name="id_Usuario">87</field>
+		<field name="preco">116333</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">66</field>
+		<field name="estadoVeiculo">Usado</field>
+		<field name="ano">1989-09-02</field>
+		<field name="cor">indigo</field>
+		<field name="numeroPortas">2</field>
+		<field name="quilometragem">196529</field>
+		<field name="cambio">manual</field>
+		<field name="combustivel">flex</field>
+		<field name="finalPlaca">6653</field>
+		<field name="tipoCarroceria">PickUp</field>
+		<field name="dataAnuncio">2012-06-16</field>
+		<field name="id_Endereco">84</field>
+		<field name="id_Modelo">2937</field>
+		<field name="id_Usuario">12</field>
+		<field name="preco">476868</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">67</field>
+		<field name="estadoVeiculo">Usado</field>
+		<field name="ano">1983-01-04</field>
+		<field name="cor">azul</field>
+		<field name="numeroPortas">2</field>
+		<field name="quilometragem">138913</field>
+		<field name="cambio">automatico</field>
+		<field name="combustivel">diesel</field>
+		<field name="finalPlaca">5109</field>
+		<field name="tipoCarroceria">PickUp</field>
+		<field name="dataAnuncio">2008-01-31</field>
+		<field name="id_Endereco">98</field>
+		<field name="id_Modelo">243</field>
+		<field name="id_Usuario">79</field>
+		<field name="preco">159397</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">68</field>
+		<field name="estadoVeiculo">Usado</field>
+		<field name="ano">2004-08-30</field>
+		<field name="cor">violeta</field>
+		<field name="numeroPortas">2</field>
+		<field name="quilometragem">34872</field>
+		<field name="cambio">automatico</field>
+		<field name="combustivel">flex</field>
+		<field name="finalPlaca">6155</field>
+		<field name="tipoCarroceria">PickUp</field>
+		<field name="dataAnuncio">2017-06-03</field>
+		<field name="id_Endereco">39</field>
+		<field name="id_Modelo">191</field>
+		<field name="id_Usuario">12</field>
+		<field name="preco">6900</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">69</field>
+		<field name="estadoVeiculo">Novo</field>
+		<field name="ano">1975-09-10</field>
+		<field name="cor">laranjado</field>
+		<field name="numeroPortas">2</field>
+		<field name="quilometragem">158333</field>
+		<field name="cambio">manual</field>
+		<field name="combustivel">gasolina</field>
+		<field name="finalPlaca">5762</field>
+		<field name="tipoCarroceria">Cupe</field>
+		<field name="dataAnuncio">2014-08-07</field>
+		<field name="id_Endereco">57</field>
+		<field name="id_Modelo">1405</field>
+		<field name="id_Usuario">20</field>
+		<field name="preco">299930</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">70</field>
+		<field name="estadoVeiculo">Novo</field>
+		<field name="ano">2000-08-30</field>
+		<field name="cor">prata</field>
+		<field name="numeroPortas">4</field>
+		<field name="quilometragem">176898</field>
+		<field name="cambio">manual</field>
+		<field name="combustivel">flex</field>
+		<field name="finalPlaca">4475</field>
+		<field name="tipoCarroceria">PickUp</field>
+		<field name="dataAnuncio">2014-10-31</field>
+		<field name="id_Endereco">58</field>
+		<field name="id_Modelo">293</field>
+		<field name="id_Usuario">36</field>
+		<field name="preco">74660</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">71</field>
+		<field name="estadoVeiculo">Novo</field>
+		<field name="ano">2003-03-23</field>
+		<field name="cor">laranjado</field>
+		<field name="numeroPortas">4</field>
+		<field name="quilometragem">114667</field>
+		<field name="cambio">automatico</field>
+		<field name="combustivel">diesel</field>
+		<field name="finalPlaca">9411</field>
+		<field name="tipoCarroceria">SUV</field>
+		<field name="dataAnuncio">2008-08-17</field>
+		<field name="id_Endereco">69</field>
+		<field name="id_Modelo">803</field>
+		<field name="id_Usuario">18</field>
+		<field name="preco">166197</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">72</field>
+		<field name="estadoVeiculo">Novo</field>
+		<field name="ano">1989-03-17</field>
+		<field name="cor">prata</field>
+		<field name="numeroPortas">2</field>
+		<field name="quilometragem">76804</field>
+		<field name="cambio">manual</field>
+		<field name="combustivel">diesel</field>
+		<field name="finalPlaca">7540</field>
+		<field name="tipoCarroceria">Van</field>
+		<field name="dataAnuncio">2013-05-06</field>
+		<field name="id_Endereco">48</field>
+		<field name="id_Modelo">1984</field>
+		<field name="id_Usuario">12</field>
+		<field name="preco">214912</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">73</field>
+		<field name="estadoVeiculo">Novo</field>
+		<field name="ano">1961-03-04</field>
+		<field name="cor">violeta</field>
+		<field name="numeroPortas">2</field>
+		<field name="quilometragem">130488</field>
+		<field name="cambio">automatico</field>
+		<field name="combustivel">flex</field>
+		<field name="finalPlaca">4634</field>
+		<field name="tipoCarroceria">Perua</field>
+		<field name="dataAnuncio">2009-04-22</field>
+		<field name="id_Endereco">29</field>
+		<field name="id_Modelo">197</field>
+		<field name="id_Usuario">66</field>
+		<field name="preco">38495</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">74</field>
+		<field name="estadoVeiculo">Usado</field>
+		<field name="ano">2016-04-05</field>
+		<field name="cor">branco</field>
+		<field name="numeroPortas">2</field>
+		<field name="quilometragem">62861</field>
+		<field name="cambio">automatico</field>
+		<field name="combustivel">alcool</field>
+		<field name="finalPlaca">9332</field>
+		<field name="tipoCarroceria">SUV</field>
+		<field name="dataAnuncio">2009-07-30</field>
+		<field name="id_Endereco">87</field>
+		<field name="id_Modelo">282</field>
+		<field name="id_Usuario">73</field>
+		<field name="preco">300676</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">75</field>
+		<field name="estadoVeiculo">Usado</field>
+		<field name="ano">1989-11-13</field>
+		<field name="cor">violeta</field>
+		<field name="numeroPortas">2</field>
+		<field name="quilometragem">115910</field>
+		<field name="cambio">manual</field>
+		<field name="combustivel">gasolina</field>
+		<field name="finalPlaca">2837</field>
+		<field name="tipoCarroceria">PickUp</field>
+		<field name="dataAnuncio">2009-04-22</field>
+		<field name="id_Endereco">34</field>
+		<field name="id_Modelo">258</field>
+		<field name="id_Usuario">98</field>
+		<field name="preco">75391</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">76</field>
+		<field name="estadoVeiculo">Novo</field>
+		<field name="ano">1985-06-17</field>
+		<field name="cor">prata</field>
+		<field name="numeroPortas">4</field>
+		<field name="quilometragem">130363</field>
+		<field name="cambio">automatico</field>
+		<field name="combustivel">diesel</field>
+		<field name="finalPlaca">2119</field>
+		<field name="tipoCarroceria">PickUp</field>
+		<field name="dataAnuncio">2012-11-26</field>
+		<field name="id_Endereco">76</field>
+		<field name="id_Modelo">2934</field>
+		<field name="id_Usuario">76</field>
+		<field name="preco">14580</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">77</field>
+		<field name="estadoVeiculo">Usado</field>
+		<field name="ano">1969-05-24</field>
+		<field name="cor">vermelho</field>
+		<field name="numeroPortas">4</field>
+		<field name="quilometragem">42686</field>
+		<field name="cambio">manual</field>
+		<field name="combustivel">diesel</field>
+		<field name="finalPlaca">8591</field>
+		<field name="tipoCarroceria">Cupe</field>
+		<field name="dataAnuncio">2009-10-28</field>
+		<field name="id_Endereco">54</field>
+		<field name="id_Modelo">183</field>
+		<field name="id_Usuario">98</field>
+		<field name="preco">180757</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">78</field>
+		<field name="estadoVeiculo">Usado</field>
+		<field name="ano">1983-10-09</field>
+		<field name="cor">violeta</field>
+		<field name="numeroPortas">2</field>
+		<field name="quilometragem">186654</field>
+		<field name="cambio">manual</field>
+		<field name="combustivel">alcool</field>
+		<field name="finalPlaca">2174</field>
+		<field name="tipoCarroceria">Seda</field>
+		<field name="dataAnuncio">2017-10-01</field>
+		<field name="id_Endereco">95</field>
+		<field name="id_Modelo">2542</field>
+		<field name="id_Usuario">51</field>
+		<field name="preco">61259</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">79</field>
+		<field name="estadoVeiculo">Novo</field>
+		<field name="ano">1975-02-04</field>
+		<field name="cor">branco</field>
+		<field name="numeroPortas">2</field>
+		<field name="quilometragem">139333</field>
+		<field name="cambio">automatico</field>
+		<field name="combustivel">diesel</field>
+		<field name="finalPlaca">9423</field>
+		<field name="tipoCarroceria">Hatch</field>
+		<field name="dataAnuncio">2009-11-30</field>
+		<field name="id_Endereco">18</field>
+		<field name="id_Modelo">2648</field>
+		<field name="id_Usuario">42</field>
+		<field name="preco">301272</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">80</field>
+		<field name="estadoVeiculo">Usado</field>
+		<field name="ano">2000-04-21</field>
+		<field name="cor">cinza</field>
+		<field name="numeroPortas">2</field>
+		<field name="quilometragem">149554</field>
+		<field name="cambio">manual</field>
+		<field name="combustivel">flex</field>
+		<field name="finalPlaca">6711</field>
+		<field name="tipoCarroceria">SUV</field>
+		<field name="dataAnuncio">2009-08-05</field>
+		<field name="id_Endereco">1</field>
+		<field name="id_Modelo">803</field>
+		<field name="id_Usuario">69</field>
+		<field name="preco">117458</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">81</field>
+		<field name="estadoVeiculo">Novo</field>
+		<field name="ano">2003-06-11</field>
+		<field name="cor">indigo</field>
+		<field name="numeroPortas">2</field>
+		<field name="quilometragem">110375</field>
+		<field name="cambio">automatico</field>
+		<field name="combustivel">gasolina</field>
+		<field name="finalPlaca">3285</field>
+		<field name="tipoCarroceria">PickUp</field>
+		<field name="dataAnuncio">2009-06-22</field>
+		<field name="id_Endereco">91</field>
+		<field name="id_Modelo">2933</field>
+		<field name="id_Usuario">2</field>
+		<field name="preco">315497</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">82</field>
+		<field name="estadoVeiculo">Usado</field>
+		<field name="ano">2002-01-21</field>
+		<field name="cor">amarelo</field>
+		<field name="numeroPortas">4</field>
+		<field name="quilometragem">3803</field>
+		<field name="cambio">automatico</field>
+		<field name="combustivel">diesel</field>
+		<field name="finalPlaca">5405</field>
+		<field name="tipoCarroceria">SUV</field>
+		<field name="dataAnuncio">2013-11-27</field>
+		<field name="id_Endereco">5</field>
+		<field name="id_Modelo">2262</field>
+		<field name="id_Usuario">45</field>
+		<field name="preco">7552</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">83</field>
+		<field name="estadoVeiculo">Usado</field>
+		<field name="ano">2008-03-14</field>
+		<field name="cor">violeta</field>
+		<field name="numeroPortas">2</field>
+		<field name="quilometragem">66617</field>
+		<field name="cambio">manual</field>
+		<field name="combustivel">flex</field>
+		<field name="finalPlaca">8896</field>
+		<field name="tipoCarroceria">Perua</field>
+		<field name="dataAnuncio">2011-11-16</field>
+		<field name="id_Endereco">71</field>
+		<field name="id_Modelo">199</field>
+		<field name="id_Usuario">20</field>
+		<field name="preco">370669</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">84</field>
+		<field name="estadoVeiculo">Usado</field>
+		<field name="ano">1969-03-11</field>
+		<field name="cor">violeta</field>
+		<field name="numeroPortas">2</field>
+		<field name="quilometragem">111376</field>
+		<field name="cambio">manual</field>
+		<field name="combustivel">diesel</field>
+		<field name="finalPlaca">6945</field>
+		<field name="tipoCarroceria">Hatch</field>
+		<field name="dataAnuncio">2012-12-13</field>
+		<field name="id_Endereco">57</field>
+		<field name="id_Modelo">247</field>
+		<field name="id_Usuario">25</field>
+		<field name="preco">332972</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">85</field>
+		<field name="estadoVeiculo">Novo</field>
+		<field name="ano">1967-01-04</field>
+		<field name="cor">branco</field>
+		<field name="numeroPortas">2</field>
+		<field name="quilometragem">75712</field>
+		<field name="cambio">automatico</field>
+		<field name="combustivel">alcool</field>
+		<field name="finalPlaca">9027</field>
+		<field name="tipoCarroceria">Seda</field>
+		<field name="dataAnuncio">2017-08-15</field>
+		<field name="id_Endereco">15</field>
+		<field name="id_Modelo">700</field>
+		<field name="id_Usuario">95</field>
+		<field name="preco">335736</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">86</field>
+		<field name="estadoVeiculo">Novo</field>
+		<field name="ano">2016-06-21</field>
+		<field name="cor">amarelo</field>
+		<field name="numeroPortas">4</field>
+		<field name="quilometragem">198696</field>
+		<field name="cambio">manual</field>
+		<field name="combustivel">gasolina</field>
+		<field name="finalPlaca">9192</field>
+		<field name="tipoCarroceria">SUV</field>
+		<field name="dataAnuncio">2013-12-02</field>
+		<field name="id_Endereco">8</field>
+		<field name="id_Modelo">2651</field>
+		<field name="id_Usuario">78</field>
+		<field name="preco">437333</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">87</field>
+		<field name="estadoVeiculo">Novo</field>
+		<field name="ano">2015-09-15</field>
+		<field name="cor">amarelo</field>
+		<field name="numeroPortas">4</field>
+		<field name="quilometragem">51636</field>
+		<field name="cambio">automatico</field>
+		<field name="combustivel">flex</field>
+		<field name="finalPlaca">6812</field>
+		<field name="tipoCarroceria">PickUp</field>
+		<field name="dataAnuncio">2015-11-23</field>
+		<field name="id_Endereco">30</field>
+		<field name="id_Modelo">265</field>
+		<field name="id_Usuario">77</field>
+		<field name="preco">142654</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">88</field>
+		<field name="estadoVeiculo">Usado</field>
+		<field name="ano">1968-07-11</field>
+		<field name="cor">indigo</field>
+		<field name="numeroPortas">4</field>
+		<field name="quilometragem">98607</field>
+		<field name="cambio">automatico</field>
+		<field name="combustivel">alcool</field>
+		<field name="finalPlaca">1803</field>
+		<field name="tipoCarroceria">PickUp</field>
+		<field name="dataAnuncio">2008-06-09</field>
+		<field name="id_Endereco">7</field>
+		<field name="id_Modelo">5013</field>
+		<field name="id_Usuario">48</field>
+		<field name="preco">258940</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">89</field>
+		<field name="estadoVeiculo">Usado</field>
+		<field name="ano">1975-11-19</field>
+		<field name="cor">cinza</field>
+		<field name="numeroPortas">4</field>
+		<field name="quilometragem">72306</field>
+		<field name="cambio">automatico</field>
+		<field name="combustivel">alcool</field>
+		<field name="finalPlaca">4497</field>
+		<field name="tipoCarroceria">Perua</field>
+		<field name="dataAnuncio">2016-03-13</field>
+		<field name="id_Endereco">75</field>
+		<field name="id_Modelo">5005</field>
+		<field name="id_Usuario">62</field>
+		<field name="preco">34389</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">90</field>
+		<field name="estadoVeiculo">Novo</field>
+		<field name="ano">2005-07-13</field>
+		<field name="cor">violeta</field>
+		<field name="numeroPortas">4</field>
+		<field name="quilometragem">191343</field>
+		<field name="cambio">manual</field>
+		<field name="combustivel">diesel</field>
+		<field name="finalPlaca">1313</field>
+		<field name="tipoCarroceria">Hatch</field>
+		<field name="dataAnuncio">2013-04-29</field>
+		<field name="id_Endereco">48</field>
+		<field name="id_Modelo">241</field>
+		<field name="id_Usuario">74</field>
+		<field name="preco">490044</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">91</field>
+		<field name="estadoVeiculo">Novo</field>
+		<field name="ano">1971-05-26</field>
+		<field name="cor">indigo</field>
+		<field name="numeroPortas">2</field>
+		<field name="quilometragem">66363</field>
+		<field name="cambio">manual</field>
+		<field name="combustivel">diesel</field>
+		<field name="finalPlaca">6834</field>
+		<field name="tipoCarroceria">PickUp</field>
+		<field name="dataAnuncio">2016-10-05</field>
+		<field name="id_Endereco">79</field>
+		<field name="id_Modelo">2270</field>
+		<field name="id_Usuario">94</field>
+		<field name="preco">93884</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">92</field>
+		<field name="estadoVeiculo">Novo</field>
+		<field name="ano">1950-05-20</field>
+		<field name="cor">violeta</field>
+		<field name="numeroPortas">4</field>
+		<field name="quilometragem">10803</field>
+		<field name="cambio">manual</field>
+		<field name="combustivel">gasolina</field>
+		<field name="finalPlaca">8287</field>
+		<field name="tipoCarroceria">SUV</field>
+		<field name="dataAnuncio">2011-02-12</field>
+		<field name="id_Endereco">20</field>
+		<field name="id_Modelo">726</field>
+		<field name="id_Usuario">54</field>
+		<field name="preco">174398</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">93</field>
+		<field name="estadoVeiculo">Usado</field>
+		<field name="ano">1954-04-15</field>
+		<field name="cor">cinza</field>
+		<field name="numeroPortas">4</field>
+		<field name="quilometragem">93381</field>
+		<field name="cambio">automatico</field>
+		<field name="combustivel">alcool</field>
+		<field name="finalPlaca">4323</field>
+		<field name="tipoCarroceria">SUV</field>
+		<field name="dataAnuncio">2008-12-09</field>
+		<field name="id_Endereco">17</field>
+		<field name="id_Modelo">263</field>
+		<field name="id_Usuario">86</field>
+		<field name="preco">152069</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">94</field>
+		<field name="estadoVeiculo">Usado</field>
+		<field name="ano">1991-08-14</field>
+		<field name="cor">indigo</field>
+		<field name="numeroPortas">2</field>
+		<field name="quilometragem">119161</field>
+		<field name="cambio">automatico</field>
+		<field name="combustivel">alcool</field>
+		<field name="finalPlaca">4692</field>
+		<field name="tipoCarroceria">PickUp</field>
+		<field name="dataAnuncio">2010-05-19</field>
+		<field name="id_Endereco">77</field>
+		<field name="id_Modelo">1986</field>
+		<field name="id_Usuario">31</field>
+		<field name="preco">134310</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">95</field>
+		<field name="estadoVeiculo">Novo</field>
+		<field name="ano">1955-05-04</field>
+		<field name="cor">prata</field>
+		<field name="numeroPortas">2</field>
+		<field name="quilometragem">24322</field>
+		<field name="cambio">manual</field>
+		<field name="combustivel">diesel</field>
+		<field name="finalPlaca">7388</field>
+		<field name="tipoCarroceria">Perua</field>
+		<field name="dataAnuncio">2014-06-09</field>
+		<field name="id_Endereco">89</field>
+		<field name="id_Modelo">292</field>
+		<field name="id_Usuario">21</field>
+		<field name="preco">170419</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">96</field>
+		<field name="estadoVeiculo">Novo</field>
+		<field name="ano">2007-07-05</field>
+		<field name="cor">prata</field>
+		<field name="numeroPortas">2</field>
+		<field name="quilometragem">51996</field>
+		<field name="cambio">automatico</field>
+		<field name="combustivel">flex</field>
+		<field name="finalPlaca">6381</field>
+		<field name="tipoCarroceria">Perua</field>
+		<field name="dataAnuncio">2008-01-06</field>
+		<field name="id_Endereco">63</field>
+		<field name="id_Modelo">272</field>
+		<field name="id_Usuario">74</field>
+		<field name="preco">206285</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">97</field>
+		<field name="estadoVeiculo">Usado</field>
+		<field name="ano">1951-09-20</field>
+		<field name="cor">azul</field>
+		<field name="numeroPortas">4</field>
+		<field name="quilometragem">141682</field>
+		<field name="cambio">automatico</field>
+		<field name="combustivel">flex</field>
+		<field name="finalPlaca">1036</field>
+		<field name="tipoCarroceria">Seda</field>
+		<field name="dataAnuncio">2012-09-10</field>
+		<field name="id_Endereco">20</field>
+		<field name="id_Modelo">702</field>
+		<field name="id_Usuario">32</field>
+		<field name="preco">203936</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">98</field>
+		<field name="estadoVeiculo">Usado</field>
+		<field name="ano">1997-03-24</field>
+		<field name="cor">laranjado</field>
+		<field name="numeroPortas">2</field>
+		<field name="quilometragem">144266</field>
+		<field name="cambio">automatico</field>
+		<field name="combustivel">alcool</field>
+		<field name="finalPlaca">1533</field>
+		<field name="tipoCarroceria">SUV</field>
+		<field name="dataAnuncio">2015-02-05</field>
+		<field name="id_Endereco">29</field>
+		<field name="id_Modelo">701</field>
+		<field name="id_Usuario">66</field>
+		<field name="preco">210165</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">99</field>
+		<field name="estadoVeiculo">Novo</field>
+		<field name="ano">1960-04-01</field>
+		<field name="cor">verde</field>
+		<field name="numeroPortas">4</field>
+		<field name="quilometragem">88349</field>
+		<field name="cambio">automatico</field>
+		<field name="combustivel">gasolina</field>
+		<field name="finalPlaca">7772</field>
+		<field name="tipoCarroceria">SUV</field>
+		<field name="dataAnuncio">2016-04-27</field>
+		<field name="id_Endereco">24</field>
+		<field name="id_Modelo">251</field>
+		<field name="id_Usuario">57</field>
+		<field name="preco">373454</field>
+	</row>
+	<row>
+		<field name="id_Anuncio">100</field>
+		<field name="estadoVeiculo">Novo</field>
+		<field name="ano">1999-12-25</field>
+		<field name="cor">azul</field>
+		<field name="numeroPortas">4</field>
+		<field name="quilometragem">40488</field>
+		<field name="cambio">manual</field>
+		<field name="combustivel">alcool</field>
+		<field name="finalPlaca">6406</field>
+		<field name="tipoCarroceria">Hatch</field>
+		<field name="dataAnuncio">2014-11-28</field>
+		<field name="id_Endereco">27</field>
+		<field name="id_Modelo">2934</field>
+		<field name="id_Usuario">44</field>
+		<field name="preco">394034</field>
+	</row>
+	</table_data>
+</database>
+</mysqldump>

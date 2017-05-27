@@ -1,0 +1,1008 @@
+<?xml version="1.0"?>
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="ti_testes">	
+	
+	<table_data name="endereco">
+	<row>
+		<field name="id_Endereco">1</field>
+		<field name="cep">76796</field>
+		<field name="rua">Kareem F. Guzman</field>
+		<field name="bairro">Pacheco</field>
+		<field name="numero">1046</field>
+		<field name="cidade">Águas Lindas de Goiá</field>
+		<field name="estado">GO</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">2</field>
+		<field name="cep">51512</field>
+		<field name="rua">Raja O. Hunter</field>
+		<field name="bairro">Robles</field>
+		<field name="numero">81</field>
+		<field name="cidade">Caruaru</field>
+		<field name="estado">PE</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">3</field>
+		<field name="cep">65724</field>
+		<field name="rua">Anne K. Adams</field>
+		<field name="bairro">Mcclain</field>
+		<field name="numero">2677</field>
+		<field name="cidade">Imperatriz</field>
+		<field name="estado">MA</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">4</field>
+		<field name="cep">54148</field>
+		<field name="rua">Dorian W. Nash</field>
+		<field name="bairro">Pennington</field>
+		<field name="numero">2702</field>
+		<field name="cidade">Camaragibe</field>
+		<field name="estado">PE</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">5</field>
+		<field name="cep">58439</field>
+		<field name="rua">Leandra O. Luna</field>
+		<field name="bairro">Foreman</field>
+		<field name="numero">3200</field>
+		<field name="cidade">João Pessoa</field>
+		<field name="estado">PB</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">6</field>
+		<field name="cep">47886</field>
+		<field name="rua">Jolene E. Rivera</field>
+		<field name="bairro">Baird</field>
+		<field name="numero">1970</field>
+		<field name="cidade">Feira de Santana</field>
+		<field name="estado">BA</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">7</field>
+		<field name="cep">46241</field>
+		<field name="rua">Bert B. Perry</field>
+		<field name="bairro">Vega</field>
+		<field name="numero">2231</field>
+		<field name="cidade">Lauro de Freitas</field>
+		<field name="estado">BA</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">8</field>
+		<field name="cep">89260</field>
+		<field name="rua">Berk K. Tran</field>
+		<field name="bairro">Deleon</field>
+		<field name="numero">833</field>
+		<field name="cidade">Chapecó</field>
+		<field name="estado">SC</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">9</field>
+		<field name="cep">68504</field>
+		<field name="rua">Kim G. Hensley</field>
+		<field name="bairro">Leonard</field>
+		<field name="numero">835</field>
+		<field name="cidade">Cametá</field>
+		<field name="estado">PA</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">10</field>
+		<field name="cep">40298</field>
+		<field name="rua">Yetta M. Mullins</field>
+		<field name="bairro">Rivera</field>
+		<field name="numero">259</field>
+		<field name="cidade">Juazeiro</field>
+		<field name="estado">BA</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">11</field>
+		<field name="cep">34478957</field>
+		<field name="rua">Prescott N. Mccarthy</field>
+		<field name="bairro">Alston</field>
+		<field name="numero">797</field>
+		<field name="cidade">Belo Horizonte</field>
+		<field name="estado">MG</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">12</field>
+		<field name="cep">58291</field>
+		<field name="rua">Kaye M. Barton</field>
+		<field name="bairro">Hopper</field>
+		<field name="numero">3874</field>
+		<field name="cidade">Cajazeiras</field>
+		<field name="estado">PB</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">13</field>
+		<field name="cep">26788</field>
+		<field name="rua">Cooper M. Kennedy</field>
+		<field name="bairro">England</field>
+		<field name="numero">1171</field>
+		<field name="cidade">São João de Meriti</field>
+		<field name="estado">RJ</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">14</field>
+		<field name="cep">60000</field>
+		<field name="rua">Roth C. Gould</field>
+		<field name="bairro">Moses</field>
+		<field name="numero">991</field>
+		<field name="cidade">Juazeiro do Norte</field>
+		<field name="estado">CE</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">15</field>
+		<field name="cep">86168</field>
+		<field name="rua">Nero U. Callahan</field>
+		<field name="bairro">Simon</field>
+		<field name="numero">1980</field>
+		<field name="cidade">Londrina</field>
+		<field name="estado">PR</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">16</field>
+		<field name="cep">89807</field>
+		<field name="rua">Charissa Z. Nash</field>
+		<field name="bairro">Hunt</field>
+		<field name="numero">2853</field>
+		<field name="cidade">Criciúma</field>
+		<field name="estado">SC</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">17</field>
+		<field name="cep">23690</field>
+		<field name="rua">Mira N. Savage</field>
+		<field name="bairro">Sharpe</field>
+		<field name="numero">3384</field>
+		<field name="cidade">São João de Meriti</field>
+		<field name="estado">RJ</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">18</field>
+		<field name="cep">12401</field>
+		<field name="rua">Cody P. Gilbert</field>
+		<field name="bairro">Barrera</field>
+		<field name="numero">1458</field>
+		<field name="cidade">Ribeirão Preto</field>
+		<field name="estado">SP</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">19</field>
+		<field name="cep">66082</field>
+		<field name="rua">Lamar I. Fitzpatrick</field>
+		<field name="bairro">Bell</field>
+		<field name="numero">308</field>
+		<field name="cidade">Parauapebas</field>
+		<field name="estado">PA</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">20</field>
+		<field name="cep">68464</field>
+		<field name="rua">Dai Q. Parsons</field>
+		<field name="bairro">Collins</field>
+		<field name="numero">1819</field>
+		<field name="cidade">Ananindeua</field>
+		<field name="estado">PA</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">21</field>
+		<field name="cep">76754</field>
+		<field name="rua">Xenos N. Gomez</field>
+		<field name="bairro">Castro</field>
+		<field name="numero">1017</field>
+		<field name="cidade">Aparecida de Goiânia</field>
+		<field name="estado">GO</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">22</field>
+		<field name="cep">75757</field>
+		<field name="rua">Margaret V. Conrad</field>
+		<field name="bairro">Gutierrez</field>
+		<field name="numero">2928</field>
+		<field name="cidade">Valparaíso de Goiás</field>
+		<field name="estado">GO</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">23</field>
+		<field name="cep">81996</field>
+		<field name="rua">Clio B. Wiley</field>
+		<field name="bairro">Trujillo</field>
+		<field name="numero">2558</field>
+		<field name="cidade">Colombo</field>
+		<field name="estado">PR</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">24</field>
+		<field name="cep">89592</field>
+		<field name="rua">Gail C. Justice</field>
+		<field name="bairro">Skinner</field>
+		<field name="numero">3211</field>
+		<field name="cidade">Chapecó</field>
+		<field name="estado">SC</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">25</field>
+		<field name="cep">76715</field>
+		<field name="rua">Boris M. Durham</field>
+		<field name="bairro">Velazquez</field>
+		<field name="numero">2105</field>
+		<field name="cidade">Anápolis</field>
+		<field name="estado">GO</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">26</field>
+		<field name="cep">62545</field>
+		<field name="rua">Brendan I. Arnold</field>
+		<field name="bairro">Head</field>
+		<field name="numero">2915</field>
+		<field name="cidade">Caucaia</field>
+		<field name="estado">CE</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">27</field>
+		<field name="cep">44209</field>
+		<field name="rua">Ursa K. Wolf</field>
+		<field name="bairro">Jones</field>
+		<field name="numero">1927</field>
+		<field name="cidade">Juazeiro</field>
+		<field name="estado">BA</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">28</field>
+		<field name="cep">88491</field>
+		<field name="rua">Honorato D. Tyler</field>
+		<field name="bairro">Fields</field>
+		<field name="numero">2566</field>
+		<field name="cidade">Itajaí</field>
+		<field name="estado">SC</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">29</field>
+		<field name="cep">74748</field>
+		<field name="rua">Hollee Q. Oconnor</field>
+		<field name="bairro">Castro</field>
+		<field name="numero">272</field>
+		<field name="cidade">Goiânia</field>
+		<field name="estado">GO</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">30</field>
+		<field name="cep">66355</field>
+		<field name="rua">Reed L. Dominguez</field>
+		<field name="bairro">Prince</field>
+		<field name="numero">2507</field>
+		<field name="cidade">Parauapebas</field>
+		<field name="estado">PA</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">31</field>
+		<field name="cep">53994</field>
+		<field name="rua">Aristotle O. Goodman</field>
+		<field name="bairro">Frye</field>
+		<field name="numero">828</field>
+		<field name="cidade">Petrolina</field>
+		<field name="estado">PE</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">32</field>
+		<field name="cep">76729</field>
+		<field name="rua">Audrey W. Alvarez</field>
+		<field name="bairro">Holt</field>
+		<field name="numero">2575</field>
+		<field name="cidade">Luziânia</field>
+		<field name="estado">GO</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">33</field>
+		<field name="cep">90785</field>
+		<field name="rua">Lucas L. Gilbert</field>
+		<field name="bairro">Wilson</field>
+		<field name="numero">4202</field>
+		<field name="cidade">Canoas</field>
+		<field name="estado">RS</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">34</field>
+		<field name="cep">55285</field>
+		<field name="rua">Tanner G. Wallace</field>
+		<field name="bairro">Farley</field>
+		<field name="numero">1720</field>
+		<field name="cidade">Petrolina</field>
+		<field name="estado">PE</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">35</field>
+		<field name="cep">88483</field>
+		<field name="rua">Hashim C. Franco</field>
+		<field name="bairro">Franco</field>
+		<field name="numero">1470</field>
+		<field name="cidade">Chapecó</field>
+		<field name="estado">SC</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">36</field>
+		<field name="cep">81915</field>
+		<field name="rua">Cairo A. Wyatt</field>
+		<field name="bairro">Payne</field>
+		<field name="numero">2163</field>
+		<field name="cidade">Colombo</field>
+		<field name="estado">PR</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">37</field>
+		<field name="cep">62029</field>
+		<field name="rua">Breanna A. Steele</field>
+		<field name="bairro">Snyder</field>
+		<field name="numero">2547</field>
+		<field name="cidade">Maracanaú</field>
+		<field name="estado">CE</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">38</field>
+		<field name="cep">80727</field>
+		<field name="rua">Abbot C. Matthews</field>
+		<field name="bairro">Church</field>
+		<field name="numero">3770</field>
+		<field name="cidade">Paranaguá</field>
+		<field name="estado">PR</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">39</field>
+		<field name="cep">75799</field>
+		<field name="rua">Amy T. Becker</field>
+		<field name="bairro">Snyder</field>
+		<field name="numero">3029</field>
+		<field name="cidade">Anápolis</field>
+		<field name="estado">GO</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">40</field>
+		<field name="cep">88992</field>
+		<field name="rua">Brandon N. English</field>
+		<field name="bairro">Leblanc</field>
+		<field name="numero">3134</field>
+		<field name="cidade">Joinville</field>
+		<field name="estado">SC</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">41</field>
+		<field name="cep">52139</field>
+		<field name="rua">Phyllis R. Griffin</field>
+		<field name="bairro">Lowe</field>
+		<field name="numero">1391</field>
+		<field name="cidade">Jaboatão dos Guarara</field>
+		<field name="estado">PE</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">42</field>
+		<field name="cep">51689</field>
+		<field name="rua">Lesley S. Lamb</field>
+		<field name="bairro">Carr</field>
+		<field name="numero">3650</field>
+		<field name="cidade">Paulista</field>
+		<field name="estado">PE</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">43</field>
+		<field name="cep">21432</field>
+		<field name="rua">Tyler I. Pickett</field>
+		<field name="bairro">Sherman</field>
+		<field name="numero">2078</field>
+		<field name="cidade">Campos dos Goytacaze</field>
+		<field name="estado">RJ</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">44</field>
+		<field name="cep">76778</field>
+		<field name="rua">Ciara V. Clayton</field>
+		<field name="bairro">Quinn</field>
+		<field name="numero">418</field>
+		<field name="cidade">Rio Verde</field>
+		<field name="estado">GO</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">45</field>
+		<field name="cep">95933</field>
+		<field name="rua">Pearl Q. Meyer</field>
+		<field name="bairro">Wilkins</field>
+		<field name="numero">376</field>
+		<field name="cidade">Rio Grande</field>
+		<field name="estado">RS</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">46</field>
+		<field name="cep">48063</field>
+		<field name="rua">Cleo Y. Mccullough</field>
+		<field name="bairro">Whitehead</field>
+		<field name="numero">3201</field>
+		<field name="cidade">Juazeiro</field>
+		<field name="estado">BA</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">47</field>
+		<field name="cep">74793</field>
+		<field name="rua">Alexandra A. Burt</field>
+		<field name="bairro">Sanders</field>
+		<field name="numero">1100</field>
+		<field name="cidade">Luziânia</field>
+		<field name="estado">GO</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">48</field>
+		<field name="cep">83451</field>
+		<field name="rua">Tana Y. Carter</field>
+		<field name="bairro">Fischer</field>
+		<field name="numero">4672</field>
+		<field name="cidade">Paranaguá</field>
+		<field name="estado">PR</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">49</field>
+		<field name="cep">90397</field>
+		<field name="rua">Georgia F. Galloway</field>
+		<field name="bairro">Klein</field>
+		<field name="numero">2555</field>
+		<field name="cidade">Santa Maria</field>
+		<field name="estado">RS</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">50</field>
+		<field name="cep">80711</field>
+		<field name="rua">Berk M. Avila</field>
+		<field name="bairro">Day</field>
+		<field name="numero">4356</field>
+		<field name="cidade">São José dos Pinhais</field>
+		<field name="estado">PR</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">51</field>
+		<field name="cep">58141</field>
+		<field name="rua">Norman I. Chang</field>
+		<field name="bairro">Mayo</field>
+		<field name="numero">2200</field>
+		<field name="cidade">Cajazeiras</field>
+		<field name="estado">PB</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">52</field>
+		<field name="cep">40599</field>
+		<field name="rua">Mohammad V. Hewitt</field>
+		<field name="bairro">Farley</field>
+		<field name="numero">2807</field>
+		<field name="cidade">Itabuna</field>
+		<field name="estado">BA</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">53</field>
+		<field name="cep">52922</field>
+		<field name="rua">Sheila O. Skinner</field>
+		<field name="bairro">Durham</field>
+		<field name="numero">3432</field>
+		<field name="cidade">Paulista</field>
+		<field name="estado">PE</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">54</field>
+		<field name="cep">81817</field>
+		<field name="rua">Willa F. Mcconnell</field>
+		<field name="bairro">Mcclure</field>
+		<field name="numero">4440</field>
+		<field name="cidade">Foz do Iguaçu</field>
+		<field name="estado">PR</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">55</field>
+		<field name="cep">37440520</field>
+		<field name="rua">Graiden L. Durham</field>
+		<field name="bairro">Farrell</field>
+		<field name="numero">1303</field>
+		<field name="cidade">Montes Claros</field>
+		<field name="estado">MG</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">56</field>
+		<field name="cep">40452</field>
+		<field name="rua">Joseph W. Mccoy</field>
+		<field name="bairro">Peck</field>
+		<field name="numero">227</field>
+		<field name="cidade">Salvador</field>
+		<field name="estado">BA</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">57</field>
+		<field name="cep">25325</field>
+		<field name="rua">Quynn W. Valenzuela</field>
+		<field name="bairro">Oconnor</field>
+		<field name="numero">4152</field>
+		<field name="cidade">Duque de Caxias</field>
+		<field name="estado">RJ</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">58</field>
+		<field name="cep">65328</field>
+		<field name="rua">Casey F. Sullivan</field>
+		<field name="bairro">Gilbert</field>
+		<field name="numero">1236</field>
+		<field name="cidade">Codó</field>
+		<field name="estado">MA</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">59</field>
+		<field name="cep">88361</field>
+		<field name="rua">Ciaran B. Tate</field>
+		<field name="bairro">Richards</field>
+		<field name="numero">908</field>
+		<field name="cidade">Criciúma</field>
+		<field name="estado">SC</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">60</field>
+		<field name="cep">87309</field>
+		<field name="rua">Theodore P. Sanchez</field>
+		<field name="bairro">Cummings</field>
+		<field name="numero">4406</field>
+		<field name="cidade">Foz do Iguaçu</field>
+		<field name="estado">PR</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">61</field>
+		<field name="cep">58442</field>
+		<field name="rua">Macy U. Levy</field>
+		<field name="bairro">Yang</field>
+		<field name="numero">4332</field>
+		<field name="cidade">Cajazeiras</field>
+		<field name="estado">PB</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">62</field>
+		<field name="cep">95374</field>
+		<field name="rua">Galvin W. Barlow</field>
+		<field name="bairro">Sherman</field>
+		<field name="numero">4032</field>
+		<field name="cidade">Porto Alegre</field>
+		<field name="estado">RS</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">63</field>
+		<field name="cep">44207</field>
+		<field name="rua">Basia V. Dorsey</field>
+		<field name="bairro">Brock</field>
+		<field name="numero">440</field>
+		<field name="cidade">Ilhéus</field>
+		<field name="estado">BA</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">64</field>
+		<field name="cep">53873</field>
+		<field name="rua">Maisie T. Tanner</field>
+		<field name="bairro">James</field>
+		<field name="numero">3473</field>
+		<field name="cidade">Recife</field>
+		<field name="estado">PE</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">65</field>
+		<field name="cep">58611</field>
+		<field name="rua">Inga P. Conley</field>
+		<field name="bairro">Mack</field>
+		<field name="numero">4587</field>
+		<field name="cidade">Bayeux</field>
+		<field name="estado">PB</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">66</field>
+		<field name="cep">12425</field>
+		<field name="rua">Hu B. Sears</field>
+		<field name="bairro">Small</field>
+		<field name="numero">1703</field>
+		<field name="cidade">Mogi das Cruzes</field>
+		<field name="estado">SP</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">67</field>
+		<field name="cep">86995</field>
+		<field name="rua">Brielle G. Gray</field>
+		<field name="bairro">Mathews</field>
+		<field name="numero">699</field>
+		<field name="cidade">Colombo</field>
+		<field name="estado">PR</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">68</field>
+		<field name="cep">19202</field>
+		<field name="rua">Hiram U. Bonner</field>
+		<field name="bairro">Rasmussen</field>
+		<field name="numero">412</field>
+		<field name="cidade">Jundiaí</field>
+		<field name="estado">SP</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">69</field>
+		<field name="cep">58218</field>
+		<field name="rua">Amy N. Hopper</field>
+		<field name="bairro">Delgado</field>
+		<field name="numero">1027</field>
+		<field name="cidade">Bayeux</field>
+		<field name="estado">PB</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">70</field>
+		<field name="cep">37288288</field>
+		<field name="rua">Isabella E. Harvey</field>
+		<field name="bairro">Guthrie</field>
+		<field name="numero">1890</field>
+		<field name="cidade">Divinópolis</field>
+		<field name="estado">MG</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">71</field>
+		<field name="cep">16461</field>
+		<field name="rua">Julie A. Powers</field>
+		<field name="bairro">Garner</field>
+		<field name="numero">1220</field>
+		<field name="cidade">Diadema</field>
+		<field name="estado">SP</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">72</field>
+		<field name="cep">21685</field>
+		<field name="rua">Aubrey T. Lopez</field>
+		<field name="bairro">Pruitt</field>
+		<field name="numero">75</field>
+		<field name="cidade">Rio de Janeiro</field>
+		<field name="estado">RJ</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">73</field>
+		<field name="cep">62787</field>
+		<field name="rua">Zoe T. Gonzalez</field>
+		<field name="bairro">Sykes</field>
+		<field name="numero">783</field>
+		<field name="cidade">Sobral</field>
+		<field name="estado">CE</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">74</field>
+		<field name="cep">95970</field>
+		<field name="rua">Flavia G. Knox</field>
+		<field name="bairro">Barnett</field>
+		<field name="numero">3480</field>
+		<field name="cidade">Porto Alegre</field>
+		<field name="estado">RS</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">75</field>
+		<field name="cep">65380</field>
+		<field name="rua">Kelly O. Powell</field>
+		<field name="bairro">Nash</field>
+		<field name="numero">2046</field>
+		<field name="cidade">Bacabal</field>
+		<field name="estado">MA</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">76</field>
+		<field name="cep">48762</field>
+		<field name="rua">Althea M. Salinas</field>
+		<field name="bairro">Richmond</field>
+		<field name="numero">238</field>
+		<field name="cidade">Vitória da Conquista</field>
+		<field name="estado">BA</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">77</field>
+		<field name="cep">56767</field>
+		<field name="rua">Wilma C. May</field>
+		<field name="bairro">Zamora</field>
+		<field name="numero">4911</field>
+		<field name="cidade">Paulista</field>
+		<field name="estado">PE</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">78</field>
+		<field name="cep">66658</field>
+		<field name="rua">Dominic N. Macias</field>
+		<field name="bairro">Bauer</field>
+		<field name="numero">974</field>
+		<field name="cidade">Parauapebas</field>
+		<field name="estado">PA</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">79</field>
+		<field name="cep">88608</field>
+		<field name="rua">Cara X. Moon</field>
+		<field name="bairro">Callahan</field>
+		<field name="numero">3029</field>
+		<field name="cidade">Joinville</field>
+		<field name="estado">SC</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">80</field>
+		<field name="cep">65432</field>
+		<field name="rua">Quinn Q. Ellis</field>
+		<field name="bairro">Ewing</field>
+		<field name="numero">1893</field>
+		<field name="cidade">Caxias</field>
+		<field name="estado">MA</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">81</field>
+		<field name="cep">45564</field>
+		<field name="rua">Indira K. English</field>
+		<field name="bairro">Galloway</field>
+		<field name="numero">3827</field>
+		<field name="cidade">Vitória da Conquista</field>
+		<field name="estado">BA</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">82</field>
+		<field name="cep">41075</field>
+		<field name="rua">Jade V. Boyle</field>
+		<field name="bairro">Newton</field>
+		<field name="numero">1693</field>
+		<field name="cidade">Itabuna</field>
+		<field name="estado">BA</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">83</field>
+		<field name="cep">50221</field>
+		<field name="rua">Nathan U. Mcfadden</field>
+		<field name="bairro">Wilkinson</field>
+		<field name="numero">2747</field>
+		<field name="cidade">Camaragibe</field>
+		<field name="estado">PE</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">84</field>
+		<field name="cep">11000</field>
+		<field name="rua">Alice J. Mcdonald</field>
+		<field name="bairro">Mclaughlin</field>
+		<field name="numero">2167</field>
+		<field name="cidade">Mogi das Cruzes</field>
+		<field name="estado">SP</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">85</field>
+		<field name="cep">63906</field>
+		<field name="rua">Aileen V. Cook</field>
+		<field name="bairro">Dunlap</field>
+		<field name="numero">1028</field>
+		<field name="cidade">Juazeiro do Norte</field>
+		<field name="estado">CE</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">86</field>
+		<field name="cep">41586</field>
+		<field name="rua">Maggy H. Dorsey</field>
+		<field name="bairro">Morales</field>
+		<field name="numero">652</field>
+		<field name="cidade">Vitória da Conquista</field>
+		<field name="estado">BA</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">87</field>
+		<field name="cep">31680307</field>
+		<field name="rua">Rowan J. Hardy</field>
+		<field name="bairro">Mathews</field>
+		<field name="numero">2600</field>
+		<field name="cidade">Belo Horizonte</field>
+		<field name="estado">MG</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">88</field>
+		<field name="cep">18592</field>
+		<field name="rua">Nora J. Hensley</field>
+		<field name="bairro">Delaney</field>
+		<field name="numero">3762</field>
+		<field name="cidade">Diadema</field>
+		<field name="estado">SP</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">89</field>
+		<field name="cep">98588</field>
+		<field name="rua">Piper F. White</field>
+		<field name="bairro">Wheeler</field>
+		<field name="numero">3605</field>
+		<field name="cidade">Canoas</field>
+		<field name="estado">RS</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">90</field>
+		<field name="cep">92702</field>
+		<field name="rua">Stone T. Strickland</field>
+		<field name="bairro">Petersen</field>
+		<field name="numero">2877</field>
+		<field name="cidade">Gravataí</field>
+		<field name="estado">RS</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">91</field>
+		<field name="cep">91801</field>
+		<field name="rua">Alisa L. Vinson</field>
+		<field name="bairro">Briggs</field>
+		<field name="numero">829</field>
+		<field name="cidade">Porto Alegre</field>
+		<field name="estado">RS</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">92</field>
+		<field name="cep">88567</field>
+		<field name="rua">Hu M. Abbott</field>
+		<field name="bairro">Stokes</field>
+		<field name="numero">249</field>
+		<field name="cidade">Florianópolis</field>
+		<field name="estado">SC</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">93</field>
+		<field name="cep">61282</field>
+		<field name="rua">Brielle X. Rosales</field>
+		<field name="bairro">Melton</field>
+		<field name="numero">2007</field>
+		<field name="cidade">Juazeiro do Norte</field>
+		<field name="estado">CE</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">94</field>
+		<field name="cep">51983</field>
+		<field name="rua">Giselle L. Roberts</field>
+		<field name="bairro">Boyer</field>
+		<field name="numero">1282</field>
+		<field name="cidade">Paulista</field>
+		<field name="estado">PE</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">95</field>
+		<field name="cep">80689</field>
+		<field name="rua">Risa M. Alford</field>
+		<field name="bairro">Cox</field>
+		<field name="numero">1313</field>
+		<field name="cidade">Paranaguá</field>
+		<field name="estado">PR</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">96</field>
+		<field name="cep">58749</field>
+		<field name="rua">Wayne B. Keith</field>
+		<field name="bairro">Dorsey</field>
+		<field name="numero">1974</field>
+		<field name="cidade">João Pessoa</field>
+		<field name="estado">PB</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">97</field>
+		<field name="cep">41643</field>
+		<field name="rua">Nehru O. Reed</field>
+		<field name="bairro">Francis</field>
+		<field name="numero">3674</field>
+		<field name="cidade">Salvador</field>
+		<field name="estado">BA</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">98</field>
+		<field name="cep">35564666</field>
+		<field name="rua">Keiko D. Walker</field>
+		<field name="bairro">Kirkland</field>
+		<field name="numero">1389</field>
+		<field name="cidade">Juiz de Fora</field>
+		<field name="estado">MG</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">99</field>
+		<field name="cep">56047</field>
+		<field name="rua">Tyler U. Sutton</field>
+		<field name="bairro">Fisher</field>
+		<field name="numero">4660</field>
+		<field name="cidade">Cabo de Santo Agosti</field>
+		<field name="estado">PE</field>
+		<field name="pais">Brazil</field>
+	</row>
+	<row>
+		<field name="id_Endereco">100</field>
+		<field name="cep">88009</field>
+		<field name="rua">Jorden A. Holt</field>
+		<field name="bairro">Hunter</field>
+		<field name="numero">2412</field>
+		<field name="cidade">Blumenau</field>
+		<field name="estado">SC</field>
+		<field name="pais">Brazil</field>
+	</row>
+	</table_data>
+	</database>
+</mysqldump>
