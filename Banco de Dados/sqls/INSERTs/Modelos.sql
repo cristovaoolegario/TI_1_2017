@@ -1,4 +1,5 @@
-INSERT INTO modelo(id,id_Marca,nome) VALUES
+DELETE FROM Modelo WHERE id_Modelo > 0;
+INSERT INTO modelo(id_Modelo,id_Marca,nomeModelo) VALUES
 ('1','25','INTEGRA')
 ,('2','25','LEGEND')
 ,('3','25','NSX')
@@ -263,9 +264,6 @@ INSERT INTO modelo(id,id_Marca,nome) VALUES
 ,('331','14','TUCSON')
 ,('332','14','VELOSTER')
 ,('333','14','VERACRUZ')
-,('334','84','AMIGO')
-,('335','84','HOMBRE')
-,('336','84','RODEO')
 ,('337','15','J3')
 ,('338','15','J5')
 ,('339','15','J6')
@@ -1181,7 +1179,6 @@ INSERT INTO modelo(id,id_Marca,nome) VALUES
 ,('3030','23','ETIOS CROSS')
 ,('3031','12','HURACAN')
 ,('3032','2','UP')
-,('3080','195','EXPLORER')
 ,('4964','142','FORTWO CABRIO')
 ,('4969','26','GT')
 ,('4970','26','GTL')
