@@ -7,7 +7,7 @@
 		<field name="id_Marca">25</field>
 		<field name="nomeModelo">INTEGRA</field>
 	</row>
-	<row>
+	<!--<row>
 		<field name="id_Modelo">2</field>
 		<field name="id_Marca">25</field>
 		<field name="nomeModelo">LEGEND</field>
@@ -6152,6 +6152,7 @@
 		<field name="id_Marca">13</field>
 		<field name="nomeModelo">FOCUS FASTBACK</field>
 	</row>
+	-->
 	</table_data>
 </database>
 </mysqldump>
