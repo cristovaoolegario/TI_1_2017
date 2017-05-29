@@ -22,29 +22,37 @@
 			return $this->createMySQLXMLDataSet("tests/UsuarioTest.xml");
 		}
 		
+		public function testselect()
+		{			
+			 $conn = $this->getConnection()->getConnection();
+			 $query = $conn->query('SELECT * FROM Usuario');
+			 $results = $query->fetchAll(PDO::FETCH_ASSOC);
+			 $this->assertEquals(1,$results[0]['id_Usuario']);
+			 
+		}	
+		
 		public function testinsert()
 		{
-			
+			$conn = $this->getConnection()->getConnection();
+			$query = $conn->query('INSERT INTO Usuario(nomeUsuario,sexo,dtNascimento,rg,nacionalidade,naturalidade,email,foto,telefone1,telefone2,id_Endereco) VALUES ("T800","M",1980-01-01,00000,"desconhecida","SKYNET","T800rules@gmail.com",1,0000000,0000000,1)');
+			$query = $conn->query('SELECT * FROM Usuario WHERE nomeUsuario = "T800"'); 
+			$results = $query->fetchAll(PDO::FETCH_ASSOC); 
+			$this->assertEquals('T800', $results[0]['nomeUsuario']); 
 		}
 		
 		public function testupdate()
 		{
-			
+			$conn = $this->getConnection()->getConnection();//createQueryTable('Usuario', 'UPDATE Usuario SET nome = Batata WHERE id_Usuario = 1');
+			$query = $conn->query('UPDATE Usuario SET nomeUsuario = "Batata" WHERE id_Usuario = 1'); 
+			$query = $conn->query('SELECT * FROM Usuario WHERE id_Usuario = 1'); 
+			$results = $query->fetchAll(PDO::FETCH_ASSOC); 
+			$this->assertEquals('Batata', $results[0]['nomeUsuario']); 
 		}
 		
 		public function testdelete()
 		{
 					
-		}
-		
-		public function testselect()
-		{			
-			 $conn = $this->getConnection()->getConnection();
-			 $query = $conn->query('SELECT * FROM Usuario');
-			 $results = $query->fetchAll(PDO::FETCH_ASSOC);	 
-			 
-		}
-		
+		}		
 	}
 	
 ?>
