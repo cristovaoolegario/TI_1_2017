@@ -22,21 +22,6 @@
 			return $this->createMySQLXMLDataSet("tests/MarcaTest.xml");
 		}
 		
-		public function testinsert()
-		{
-			
-		}
-		
-		public function testupdate()
-		{
-			
-		}
-		
-		public function testdelete()
-		{
-					
-		}
-		
 		public function testselect()
 		{			
 			 $conn = $this->getConnection()->getConnection();
@@ -45,6 +30,31 @@
 			 
 		}
 		
+		public function testinsert()
+		{
+			$conn = $this->getConnection()->getConnection();
+			$query = $conn->query('INSERT INTO Marca(nomeMarca) VALUES("MAD")');
+			$query = $conn->query('SELECT * FROM Marca WHERE nomeMarca = "MAD"'); 
+			$results = $query->fetchAll(PDO::FETCH_ASSOC);
+			
+			$this->assertEquals('MAD', $results[0]['nomeMarca']); 
+
+		}
+		
+		public function testupdate()
+		{
+			$conn = $this->getConnection()->getConnection();
+			$query = $conn->query('UPDATE Marca SET nomeMarca = "MADMOTORS"');
+			$query = $conn->query('SELECT * FROM Marca WHERE nomeMarca = "MADMOTORS"'); 
+			$results = $query->fetchAll(PDO::FETCH_ASSOC);
+			
+			$this->assertEquals('MADMOTORS', $results[0]['nomeMarca']);
+		}
+		
+		public function testdelete()
+		{
+					
+		}		
 	}
 	
 ?>
