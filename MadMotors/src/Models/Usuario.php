@@ -2,6 +2,7 @@
 
     include('IModelo.php');
     include('Endereco.php');
+    include ('Anuncio.php');
     include('MySQL.php');
 
     class Usuario implements IModelo
@@ -75,7 +76,12 @@
 			
 			$result = $mySQL -> executeQuery($selectUsuario);
 			return($result);			
-		}        
+		}
+		
+		public function creatAnuncio()
+        {
+			//Anuncio::insert();
+		}
     }
 
 ?>
