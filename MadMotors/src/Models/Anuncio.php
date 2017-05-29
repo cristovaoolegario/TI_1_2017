@@ -72,7 +72,7 @@
 
             $result = $mySQL->executeQuery($selectAnuncio);
             return($result);
-        }
+        }       
     }
 
 ?>

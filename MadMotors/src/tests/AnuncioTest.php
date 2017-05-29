@@ -22,14 +22,35 @@
 			return $this->createMySQLXMLDataSet("tests/AnuncioTest.xml");
 		}
 		
+		public function testselect()
+		{			
+			 $conn = $this->getConnection()->getConnection();
+			 $query = $conn->query('SELECT * FROM Anuncio');
+			 $results = $query->fetchAll(PDO::FETCH_ASSOC);
+			 
+			 $this->assertEquals('1', $results[0]['id_Anuncio']);			
+		}
+		
 		public function testinsert()
 		{
+			$conn = $this->getConnection()->getConnection();
+			$query = $conn->query('INSERT INTO Anuncio  (estadoVeiculo,ano,cor,numeroPortas,quilometragem,cambio,combustivel,finalPlaca,tipoCarroceria,dataAnuncio,id_Endereco,id_Modelo,id_Usuario,preco) VALUES ("Novo",2018-01-01,"vermelho",3,80000,"automatico","eletrico",8000,"Seda",2017-01-01,1,3,1,666)');
+			$query = $conn->query('SELECT * FROM Anuncio WHERE numeroPortas = 3'); 
+			$results = $query->fetchAll(PDO::FETCH_ASSOC);
+			
+			//$this->assertEquals('eletrico', $results[0]['combustivel']);
+			$this->assertEquals(3, $results[0]['numeroPortas']); 
 			
 		}
 		
 		public function testupdate()
 		{
+			$conn = $this->getConnection()->getConnection();
+			$query = $conn->query('UPDATE Anuncio SET numeroPortas = 5 WHERE id_Anuncio = 1'); 
+			$query = $conn->query('SELECT * FROM Anuncio WHERE id_Anuncio = 1'); 
+			$results = $query->fetchAll(PDO::FETCH_ASSOC); 
 			
+			$this->assertEquals('5', $results[0]['numeroPortas']); 
 		}
 		
 		public function testdelete()
@@ -37,22 +58,7 @@
 					
 		}
 		
-		public function testselect()
-		{			
-			 $conn = $this->getConnection()->getConnection();
-			 $query = $conn->query('SELECT * FROM Anuncio');
-			 $results = $query->fetchAll(PDO::FETCH_ASSOC);
-			 
-			 $this->assertEquals('1', $results[0]['id_Anuncio']);
-			 $this->assertEquals('Novo', $results[0]['estadoVeiculo']);
-			 $this->assertEquals('1985-06-06', $results[0]['ano']);
-			 $this->assertEquals('verde', $results[0]['cor']);
-			 
-			 //Lendo anuncios
-			/* $query = $conn->query('SELECT count(*) as totalAnuncios FROM Anuncio');
-		     $results = $query->fetchAll(PDO::FETCH_ASSOC);
-			 $this->assertEquals(1, $results[0]['totalAnuncios']);*/
-		}
+		
 		
 	}
 ?>
