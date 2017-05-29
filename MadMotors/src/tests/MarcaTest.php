@@ -26,8 +26,9 @@
 		{			
 			 $conn = $this->getConnection()->getConnection();
 			 $query = $conn->query('SELECT * FROM Marca');
-			 $results = $query->fetchAll(PDO::FETCH_ASSOC);	 
+			 $results = $query->fetchAll(PDO::FETCH_ASSOC);
 			 
+			 $this->assertEquals('1', $results[0]['id_Marca']);						 
 		}
 		
 		public function testinsert()
