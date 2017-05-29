@@ -1,5 +1,5 @@
 CREATE TABLE Anuncio (
- id int PRIMARY KEY AUTO_INCREMENT,
+ id_Anuncio int PRIMARY KEY AUTO_INCREMENT,
  estadoVeiculo varchar(10),
  ano date,
  cor varchar(10),
@@ -16,6 +16,6 @@ CREATE TABLE Anuncio (
  preco int
 );
 
-ALTER TABLE Anuncio ADD FOREIGN KEY(id_Endereco) REFERENCES Endereco (id);
-ALTER TABLE Anuncio ADD FOREIGN KEY(id_Modelo) REFERENCES Modelo (id);
-ALTER TABLE Anuncio ADD FOREIGN KEY(id_Usuario) REFERENCES Usuario (id);
+ALTER TABLE Anuncio ADD FOREIGN KEY(id_Endereco) REFERENCES Endereco (id_Endereco);
+ALTER TABLE Anuncio ADD FOREIGN KEY(id_Modelo) REFERENCES Modelo (id_Modelo);
+ALTER TABLE Anuncio ADD FOREIGN KEY(id_Usuario) REFERENCES Usuario (id_Usuario);
