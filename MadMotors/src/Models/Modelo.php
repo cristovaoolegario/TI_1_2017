@@ -7,7 +7,7 @@
     {
 
         public $id_Marca;
-        public $nome;
+        public $nomeModelo;
         
         private static $mySQL;
 
@@ -20,14 +20,14 @@
         {
             $mySQL = new MySQL;
             $mySQL->connect();
-            $insereModelo = $mySQL->executeQuery("INSERT INTO modelo(id_Marca,nome) VALUES(".$id_Marca.",'".$nome."');");
+            $insereModelo = $mySQL->executeQuery("INSERT INTO modelo(id_Marca,nomeModelo) VALUES(".$id_Marca.",'".$nomeModelo."');");
         }
 
         public static function update()
         {
             $mySQL = new MySQL;
             $mySQL->connect();
-            $updateModelo = $mySQL->executeQuery("UPDATE modelo SET id_Marca = ".$id_Marca.", nome = '".$nome."'");
+            $updateModelo = $mySQL->executeQuery("UPDATE modelo SET id_Marca = ".$id_Marca.", nomeModelo = '".$nomeModelo."'");
         }
 
         public static function delete()
