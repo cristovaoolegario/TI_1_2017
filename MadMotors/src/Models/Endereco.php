@@ -19,31 +19,48 @@
 
         public function __construct()
         {
-            
+           $count = func_num_args();
+           
+		   if ($count < 7) 
+		   {				
+			   
+		   }		   
+		   if ($count == 7) 
+		   {
+				list($cep,$rua,$bairro,$numero,$cidade,$estado,$pais) = func_get_args();
+
+				$this->cep = $cep;
+				$this->rua = $rua;
+				$this->bairro = $bairro;
+				$this->numero = $numero;
+				$this->cidade = $cidade;
+				$this->estado = $estado;
+				$this->pais = $pais;			
+		   }
         }
 
-        public static function insert()
+        public function insert()
         {
             $mySQL = new MySQL;
             $mySQL->connect();
             $insereEndereco = $mySQL->executaQuery("INSERT INTO `endereco` (`cep`,`rua`,`bairro`,`numero`,`cidade`,`estado`,`pais`) VALUES ('".$cep."','".$rua."','".$bairro."',".$numero.",'".$cidade."','".$estado."','".$pais."');");
         }
 
-        public static function update()
-        {
-            $mySQL = new MySQL;
-            $mySQL->connect();
-            $insereEndereco = $mySQL->executaQuery("UPDATE Endereco SET cep = ".$cep.", rua = '".$rua."', bairro = '".$bairro."', numero = ".$numero.", cidade = '".$cidade."', estado = '".$estado."', pais = '".$pais."' WHERE id = ".$id."");
+        public function update()
+        {        
+			$mySQL = new MySQL;
+			$mySQL->connect();
+			$insereEndereco = $mySQL->executaQuery("UPDATE Endereco SET cep = ".$cep.", rua = '".$rua."', bairro = '".$bairro."', numero = ".$numero.", cidade = '".$cidade."', estado = '".$estado."', pais = '".$pais."' WHERE id = ".$id."");			
         }
 
-        public static function delete()
+        public function delete()
         {
             $mySQL = new MySQL;
             $mySQL->connect();
             $deleteEndereco = $mySQL->executeQuery("DELETE FROM Endereco WHERE id = ".$id."");
         }
 
-        public static function select()
+        public function select()
         {
             $mySQL = new MySQL;
             $selectEndereco = "SELECT * FROM Endereco ";
