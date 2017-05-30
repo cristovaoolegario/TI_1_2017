@@ -15,9 +15,9 @@
         {
            $count = func_num_args();
            
-		   if ($count == 1 || $count == 0) 
+		   if($count != 2) 
 		   {				
-			   
+			   echo "Número de parâmetros Incorreto";			   
 		   }		   
 		   if ($count == 2) 
 		   {
