@@ -2746,12 +2746,13 @@
 		<field name="id_Modelo">1377</field>
 		<field name="id_Marca">18</field>
 		<field name="nomeModelo">POLARA</field>
-	</row>
-	<row>
+	</row> -->
+	<row> 
 		<field name="id_Modelo">1380</field>
 		<field name="id_Marca">3</field>
 		<field name="nomeModelo">600</field>
 	</row>
+	<!--
 	<row>
 		<field name="id_Modelo">1382</field>
 		<field name="id_Marca">13</field>

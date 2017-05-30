@@ -5,7 +5,7 @@
 	<row>
 		<field name="id_Marca">1</field>
 		<field name="nomeMarca">CHEVROLET</field>
-	</row>
+	</row>	
 	<row>
 		<field name="id_Marca">2</field>
 		<field name="nomeMarca">VOLKSWAGEN</field>
@@ -14,6 +14,7 @@
 		<field name="id_Marca">3</field>
 		<field name="nomeMarca">FIAT</field>
 	</row>
+	<!--
 	<row>
 		<field name="id_Marca">4</field>
 		<field name="nomeMarca">MERCEDES-BENZ</field>
@@ -94,10 +95,12 @@
 		<field name="id_Marca">24</field>
 		<field name="nomeMarca">RENAULT</field>
 	</row>
+	-->
 	<row>
 		<field name="id_Marca">25</field>
 		<field name="nomeMarca">ACURA</field>
 	</row>
+	<!--
 	<row>
 		<field name="id_Marca">26</field>
 		<field name="nomeMarca">ADAMO</field>
@@ -590,6 +593,7 @@
 		<field name="id_Marca">534</field>
 		<field name="nomeMarca">GEELY</field>
 	</row>
+	-->
 	</table_data>
 </database>
 </mysqldump>

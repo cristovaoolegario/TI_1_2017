@@ -45,6 +45,7 @@
 		public function testupdate()
 		{
 			$conn = $this->getConnection()->getConnection();
+			$query = $conn->query('INSERT INTO Endereco (cep,rua,bairro,numero,cidade,estado,pais) VALUES (10000,"Rua Pernalonga","Donald",23,"TomorrowLand","WW","DOOMSLAND")');
 			$query = $conn->query('UPDATE Endereco SET numero = 1377 WHERE estado = "WW"'); 
 			$query = $conn->query('SELECT * FROM Endereco WHERE estado = "WW"'); 
 			$results = $query->fetchAll(PDO::FETCH_ASSOC); 

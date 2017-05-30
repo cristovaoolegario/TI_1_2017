@@ -20,7 +20,7 @@
 		<field name="id_Usuario">45</field>
 		<field name="preco">414887</field>
 	</row>
-	<row>
+	<!--<row>
 		<field name="id_Anuncio">2</field>
 		<field name="estadoVeiculo">Usado</field>
 		<field name="ano">1955-03-25</field>
@@ -1702,7 +1702,7 @@
 		<field name="id_Modelo">2934</field>
 		<field name="id_Usuario">44</field>
 		<field name="preco">394034</field>
-	</row>
+	</row> -->
 	</table_data>
 </database>
 </mysqldump>

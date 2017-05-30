@@ -34,7 +34,7 @@
 		public function testinsert()
 		{
 			$conn = $this->getConnection()->getConnection();
-			$query = $conn->query('INSERT INTO Anuncio  (estadoVeiculo,ano,cor,numeroPortas,quilometragem,cambio,combustivel,finalPlaca,tipoCarroceria,dataAnuncio,id_Endereco,id_Modelo,id_Usuario,preco) VALUES ("Novo",2018-01-01,"vermelho",3,80000,"automatico","eletrico",8000,"Seda",2017-01-01,1,3,1,666)');
+			$query = $conn->query('INSERT INTO Anuncio  (estadoVeiculo,ano,cor,numeroPortas,quilometragem,cambio,combustivel,finalPlaca,tipoCarroceria,dataAnuncio,id_Endereco,id_Modelo,id_Usuario,preco) VALUES ("Novo",2018-01-01,"vermelho",3,80000,"automatico","eletrico",8000,"Seda",2017-01-01,1,1,1,666)');
 			$query = $conn->query('SELECT * FROM Anuncio WHERE numeroPortas = 3'); 
 			$results = $query->fetchAll(PDO::FETCH_ASSOC);
 			
@@ -55,7 +55,7 @@
 		
 		public function testdelete()
 		{
-					
+			
 		}
 		
 		

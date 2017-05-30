@@ -17,6 +17,7 @@
 		<field name="telefone2">37598607</field>
 		<field name="id_Endereco">78</field>
 	</row>
+	<!--
 	<row>
 		<field name="id_Usuario">2</field>
 		<field name="nomeUsuario">Uta Mcdaniel</field>
@@ -618,7 +619,7 @@
 		<field name="telefone1">49851054</field>
 		<field name="telefone2">10436039</field>
 		<field name="id_Endereco">26</field>
-	</row>
+	</row> -->
 	<row>
 		<field name="id_Usuario">45</field>
 		<field name="nomeUsuario">Dylan Ward</field>
@@ -633,6 +634,7 @@
 		<field name="telefone2">67924444</field>
 		<field name="id_Endereco">86</field>
 	</row>
+	<!--
 	<row>
 		<field name="id_Usuario">46</field>
 		<field name="nomeUsuario">Britanney Daniels</field>
@@ -1403,6 +1405,7 @@
 		<field name="telefone2">47807919</field>
 		<field name="id_Endereco">40</field>
 	</row>
+	-->
 	</table_data>
 </database>
 </mysqldump>

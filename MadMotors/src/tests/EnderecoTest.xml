@@ -13,6 +13,7 @@
 		<field name="estado">GO</field>
 		<field name="pais">Brazil</field>
 	</row>
+	<!--
 	<row>
 		<field name="id_Endereco">2</field>
 		<field name="cep">51512</field>
@@ -193,6 +194,7 @@
 		<field name="estado">PA</field>
 		<field name="pais">Brazil</field>
 	</row>
+	-->
 	<row>
 		<field name="id_Endereco">20</field>
 		<field name="cep">68464</field>
@@ -203,6 +205,7 @@
 		<field name="estado">PA</field>
 		<field name="pais">Brazil</field>
 	</row>
+	<!--
 	<row>
 		<field name="id_Endereco">21</field>
 		<field name="cep">76754</field>
@@ -773,6 +776,7 @@
 		<field name="estado">PE</field>
 		<field name="pais">Brazil</field>
 	</row>
+	-->
 	<row>
 		<field name="id_Endereco">78</field>
 		<field name="cep">66658</field>
@@ -783,6 +787,7 @@
 		<field name="estado">PA</field>
 		<field name="pais">Brazil</field>
 	</row>
+	<!--
 	<row>
 		<field name="id_Endereco">79</field>
 		<field name="cep">88608</field>
@@ -853,6 +858,7 @@
 		<field name="estado">CE</field>
 		<field name="pais">Brazil</field>
 	</row>
+	-->
 	<row>
 		<field name="id_Endereco">86</field>
 		<field name="cep">41586</field>
@@ -863,6 +869,7 @@
 		<field name="estado">BA</field>
 		<field name="pais">Brazil</field>
 	</row>
+	<!--
 	<row>
 		<field name="id_Endereco">87</field>
 		<field name="cep">31680307</field>
@@ -1003,6 +1010,7 @@
 		<field name="estado">SC</field>
 		<field name="pais">Brazil</field>
 	</row>
+	-->
 	</table_data>
 	</database>
 </mysqldump>

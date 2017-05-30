@@ -45,7 +45,8 @@
 		public function testupdate()
 		{
 			$conn = $this->getConnection()->getConnection();
-			$query = $conn->query('UPDATE Marca SET nomeMarca = "MADMOTORS"');
+			$query = $conn->query('INSERT INTO Marca(nomeMarca) VALUES("MAD")');
+			$query = $conn->query('UPDATE Marca SET nomeMarca = "MADMOTORS" WHERE nomeMarca = "MAD"');
 			$query = $conn->query('SELECT * FROM Marca WHERE nomeMarca = "MADMOTORS"'); 
 			$results = $query->fetchAll(PDO::FETCH_ASSOC);
 			
@@ -54,7 +55,7 @@
 		
 		public function testdelete()
 		{
-					
+			//$this->assertNull($results);
 		}		
 	}
 	

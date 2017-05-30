@@ -43,7 +43,7 @@
 		
 		public function testupdate()
 		{
-			$conn = $this->getConnection()->getConnection();
+			$conn = $this->getConnection()->getConnection();			
 			$query = $conn->query('UPDATE Usuario SET nomeUsuario = "Batata" WHERE id_Usuario = 1'); 
 			$query = $conn->query('SELECT * FROM Usuario WHERE id_Usuario = 1'); 
 			$results = $query->fetchAll(PDO::FETCH_ASSOC); 

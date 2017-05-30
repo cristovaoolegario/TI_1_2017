@@ -44,8 +44,9 @@
 		public function testupdate()
 		{
 			$conn = $this->getConnection()->getConnection();
+			$query = $conn->query('INSERT INTO Modelo(nomeModelo, id_Marca) VALUES("MAD CIVIC",3) ');
 			$query = $conn->query('UPDATE Modelo SET nomeModelo = "HAPPY CIVIC" WHERE nomeModelo = "MAD CIVIC"'); 
-			$query = $conn->query('SELECT * FROM Modelo WHERE nomeModelo = "HAPPY CIVIC"'); 
+			$query = $conn->query('SELECT nomeModelo FROM Modelo WHERE nomeModelo = "HAPPY CIVIC"'); 
 			$results = $query->fetchAll(PDO::FETCH_ASSOC); 
 			
 			$this->assertEquals('HAPPY CIVIC', $results[0]['nomeModelo']); 
@@ -53,7 +54,7 @@
 		
 		public function testdelete()
 		{
-					
+				
 		}
 		
 		
