@@ -15,13 +15,12 @@
         {
            $count = func_num_args();
            
-		   if ($count == 1) 
+		   if ($count == 1 || $count == 0) 
 		   {				
-				return null;
+			   
 		   }		   
 		   if ($count == 2) 
 		   {
-
 				list($id__Marca, $nomeModelo) = func_get_args();
 
 				$this->id_Marca = $id_Marca;
