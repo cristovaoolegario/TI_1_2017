@@ -21,11 +21,11 @@
         {
            $count = func_num_args();
            
-		   if ($count < 7) 
+		   if ($count != 7) 
 		   {				
-			   
+			   echo "Número de parâmetros Incorreto";			   
 		   }		   
-		   if ($count == 7) 
+		   else 
 		   {
 				list($cep,$rua,$bairro,$numero,$cidade,$estado,$pais) = func_get_args();
 
