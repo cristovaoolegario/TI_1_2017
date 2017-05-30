@@ -5,7 +5,7 @@
 
     class Modelo implements IModelo
     {
-
+		public $id_Modelo;
         public $id_Marca;
         public $nomeModelo;
         
@@ -13,40 +13,59 @@
 
         public function __construct()
         {
-            
+           $count = func_num_args();
+           
+		   if ($count == 1) 
+		   {				
+				return null;
+		   }		   
+		   if ($count == 2) 
+		   {
+
+				list($id__Marca, $nomeModelo) = func_get_args();
+
+				$this->id_Marca = $id_Marca;
+				$this->nomeModelo = $nomeModelo;			
+		   }
         }
 
-        public static function insert()
+        public function insert()
         {
             $mySQL = new MySQL;
             $mySQL->connect();
             $insereModelo = $mySQL->executeQuery("INSERT INTO modelo(id_Marca,nomeModelo) VALUES(".$id_Marca.",'".$nomeModelo."');");
         }
 
-        public static function update()
+        public function update()
+        {			
+		   $count = func_num_args();
+           
+			if ($count == 1)
+			{
+				$novonomeModelo = func_get_arg(0);
+				$mySQL = new MySQL;
+				$mySQL->connect();
+				$updateModelo = $mySQL->executeQuery("UPDATE modelo SET nomeModelo = '".$novonomeModelo."' WHERE nomeModelo = '".$nomeModelo."'");
+			}
+        }
+
+        public function delete()
         {
             $mySQL = new MySQL;
             $mySQL->connect();
-            $updateModelo = $mySQL->executeQuery("UPDATE modelo SET id_Marca = ".$id_Marca.", nomeModelo = '".$nomeModelo."'");
+            $deleteModelo = $mySQL->executeQuery("DELETE FROM Modelo WHERE id = ".$id_Modelo."");
         }
 
-        public static function delete()
-        {
-            $mySQL = new MySQL;
-            $mySQL->connect();
-            $deleteModelo = $mySQL->executeQuery("DELETE FROM Modelo WHERE id = ".$id."");
-        }
-
-        public static function select()
+        public function select()
         {
             $mySQL = new MySQL;
             $selectModelo = "SELECT * FROM Modelo ";
 
             $mySQL->connect();
 
-            if (!empty($id))
+            if (!empty($id_Modelo))
             {
-                $selectModelo .= "WHERE id = ".$id." ";
+                $selectModelo .= "WHERE id = ".$id_Modelo." ";
             }
 
             $result = $mySQL->executeQuery($selectModelo);
