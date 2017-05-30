@@ -3,13 +3,13 @@
     interface IModelo
     {
 
-        public static function insert();
+        public function insert();
 
-        public static function update();
+        public function update();
 
-        public static function delete();
+        public function delete();
 
-        public static function select();
+        public function select();
     }
 
 ?>
