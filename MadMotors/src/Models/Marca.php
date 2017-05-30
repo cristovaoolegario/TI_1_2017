@@ -12,40 +12,59 @@
 
         public function __construct()
         {
-            
-        }
+           $count = func_num_args();
+           
+		   if ($count == 1) 
+		   {				
+				return null;
+		   }		   
+		   if ($count == 2) 
+		   {
 
-        public static function insert()
+				list($id_Marca, $nome_Marca) = func_get_args();
+
+				$this->id_Marca = $id_Marca;
+				$this->nome_Marca = $nome_Marca;			
+		   }
+        }       
+
+        public function insert()
         {
             $mySQL = new MySQL;
             $mySQL->connect();
             $insertMarca = $mySQL->executeQuery("INSERT INTO Marca(nomeMarca) VALUES('".$nome_Marca."')");
         }
 
-        public static function update()
+        public function update()
         {
-            $mySQL = new MySQL;
+			$count = func_num_args();
+           
+		   if ($count == 1) 
+		   {
+			$novo_nome_Marca = func_get_arg(0);
+			$mySQL = new MySQL;
             $mySQL->connect();
-            $updateMarca = $mySQL->executeQuery("UPDATE Marca SET nomeMarca = ".$nome_Marca." WHERE id_Marca = ".$id_Marca."");
+            $updateMarca = $mySQL->executeQuery("UPDATE Marca SET nomeMarca = ".$novo_nome_Marca." WHERE id_Marca = ".$id_Marca."");				
+		   }            
         }
 
-        public static function delete()
+        public function delete()
         {
             $mySQL = new MySQL;
             $mySQL->connect();
             $deleteMarca = $mySQL->executeQuery("DELETE FROM Marca WHERE id_Marca = ".$id_Marca."");
         }
 
-        public static function select()
+        public function select()
         {
             $selectMarca = "SELECT * FROM Marca";
             $mySQL = new MySQL;
             $mySQL->connect();
-/*
+
             if (!empty($id_Marca))
             {
                 $selectMarca .= "WHERE id = ".$id_Marca." ";
-            }*/
+            }
 
             $result = $mySQL -> executeQuery($selectMarca);
             return($result);
