@@ -5,27 +5,31 @@
 
     class Modelo implements IModelo
     {
-		public $id_Modelo;
+
+        public $id_Modelo;
         public $id_Marca;
         public $nomeModelo;
-        
         private static $mySQL;
 
         public function __construct()
         {
-           $count = func_num_args();
-           
-		   if($count != 2) 
-		   {				
-			   echo "Número de parâmetros Incorreto";			   
-		   }		   
-		   if ($count == 2) 
-		   {
-				list($id__Marca, $nomeModelo) = func_get_args();
+            $count = func_num_args();
 
-				$this->id_Marca = $id_Marca;
-				$this->nomeModelo = $nomeModelo;			
-		   }
+            if ($count == 0)
+            {
+                
+            }
+            else if ($count != 2)
+            {
+                echo "Número de parâmetros Incorreto";
+            }
+            else if ($count == 2)
+            {
+                list($id__Marca, $nomeModelo) = func_get_args();
+
+                $this->id_Marca = $id_Marca;
+                $this->nomeModelo = $nomeModelo;
+            }
         }
 
         public function insert()
@@ -36,16 +40,16 @@
         }
 
         public function update()
-        {			
-		   $count = func_num_args();
-           
-			if ($count == 1)
-			{
-				$novonomeModelo = func_get_arg(0);
-				$mySQL = new MySQL;
-				$mySQL->connect();
-				$updateModelo = $mySQL->executeQuery("UPDATE modelo SET nomeModelo = '".$novonomeModelo."' WHERE nomeModelo = '".$nomeModelo."'");
-			}
+        {
+            $count = func_num_args();
+
+            if ($count == 1)
+            {
+                $novonomeModelo = func_get_arg(0);
+                $mySQL = new MySQL;
+                $mySQL->connect();
+                $updateModelo = $mySQL->executeQuery("UPDATE modelo SET nomeModelo = '".$novonomeModelo."' WHERE nomeModelo = '".$nomeModelo."'");
+            }
         }
 
         public function delete()

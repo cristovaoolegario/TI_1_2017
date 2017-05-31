@@ -12,21 +12,25 @@
 
         public function __construct()
         {
-           $count = func_num_args();
-           
-		   if ($count != 2) 
-		   {				
-				echo "Número de parâmetros Incorreto";
-		   }		   
-		   if ($count == 2) 
-		   {
+            $count = func_num_args();
 
-				list($id_Marca, $nome_Marca) = func_get_args();
+            if ($count == 0)
+            {
+                
+            }
+            else if ($count != 2)
+            {
+                echo "Número de parâmetros Incorreto";
+            }
+            else if ($count == 2)
+            {
 
-				$this->id_Marca = $id_Marca;
-				$this->nome_Marca = $nome_Marca;			
-		   }
-        }       
+                list($id_Marca, $nome_Marca) = func_get_args();
+
+                $this->id_Marca = $id_Marca;
+                $this->nome_Marca = $nome_Marca;
+            }
+        }
 
         public function insert()
         {
@@ -37,15 +41,15 @@
 
         public function update()
         {
-			$count = func_num_args();
-           
-		   if ($count == 1) 
-		   {
-			$novo_nome_Marca = func_get_arg(0);
-			$mySQL = new MySQL;
-            $mySQL->connect();
-            $updateMarca = $mySQL->executeQuery("UPDATE Marca SET nomeMarca = ".$novo_nome_Marca." WHERE id_Marca = ".$id_Marca."");				
-		   }            
+            $count = func_num_args();
+
+            if ($count == 1)
+            {
+                $novo_nome_Marca = func_get_arg(0);
+                $mySQL = new MySQL;
+                $mySQL->connect();
+                $updateMarca = $mySQL->executeQuery("UPDATE Marca SET nomeMarca = ".$novo_nome_Marca." WHERE id_Marca = ".$id_Marca."");
+            }
         }
 
         public function delete()
@@ -66,7 +70,7 @@
                 $selectMarca .= "WHERE id = ".$id_Marca." ";
             }
 
-            $result = $mySQL -> executeQuery($selectMarca);
+            $result = $mySQL->executeQuery($selectMarca);
             return($result);
         }
 

@@ -21,36 +21,35 @@
         public $id_Modelo;
         public $id_Usuario;
         public $preco;
-        
         private static $mySQL;
 
         public function __construct()
         {
-           $count = func_num_args();
-           if($count != 14)
-           {
-			   echo "Número de parâmetros Incorreto";
-		   }
-		   else
-		   {
-			   list($estado,$ano,$cor,$numPortas,$quilometragem,$cambio,$combustivel,
-			   $finalPlaca,$carroceria,$dtAnuncio,$id_Endereco,$id_Modelo,$id_Usuario,$preco) = func_get_args();
-			   
-			   $this->estado = $estado;
-			   $this->ano = $ano;
-			   $this->cor = $cor;
-			   $this->numPortas = $numPortas;
-			   $this->quilometragem = $quilometragem;
-			   $this->cambio = $cambio;
-			   $this->combustivel = $combustivel;
-			   $this->finalPlaca = $finalPlaca;
-			   $this->carroceria = $carroceria;
-			   $this->dtAnuncio = $dtAnuncio;
-			   $this->id_Endereco = $id_Endereco;
-			   $this->id_Modelo = $id_Modelo;
-			   $this->id_Usuario = $id_Usuario;
-			   $this->preco = $preco;
-		   }
+            $count = func_num_args();
+            if ($count != 14)
+            {
+                
+            }
+            else
+            {
+                list($estado, $ano, $cor, $numPortas, $quilometragem, $cambio, $combustivel,
+                        $finalPlaca, $carroceria, $dtAnuncio, $id_Endereco, $id_Modelo, $id_Usuario, $preco) = func_get_args();
+
+                $this->estado = $estado;
+                $this->ano = $ano;
+                $this->cor = $cor;
+                $this->numPortas = $numPortas;
+                $this->quilometragem = $quilometragem;
+                $this->cambio = $cambio;
+                $this->combustivel = $combustivel;
+                $this->finalPlaca = $finalPlaca;
+                $this->carroceria = $carroceria;
+                $this->dtAnuncio = $dtAnuncio;
+                $this->id_Endereco = $id_Endereco;
+                $this->id_Modelo = $id_Modelo;
+                $this->id_Usuario = $id_Usuario;
+                $this->preco = $preco;
+            }
         }
 
         public function insert()
@@ -96,7 +95,8 @@
 
             $result = $mySQL->executeQuery($selectAnuncio);
             return($result);
-        }       
+        }
+
     }
 
 ?>

@@ -25,7 +25,12 @@
         public function __construct()
         {
             $count = func_num_args();
-            if ($count != 11)
+            
+            if ($count == 0)
+            {
+                
+            }
+            else if ($count != 11)
             {
                 echo "Número de parâmetros Incorreto";
             }
