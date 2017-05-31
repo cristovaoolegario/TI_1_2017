@@ -21,7 +21,7 @@
 
         public static function select()
         {     
-			$usuario = new Usuario();       
+            $usuario = new Usuario();       
             $array = $usuario->select();
             $json = json_encode($array);
             echo $json;

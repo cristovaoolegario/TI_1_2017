@@ -1,7 +1,7 @@
 <?php
 
-    include('IModelo.php');
-    include('MySQL.php');
+    include_once('IModelo.php');
+    include_once('MySQL.php');
 
     class Marca implements IModelo
     {
