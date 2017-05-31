@@ -22,7 +22,8 @@
 
         public static function select()
         {
-            $array = Marca::select();
+            $marca = new Marca();
+            $array = $marca->select();
             $json = json_encode($array);
             echo $json;
         }

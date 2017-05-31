@@ -21,7 +21,8 @@
 
         public static function select()
         {            
-            $array = Anuncio::select();
+            $anuncio = new Anuncio();
+            $array = $anuncio->select();
             $json = json_encode($array);
             echo $json;
         }
