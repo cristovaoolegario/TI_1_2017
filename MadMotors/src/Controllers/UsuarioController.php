@@ -20,8 +20,9 @@
         }
 
         public static function select()
-        {            
-            $array = Usuario::select();
+        {     
+			$usuario = new Usuario();       
+            $array = $usuario->select();
             $json = json_encode($array);
             echo $json;
         }

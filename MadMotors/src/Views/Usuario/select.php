@@ -1,6 +1,5 @@
 <?php
-include('Usuario.php');
-$a = new Usuario;
-$a -> select();
+include '../../Controllers/UsuarioController.php';
 
+UsuarioController::select();
 ?>
