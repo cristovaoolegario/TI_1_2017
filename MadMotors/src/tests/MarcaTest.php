@@ -55,7 +55,12 @@
 		
 		public function testdelete()
 		{
-			//$this->assertNull($results);
+			$conn = $this->getConnection()->getConnection();
+			$query = $conn->query('DELETE FROM Marca WHERE id_Marca = 534');
+			$query = $conn->query('SELECT * FROM Marca WHERE id_Marca = 534'); 
+			$results = $query->fetchAll(PDO::FETCH_ASSOC); 
+			
+			$this->assertEmpty($results);			
 		}		
 	}
 	

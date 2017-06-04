@@ -53,8 +53,22 @@
 		
 		public function testdelete()
 		{
-					
-		}		
+			$conn = $this->getConnection()->getConnection();
+			$query = $conn->query('DELETE FROM Usuario WHERE id_Usuario = 1');
+			$query = $conn->query('SELECT * FROM Usuario WHERE id_Usuario = 1'); 
+			$results = $query->fetchAll(PDO::FETCH_ASSOC); 
+			
+			$this->assertEmpty($results);			
+		}
+		
+		public function testselect_by_name()
+		{
+			$conn = $this->getConnection()->getConnection();
+			$query = $conn->query('SELECT * FROM Usuario WHERE nomeUsuario = "Dylan Ward"');
+			$results = $query->fetchAll(PDO::FETCH_ASSOC);
+			 
+			$this->assertEquals('Dylan Ward',$results[0]['nomeUsuario']);
+		}
 	}
 	
 ?>

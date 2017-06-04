@@ -28,8 +28,7 @@
 			 $query = $conn->query('SELECT * FROM Endereco');
 			 $results = $query->fetchAll(PDO::FETCH_ASSOC);	 
 			 
-			 $this->assertEquals(1, $results[0]['id_Endereco']);
-			 
+			 $this->assertEquals(1, $results[0]['id_Endereco']);			 
 		}
 		
 		public function testinsert()
@@ -55,7 +54,12 @@
 		
 		public function testdelete()
 		{
-					
+			$conn = $this->getConnection()->getConnection();
+			$query = $conn->query('DELETE FROM Endereco WHERE id_Endereco = 2');
+			$query = $conn->query('SELECT * FROM Endereco WHERE id_Endereco = 2'); 
+			$results = $query->fetchAll(PDO::FETCH_ASSOC); 
+			
+			$this->assertEmpty($results);	
 		}		
 	}
 	

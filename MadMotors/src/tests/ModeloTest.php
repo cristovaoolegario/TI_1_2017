@@ -54,8 +54,13 @@
 		
 		public function testdelete()
 		{
-				
-		}
+			$conn = $this->getConnection()->getConnection();
+			$query = $conn->query('DELETE FROM Modelo WHERE id_Modelo = 5020');
+			$query = $conn->query('SELECT * FROM Modelo WHERE id_Modelo = 5020'); 
+			$results = $query->fetchAll(PDO::FETCH_ASSOC); 
+			
+			$this->assertEmpty($results);			
+		}	
 		
 		
 		

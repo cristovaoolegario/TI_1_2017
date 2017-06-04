@@ -13,7 +13,7 @@
 		<field name="estado">GO</field>
 		<field name="pais">Brazil</field>
 	</row>
-	<!--
+	
 	<row>
 		<field name="id_Endereco">2</field>
 		<field name="cep">51512</field>
@@ -24,7 +24,7 @@
 		<field name="estado">PE</field>
 		<field name="pais">Brazil</field>
 	</row>
-	<row>
+	<!--<row>
 		<field name="id_Endereco">3</field>
 		<field name="cep">65724</field>
 		<field name="rua">Anne K. Adams</field>

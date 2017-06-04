@@ -20,7 +20,7 @@
 		<field name="id_Usuario">45</field>
 		<field name="preco">414887</field>
 	</row>
-	<!--<row>
+	<row>
 		<field name="id_Anuncio">2</field>
 		<field name="estadoVeiculo">Usado</field>
 		<field name="ano">1955-03-25</field>
@@ -32,12 +32,12 @@
 		<field name="finalPlaca">2992</field>
 		<field name="tipoCarroceria">PickUp</field>
 		<field name="dataAnuncio">2017-02-28</field>
-		<field name="id_Endereco">38</field>
-		<field name="id_Modelo">755</field>
-		<field name="id_Usuario">90</field>
+		<field name="id_Endereco">20</field>
+		<field name="id_Modelo">1380</field>
+		<field name="id_Usuario">45</field>
 		<field name="preco">446313</field>
 	</row>
-	<row>
+	<!--<row>
 		<field name="id_Anuncio">3</field>
 		<field name="estadoVeiculo">Usado</field>
 		<field name="ano">1969-08-22</field>

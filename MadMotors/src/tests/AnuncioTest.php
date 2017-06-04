@@ -55,10 +55,12 @@
 		
 		public function testdelete()
 		{
+			$conn = $this->getConnection()->getConnection();
+			$query = $conn->query('DELETE FROM Anuncio WHERE id_Anuncio = 2');
+			$query = $conn->query('SELECT * FROM Anuncio WHERE id_Anuncio = 2'); 
+			$results = $query->fetchAll(PDO::FETCH_ASSOC); 
 			
-		}
-		
-		
-		
+			$this->assertEmpty($results);			
+		}		
 	}
 ?>
