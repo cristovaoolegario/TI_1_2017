@@ -18,6 +18,7 @@
     <!-- homeCtrl -->
     <script type="text/javascript" src="js/cadastroCtrl.js"></script>
 
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
   </head>
 
   <body ng-controller="cadastroCtrl">
@@ -97,13 +98,11 @@
 							</div>
 								<div class="col-md-3" style="margin-top:10px">	
 										<input class="form-control" style="margin-bottom:10px" type="text" ng-model="cadastro.usuarioID" name="usuarioID" placeholder="Usuário ID"/>
-										<select class="form-control" style="margin-bottom:10px" ng-model="cadastro.marca" name="marca" ng-change="carregarModelos(cadastro.marca)">
-										  <option value="">Selecione uma marca</option>
-										  <option ng-repeat="marca in marcas | orderBy:'nome'">{{marca.nomeMarca}}</option>								  
+										<select class="form-control" style="margin-bottom:10px" ng-model="cadastro.marca" ng-options="marca.nomeMarca for marca in marcas" name="marca" ng-change="carregarModelos(cadastro.marca)">
+										  <option value="">Selecione uma marca</option>								  
 										</select>								
-										<select class="form-control" style="margin-bottom:10px" ng-disabled="!cadastro.marca">								
-										  <option value="">Selecione uma modelo</option>								
-										  <option ng-repeat="modelo in modelos | orderBy:'nome'">{{modelo.nomeModelo}}</option>								  
+										<select class="form-control" style="margin-bottom:10px"  ng-model="cadastro.modelo" ng-disabled="!cadastro.marca" ng-options="modelo.nomeModelo for modelo in modelos">								
+										  <option value="">Selecione uma modelo</option>													  
 										</select>								
 										<input class="form-control" style="margin-bottom:10px" type="text" ng-model="cadastro.cor" name="cor" placeholder="Cor"/>								
 										<input class="form-control" style="margin-bottom:10px" type="text" ng-model="cadastro.portas" name="portas" placeholder="Portas"/>								
@@ -138,7 +137,7 @@
 					<div class="row">
 						<div style="text-align: center; margin-top:50px"> 
 						
-							<button class="btn btn-primary" type="submit" ng-click="cadastrar" ng-disabled="!cadastro.modelo || !cadastro.estado || !cadastro.marca || !cadastro.ano || !cadastro.cor || !cadastro.portas
+							<button class="btn btn-primary" type="submit" ng-click="cadastrar(cadastro)" ng-disabled="!cadastro.marca || !cadastro.modelo || !cadastro.estado || !cadastro.ano || !cadastro.cor || !cadastro.portas
 							|| !cadastro.km || !cadastro.cambio || !cadastro.combustivel || !cadastro.carroceria || !cadastro.localizacao">Cadastrar Anuncio</button>
 							
 							<button class="btn btn-primary" type="submit" style="margin-left:150px">Cancelar</button>

@@ -1,32 +1,33 @@
 angular.module("madmotors", []);
-angular.module("madmotors").controller("cadastroCtrl", function($scope, $http)
-{  
-	
-	$scope.marcas = [];
+angular.module("madmotors").controller("cadastroCtrl", function ($scope, $http)
+{
 
-	$scope.cambios = [
-	{nome: "MANUAL"},
-	{nome: "AUTOMATICO"},
-	{nome: "SEMI AUTOMATICO"},
-	{nome: "CVT"}
-	];
-
-	$scope.carrocerias = [
-	{nome: "SEDAN"},
-	{nome: "HATCH"},
-	{nome: "PERUA"},
-	{nome: "MPV"},
-	{nome: "COUPÉ"},
-	{nome: "SUV"},
-	{nome: "JIPE"},
-	{nome: "CROSSOVER"},
-	{nome: "PICAPE"},
-	{nome: "CAMINHONETE"}
-	];
-
-	$scope.Anuncios = [];
-
+    $scope.marcas = [];
+    $scope.modelos = [];
     
+    $scope.cambios = [
+        {nome: "MANUAL"},
+        {nome: "AUTOMATICO"},
+        {nome: "SEMI AUTOMATICO"},
+        {nome: "CVT"}
+    ];
+
+    $scope.carrocerias = [
+        {nome: "SEDAN"},
+        {nome: "HATCH"},
+        {nome: "PERUA"},
+        {nome: "MPV"},
+        {nome: "COUPÉ"},
+        {nome: "SUV"},
+        {nome: "JIPE"},
+        {nome: "CROSSOVER"},
+        {nome: "PICAPE"},
+        {nome: "CAMINHONETE"}
+    ];
+
+    $scope.Anuncios = [];
+
+
     $scope.carregarMarcas = function ()
     {
         var req = {// variavel para que se faça a requisição ao backend
@@ -43,15 +44,40 @@ angular.module("madmotors").controller("cadastroCtrl", function($scope, $http)
         });
     };
     
-    
-	$scope.cadastrarAnuncio = function(cadastro) {
+    $scope.carregarModelos = function (marca)
+    {
+        var req = {// variavel para que se faça a requisição ao backend
+            method: 'GET',
+            url: './src/Views/modelo/select.php',
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        };
 
-		//console.log(cadastro);
-		delete $scope.cadastro;
-		$scope.cadastroForm.$setPristine();
-		
-	}
-    
+        $http(req).then(function success(response)
+        {
+            $scope.modelos = response.data;
+        });/*
+        console.log(marca);
+        $.ajax({
+            type: 'POST',
+            data: marca,
+            url: './src/Views/Modelo/select.php',
+            success: function(data) 
+            {
+                console.log(data);
+                $scope.modelos = data;
+            }
+        });*/
+    };
+
+    $scope.cadastrar = function (cadastro) {
+        console.log($scope.cadastro);
+        delete $scope.cadastro;
+        $scope.cadastroForm.$setPristine();
+
+    }
+
     $scope.carregarMarcas();
-    
+
 });

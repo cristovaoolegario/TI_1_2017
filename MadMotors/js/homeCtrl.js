@@ -60,20 +60,6 @@ angular.module("madmotors").controller("homeCtrl", function ($scope, $http)
 
     };*/
 
-    var cadastrarAnuncio = function (cadastro)
-    {
-        console.log(cadastro);
-        /*
-        $http.post("", cadastro).success(function (data)
-        {
-            delete $scope.cadastro;
-
-        }).error(function (data, status)
-        {
-            $scope.message = "Aconteceu um problema: " + data;
-        });
-*/
-    };
 
     carregarMarcas();
     carregarAnuncio();
