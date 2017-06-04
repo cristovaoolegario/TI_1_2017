@@ -53,14 +53,14 @@
         {
             $mySQL = new MySQL;
             $mySQL->connect();
-            $insereEndereco = $mySQL->executaQuery("UPDATE Endereco SET cep = ".$cep.", rua = '".$rua."', bairro = '".$bairro."', numero = ".$numero.", cidade = '".$cidade."', estado = '".$estado."', pais = '".$pais."' WHERE id = ".$id."");
+            $insereEndereco = $mySQL->executaQuery("UPDATE Endereco SET cep = ".$cep.", rua = '".$rua."', bairro = '".$bairro."', numero = ".$numero.", cidade = '".$cidade."', estado = '".$estado."', pais = '".$pais."' WHERE id_Endereco = ".$id."");
         }
 
         public function delete()
         {
             $mySQL = new MySQL;
             $mySQL->connect();
-            $deleteEndereco = $mySQL->executeQuery("DELETE FROM Endereco WHERE id = ".$id."");
+            $deleteEndereco = $mySQL->executeQuery("DELETE FROM Endereco WHERE id_Endereco = ".$id."");
         }
 
         public function select()
@@ -72,7 +72,7 @@
 
             if (!empty($id))
             {
-                $selectEndereco .= "WHERE id = ".$id." ";
+                $selectEndereco .= "WHERE id_Endereco = ".$id." ";
             }
 
             $result = $mySQL->executeQuery($selectEndereco);
