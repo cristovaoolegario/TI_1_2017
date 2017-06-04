@@ -1,4 +1,5 @@
 <?php
+
     include '../../Models/Usuario.php';
 
     class UsuarioController
@@ -36,18 +37,21 @@
             echo $json;
         }
         
-        public static function autenticacao()
+        public static function autenticacao($usuario)
         {
-            $data = json_decode(file_get_contents("php://input"));
-            $login = $data->login;
-            $senha = $data->senha;
+            $login = $usuario['login'];
+            $senha = $usuario['senha'];
                        
             // session_start inicia a sessão
             session_start();
+                 
+            $cliente = new Usuario();
+            
+            $cliente->nome = $login;
                         
-            $result = Usuario::select_by_name($login);
+            $result = $cliente->select_by_name($cliente->nome);
           
-            if(mysql_num_rows ($result) > 0 )
+            if(!empty($result))
             {
                 $_SESSION['login'] = $login;
                 $_SESSION['senha'] = $senha;
@@ -57,5 +61,5 @@
                 unset ($_SESSION['login']);
                 unset ($_SESSION['senha']);
             }
-        }       
+        }
     }

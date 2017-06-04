@@ -9,7 +9,7 @@
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <!-- Customs CSS -->
     <link href="css/modern-business.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
     <!-- AngularJS (obrigatório para utilizar o AngularJS -->
     <script type="text/javascript" src="js/angular.min.js"></script>
@@ -91,9 +91,9 @@
             <div class="register span6">
                 <form name="usuarioForm">
 		    <h2>Entrar <span class="red"><strong>MadMotors</strong></span></h2>	   
-                    <input class="iconed email form-control" style="text-align:center; margin-left:auto; margin-right:auto; margin-bottom:10px" type="text" ng-model="login" name="login" placeholder="Usuário">
-		    <input class="form-control" style="text-align:center; margin-left:auto; margin-right:auto; margin-bottom:10px" type="password" ng-model="senha" name="senha" placeholder="Senha">
-                    <input class="btn btn-primary form-control" style="text-align:center; color:white;" type="submit" name="entrar" value="Entrar" ng-click="(iniciarSessao(usuarioForm))">
+                    <input class="iconed email form-control" style="text-align:center; margin-left:auto; margin-right:auto; margin-bottom:10px" type="text" ng-model="usuario.login" name="login" placeholder="Usuário">
+		    <input class="form-control" style="text-align:center; margin-left:auto; margin-right:auto; margin-bottom:10px" type="password" ng-model="usuario.senha" name="senha" placeholder="Senha">
+                    <input class="btn btn-primary form-control" style="text-align:center; color:white;" type="submit" name="entrar" value="Entrar" ng-click="(iniciarSessao(usuario))">
                 </form>
           </div>
         </div>

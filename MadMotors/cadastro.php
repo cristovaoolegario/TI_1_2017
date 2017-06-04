@@ -151,8 +151,8 @@
 					<div class="row">
 						<div style="text-align: center; margin-top:50px"> 
 						
-							<button class="btn btn-primary" type="submit" ng-click="cadastrar" ng-disabled="!cadastro.modelo || !cadastro.estado || !cadastro.marca || !cadastro.ano || !cadastro.cor || !cadastro.portas
-							|| !cadastro.km || !cadastro.cambio || !cadastro.combustivel || !cadastro.carroceria || !cadastro.localizacao">Cadastrar Anuncio</button>
+							<button class="btn btn-primary" type="submit" ng-click="cadastrar(cadastro)" ng-disabled="!cadastro.marca || !cadastro.modelo || !cadastro.estado || !cadastro.ano || !cadastro.cor || !cadastro.numPortas
+							|| !cadastro.quilometragem || !cadastro.cambio || !cadastro.combustivel || !cadastro.carroceria || !cadastro.localizacao">Cadastrar Anuncio</button>
 							
 							<button class="btn btn-primary" type="submit" style="margin-left:150px">Cancelar</button>
 							
