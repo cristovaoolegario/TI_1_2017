@@ -87,7 +87,7 @@
             return($result);
         }
               
-        public static function select_by_name($name)
+        public function select_by_name($name)
         {
             $selectUsuario = "SELECT * FROM Usuario WHERE nomeUsuario = '".$name."'";
             
@@ -104,4 +104,5 @@
         }
 
     }
+
 ?>

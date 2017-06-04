@@ -39,10 +39,10 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
                         <li>
-                            <a href="about.html"><i class="fa fa-user"></i> Login</a>
+                            <a href="login.html"><i class="fa fa-user"></i> Login</a>
                         </li>
                         <li>
-                            <a href="cadastro.html">Cadastrar</a>
+                            <a href="cadastro.php"><i class="fa fa-pencil"></i> Cadastrar</a>
                         </li>
                     </ul>
                 </div>
@@ -98,7 +98,7 @@
                             <div class="col-lg-4" style="margin-top:10px">
                                 <select class="form-control">
                                     <option value="">Selecione uma marca</option>
-                                    <option ng-repeat="marca in marcas| orderBy:'nome'">{{marca.nome}}</option>
+                                    <option ng-repeat="marca in marcas| orderBy:'nome'">{{marca.nomeMarca}}</option>
                                 </select>
                             </div>
                             <div class="col-lg-8" style="margin-top:10px">
@@ -114,7 +114,7 @@
                             <div class="col-lg-4" style="margin-top:10px">
                                 <select class="form-control">
                                     <option value="">Selecione um modelo</option>
-                                    <option ng-repeat="modelo in modelos| orderBy:'nome'">{{modelo.nome}}</option>
+                                    <option ng-repeat="modelo in modelos| orderBy:'nome'">{{modelo.nomeModelo}}</option>
                                 </select>
                             </div>
                             <div class="col-lg-4" style="margin-top:10px">
