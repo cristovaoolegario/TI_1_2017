@@ -4,19 +4,28 @@
     class UsuarioController
     {
 
-        public function insert()
+        public static function insert($nome,$sexo,$dtNascimento,$rg,$nacionalidade,$naturalidade,$email,$foto,$telefone1,$telefone2,$idEndereco)
         {
-            
+            $usuario = new Usuario($nome, $sexo, $dtNascimento, $rg, $nacionalidade, $naturalidade, $email, $foto,$telefone1, $telefone2, $idEndereco);       
+            $array = $usuario->insert();
+            $json = json_encode($array);
+            echo $json;
         }
 
-        public function update()
+        public static function update($nome, $sexo, $dtNascimento, $rg, $nacionalidade, $naturalidade, $email, $foto,$telefone1, $telefone2, $idEndereco)
         {
-            
+            $usuario = new Usuario($nome, $sexo, $dtNascimento, $rg, $nacionalidade, $naturalidade, $email, $foto,$telefone1, $telefone2, $idEndereco);       
+            $array = $usuario->update();
+            $json = json_encode($array);
+            echo $json;
         }
 
-        public function delete()
+        public static function delete($nome, $sexo, $dtNascimento, $rg, $nacionalidade, $naturalidade, $email, $foto,$telefone1, $telefone2, $idEndereco)
         {
-            
+            $usuario = new Usuario($nome, $sexo, $dtNascimento, $rg, $nacionalidade, $naturalidade, $email, $foto,$telefone1, $telefone2, $idEndereco);       
+            $array = $usuario->delete();
+            $json = json_encode($array);
+            echo $json;
         }
 
         public static function select()

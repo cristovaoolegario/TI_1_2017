@@ -55,7 +55,10 @@
 		{
 			$conn = $this->getConnection()->getConnection();
 			$query = $conn->query('DELETE FROM Usuario WHERE id_Usuario = 1');
-			$query = $conn->query('SELECT * FROM Usuario WHERE id_Usuario = 1'); 
+			$query = $conn->query('SELECT * FROM Usuario WHERE id_Usuario = 1');			
+			/* ERROS
+			 * $query = $conn->query('DELETE FROM Usuario WHERE id_Usuario = 1500');
+			$query = $conn->query('SELECT * FROM Usuario WHERE id_Usuario = 1500');*/			
 			$results = $query->fetchAll(PDO::FETCH_ASSOC); 
 			
 			$this->assertEmpty($results);			

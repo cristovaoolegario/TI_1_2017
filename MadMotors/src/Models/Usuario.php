@@ -36,7 +36,7 @@
             }
             else
             {
-                list($nome, $sexo, $dtNascimento, $rg, $nacionalidade, $naturalidade, $email, $telefone1, $telefone2, $idEndereco) = func_get_args();
+                list($nome, $sexo, $dtNascimento, $rg, $nacionalidade, $naturalidade, $email, $foto, $telefone1, $telefone2, $idEndereco) = func_get_args();
                 $this->nome = $nome;
                 $this->sexo = $sexo;
                 $this->dtNascimento = $dtNascimento;
@@ -44,6 +44,7 @@
                 $this->nacionalidade = $nacionalidade;
                 $this->naturalidade = $naturalidade;
                 $this->email = $email;
+                $this->foto = $foto;
                 $this->telefone1 = $telefone1;
                 $this->telefone2 = $telefone2;
                 $this->idEndereco = $idEndereco;

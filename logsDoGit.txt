@@ -1,0 +1,702 @@
+commit 83cd0a6363842689bb7648f4f5edbd8227795707
+Author: cristovaoolegario <cristovaoolegario@gmail.com>
+Date:   Sun Jun 4 01:21:48 2017 -0300
+
+    Adição das funções para autenticação de usuários.
+
+commit a6575216ce374adf84f3618c8609561222743a73
+Author: Franco Birro Godinho <fbirro@br.ibm.com>
+Date:   Sat Jun 3 15:35:23 2017 -0300
+
+    Teste de Compatibilidade
+
+commit af9b6525df77558a559453e3d01619087397e2ff
+Author: Franco Birro Godinho <fbirro@br.ibm.com>
+Date:   Sat Jun 3 13:22:42 2017 -0300
+
+    Mudanças no Plano de test
+    
+    Prints dos clientes do git, e criação dacapa do trabalho
+
+commit 668c354ec625a9d98aa0d6eb0bb4d2683feec1d0
+Author: cristovaoolegario <cristovaoolegario@gmail.com>
+Date:   Sat Jun 3 13:07:44 2017 -0300
+
+    Adição da dependecia Selenium no arquivo composer.json
+
+commit 7227cb60fbfaf7317af98aebdb6d26794e402017
+Author: cristovaoolegario <cristovaoolegario@gmail.com>
+Date:   Fri Jun 2 18:36:28 2017 -0300
+
+    Adição do arquivo para iniciar o servidor selenium.
+
+commit 906cc1645366771021af43bbec42e0f921f0d7ab
+Author: Pedro Duarte <pedrolu.duarte@gmail.com>
+Date:   Wed May 31 17:48:20 2017 -0300
+
+    Alteração "sobrecarga de métodos" - retorno parametros errados
+
+commit da41b0b4104fa3383e66efa6bd1cb6bbdeca5cae
+Author: Pedro Duarte <pedrolu.duarte@gmail.com>
+Date:   Wed May 31 17:22:19 2017 -0300
+
+    Mudando "include" para "include_once" nas classes de Modelo
+
+commit ccc9e922f41d2d3e9f4baa2e3cf9b92f9ea51338
+Author: cristovaoolegario <cristovaoolegario@gmail.com>
+Date:   Wed May 31 00:26:10 2017 -0300
+
+    Chamada de controle para Usuário.
+
+commit 9707b2d1bc007a03c83cfd93229f2b932312421d
+Author: cristovaoolegario <cristovaoolegario@gmail.com>
+Date:   Wed May 31 00:21:05 2017 -0300
+
+    Remoção de arquivos relacionados a revendedora.
+
+commit a8330c918076a92506674f308a560f53558012e8
+Author: Pedro Duarte <pedrolu.duarte@gmail.com>
+Date:   Wed May 31 00:14:05 2017 -0300
+
+    Chamada controle de Anuncio, Endereço, Marca e Modelo
+
+commit 2e002902dcd7d5afd45b6deeb8d284752cc40e03
+Author: cristovaoolegario <cristovaoolegario@gmail.com>
+Date:   Tue May 30 20:56:04 2017 -0300
+
+    Mudança dos métodos da classe Usuario para de instância a adição de overloading do construtor.
+
+commit b7210c39f828f7d9e910f70e3996c50f96293472
+Author: cristovaoolegario <cristovaoolegario@gmail.com>
+Date:   Tue May 30 20:55:17 2017 -0300
+
+    Atualização do documento de Plano de Testes.
+
+commit 78f1107b7d81169a84aab51b0713d2927d2993c9
+Author: cristovaoolegario <cristovaoolegario@gmail.com>
+Date:   Tue May 30 20:33:23 2017 -0300
+
+    Atualização no construtor.
+
+commit 22554b177e18b6ed52e6143b13466085c5b9ae65
+Author: cristovaoolegario <cristovaoolegario@gmail.com>
+Date:   Tue May 30 20:31:47 2017 -0300
+
+    Mudança dos métodos da classe Anuncio para de instância a adição de overloading do construtor.
+
+commit cabc6977ce4f4d1feeee542bc4e8b553be08dc9b
+Author: cristovaoolegario <cristovaoolegario@gmail.com>
+Date:   Tue May 30 20:30:11 2017 -0300
+
+    Atualização na classe Endereço.
+
+commit 789bbf79ef05965fbbddc767f6226875aab7858b
+Author: cristovaoolegario <cristovaoolegario@gmail.com>
+Date:   Tue May 30 20:10:49 2017 -0300
+
+    Mudança dos métodos da classe Endereco para de instância a adição de overloading do construtor.
+
+commit 35f83720299ef56628e63d179c8b4396e9f08a79
+Author: cristovaoolegario <cristovaoolegario@gmail.com>
+Date:   Tue May 30 20:10:08 2017 -0300
+
+    Atualização da classe Modelo.
+
+commit 2f17994e44067c627bf1cd95b572b3a76290bfbe
+Author: cristovaoolegario <cristovaoolegario@gmail.com>
+Date:   Tue May 30 10:16:37 2017 -0300
+
+    Mudança dos métodos da classe Modelo para de instância a adição de overloading do construtor.
+
+commit de845c6a6ff3eb87381a2d730401d0e0dd6f9bf5
+Author: cristovaoolegario <cristovaoolegario@gmail.com>
+Date:   Tue May 30 09:57:12 2017 -0300
+
+    Mudança dos métodos da classe Marca para de instância a adição de overloading do construtor.
+
+commit b0ce1ffece3438e71c71da07f946e99d0483774d
+Author: cristovaoolegario <cristovaoolegario@gmail.com>
+Date:   Tue May 30 09:56:09 2017 -0300
+
+    Mudança das tags static da interface IModelo.
+
+commit f3394ac80593828f306dc597e9e2cbe9ae103ab9
+Author: cristovaoolegario <cristovaoolegario@gmail.com>
+Date:   Tue May 30 08:11:32 2017 -0300
+
+    Remoção do diretório de Revendedora do diretório Views.
+
+commit eff01df9ad93573c043caa96095bfb3a7bf9df37
+Author: cristovaoolegario <cristovaoolegario@gmail.com>
+Date:   Tue May 30 08:10:10 2017 -0300
+
+    Adição do diretório para armazenamento dos relatórios e dos resuldados, além do acrescimo do resultado dos testes de Unidade.
+
+commit 1c0f77cc05d4d313f09f38e784d4c2f4223175fe
+Author: cristovaoolegario <cristovaoolegario@gmail.com>
+Date:   Tue May 30 08:09:09 2017 -0300
+
+    Correção dos arquivos php e xml para a execução dos testes de unidade mais rapidamente.
+
+commit 9b59c39fd4525dca5d1fd071b03607a53c8290a9
+Author: cristovaoolegario <cristovaoolegario@gmail.com>
+Date:   Mon May 29 17:44:47 2017 -0300
+
+    Adição do Teste Unitário para a classe Endereço completo.
+
+commit 034fdcfce4d8f7cc2220c19929c0efb4e453910c
+Author: cristovaoolegario <cristovaoolegario@gmail.com>
+Date:   Mon May 29 17:44:19 2017 -0300
+
+    Adição do comentário no arquivo .xml para fazer o teste rodar mais rápido.
+
+commit 61dc01c41514d924070e99f3c44b0e03dd07c8ed
+Author: cristovaoolegario <cristovaoolegario@gmail.com>
+Date:   Mon May 29 17:42:52 2017 -0300
+
+    Adição do Teste Unitário para a classe Modelo completo.
+
+commit 22f9b2a613561bb878029d1b1f7c9ba4e9b7ed7c
+Author: cristovaoolegario <cristovaoolegario@gmail.com>
+Date:   Mon May 29 17:41:48 2017 -0300
+
+    Correção do teste de Select para a classe MarcaTest.
+
+commit befde0b7bcbbf9f9eac7ddc7649bfab496aca487
+Author: cristovaoolegario <cristovaoolegario@gmail.com>
+Date:   Mon May 29 17:26:34 2017 -0300
+
+    Adição do Teste Unitário para a classe Marca completo.
+
+commit 771e797509f65a7265eedfd35416b697980293a2
+Author: cristovaoolegario <cristovaoolegario@gmail.com>
+Date:   Mon May 29 16:53:24 2017 -0300
+
+    Remoção da classe Revendedora do Modelo.
+
+commit f44e47bd18f5a2df902b160b39c540748c64cb50
+Author: cristovaoolegario <cristovaoolegario@gmail.com>
+Date:   Mon May 29 16:52:54 2017 -0300
+
+    Correção nos CREATE TABLE das tabelas Usuario e Anuncio.
+
+commit d831c43c84045545668055bdfb93166aaa7cb215
+Author: cristovaoolegario <cristovaoolegario@gmail.com>
+Date:   Mon May 29 16:52:13 2017 -0300
+
+    Adição do Teste Unitário para a classe Anuncio completo.
+
+commit 07377c0ca61772d0a66bde74bbe26ac0f7b366e0
+Author: cristovaoolegario <cristovaoolegario@gmail.com>
+Date:   Mon May 29 16:51:22 2017 -0300
+
+    Adição do Teste Unitário para a classe Usuário completo.
+
+commit 255b586afe52a81f3b8a61a9ef9bfc6473335e59
+Author: cristovaoolegario <cristovaoolegario@gmail.com>
+Date:   Mon May 29 10:21:53 2017 -0300
+
+    UsuarioTest em funcionamento
+    
+    Fiz mágica, mas ainda falta o teste de deletar usuário.
+
+commit 112b88c81c9812d0ea21ac48e5a5bd3cb2988ef8
+Author: Diogo Lourenço Pereira <diogo-lp@hotmail.com.br>
+Date:   Sun May 28 20:49:23 2017 -0300
+
+    Atualização da tela de cadastro e separação dos controllers da tela principal e de cadastro.
+
+commit c2b7ac88916441f7f0365848d66694fd49fd8d68
+Author: cristovaoolegario <cristovaoolegario@gmail.com>
+Date:   Sun May 28 13:22:07 2017 -0300
+
+    Correção da extensão do arquivo com os resultados dos testes de unidade
+
+commit 27c1b004c655de7c62508239414d4955aeba0357
+Author: cristovaoolegario <cristovaoolegario@gmail.com>
+Date:   Sun May 28 01:17:53 2017 -0300
+
+    Resultado dos testes de Unidade com phpUnit
+
+commit 249a8e3f023b8d1d2209b901665b9c4e74c97ba9
+Author: cristovaoolegario <cristovaoolegario@gmail.com>
+Date:   Sun May 28 00:49:34 2017 -0300
+
+    Adição de um comentário explicativo sobre a função 'mysqldump'
+
+commit 4174e23eec1532f2a6947382da5392fa1d936f0e
+Author: cristovaoolegario <cristovaoolegario@gmail.com>
+Date:   Sun May 28 00:48:18 2017 -0300
+
+    Correção dos dados de inserção no banco
+
+commit 412b4aa455f78c250b97c598421d3151db5b5cad
+Author: cristovaoolegario <cristovaoolegario@gmail.com>
+Date:   Sat May 27 17:02:03 2017 -0300
+
+    Adição dos arquivos para utilzação do phpUnit
+
+commit 58086f6dc3b3648c74de97a1154e50a22e8430cd
+Author: Diogo Lourenço <diogo-lp@hotmail.com.br>
+Date:   Sat May 27 15:16:42 2017 -0300
+
+    Att tela de cadastro
+
+commit e1899d78308b3d5c72acbd9c6da7a7636d1c1a34
+Author: cristovaoolegario <cristovaoolegario@gmail.com>
+Date:   Sat May 27 02:06:01 2017 -0300
+
+    Adição das classes de teste para Testes Unitários com phpUnit
+
+commit 7de9984d04db65bf8e81f55c30cac27c596203b1
+Merge: a4033db 877e875
+Author: Pedro Duarte <pedrolu.duarte@gmail.com>
+Date:   Fri May 26 23:03:16 2017 -0300
+
+    Merge branch 'master' of https://github.com/cristovaoolegario/TI_1_2017
+
+commit a4033dba2fad891fc56e904ea6181280de468bf7
+Author: Pedro Duarte <pedrolu.duarte@gmail.com>
+Date:   Fri May 26 23:02:56 2017 -0300
+
+    Colocando anuncios do banco na tela inicial. Alteração arquivo de insert na tabela de anuncios.
+
+commit 877e875fcf8505ed72118d7d33356afb1c56aaf9
+Author: Franco Birro Godinho <fbirro@br.ibm.com>
+Date:   Fri May 26 18:49:56 2017 -0300
+
+    Telas finais
+    
+    Adicionadas telas de noticias, loja, e correção de telas de cadastro e
+    visualização de anuncio.
+
+commit 66680adaaed011158da61ed208a93f9bdda7bb34
+Author: Cristóvão Olegário <cristovaoolegario@gmail.com>
+Date:   Fri May 26 08:18:12 2017 -0300
+
+    Adição do Plano de Testes
+
+commit 63cd36bc62107220c7b4e0a0574c9924ace7e78f
+Author: cristovaoolegario <cristovaoolegario@gmail.com>
+Date:   Thu May 25 21:19:19 2017 -0300
+
+    Revert "Revert "Select All para Usuário""
+    
+    This reverts commit cac390b454a59ba1c0075ec25bdbcef7448c76f8.
+
+commit 488e09e11da484889f9cd2cde675434534a85aaa
+Author: cristovaoolegario <cristovaoolegario@gmail.com>
+Date:   Thu May 25 21:18:48 2017 -0300
+
+    Revert "Revert "Select All para Revendedora""
+    
+    This reverts commit 8645aa1b4e7b08a0d1c136ffd520c742db8e3ddc.
+
+commit cac390b454a59ba1c0075ec25bdbcef7448c76f8
+Author: cristovaoolegario <cristovaoolegario@gmail.com>
+Date:   Thu May 25 21:19:19 2017 -0300
+
+    Revert "Select All para Usuário"
+    
+    This reverts commit f0167dc47201c5c228b45d30bda7556cc86b70ee.
+
+commit 8645aa1b4e7b08a0d1c136ffd520c742db8e3ddc
+Author: cristovaoolegario <cristovaoolegario@gmail.com>
+Date:   Thu May 25 21:18:48 2017 -0300
+
+    Revert "Select All para Revendedora"
+    
+    This reverts commit 9bf438a5fc0646c2f2c83cba6e5168d8657b95ec.
+
+commit f0167dc47201c5c228b45d30bda7556cc86b70ee
+Author: cristovaoolegario <cristovaoolegario@gmail.com>
+Date:   Thu May 25 21:19:19 2017 -0300
+
+    Select All para Usuário
+
+commit 9bf438a5fc0646c2f2c83cba6e5168d8657b95ec
+Author: cristovaoolegario <cristovaoolegario@gmail.com>
+Date:   Thu May 25 21:18:48 2017 -0300
+
+    Select All para Revendedora
+
+commit 039089c4db84d2dc25b819b6a94009e35c68b0c2
+Author: Pedro Duarte <pedrolu.duarte@gmail.com>
+Date:   Thu May 25 20:38:21 2017 -0300
+
+    Select All de Modelo (View, Model e Controller)
+
+commit 592b8103da1b0d90dfe021882044b51dbb1e7654
+Author: Pedro Duarte <pedrolu.duarte@gmail.com>
+Date:   Thu May 25 20:29:00 2017 -0300
+
+    Select All para Endereço (Model, View, Controller)
+
+commit d063d680872d8ae560466e414bcaf38235c3a2b9
+Author: Pedro Duarte <pedrolu.duarte@gmail.com>
+Date:   Thu May 25 20:19:05 2017 -0300
+
+    Select all para Anuncio (Model, View e Controller)
+
+commit 9939cb5631dae89b59ef5f7d2d31bb6ea146bc28
+Author: Pedro Duarte <pedrolu.duarte@gmail.com>
+Date:   Thu May 25 19:52:16 2017 -0300
+
+    Correção variável que recebe os resultados da consulta do banco
+
+commit c261bdb730281ba6aa61c0c0549537c9dba86192
+Author: cristovaoolegario <cristovaoolegario@gmail.com>
+Date:   Thu May 25 18:29:17 2017 -0300
+
+    Adição dos metodos selects em suas respectivas classes controllers
+
+commit 2109acf32e08e83f439a7a425d783e9c93e3fe21
+Author: cristovaoolegario <cristovaoolegario@gmail.com>
+Date:   Thu May 25 08:13:02 2017 -0300
+
+    Correções de '.' e de funções static
+
+commit 32f01a0d15a1199d969929cf68f5c80add3eba0a
+Author: cristovaoolegario <cristovaoolegario@gmail.com>
+Date:   Thu May 25 07:49:30 2017 -0300
+
+    Correções no SQL das funções
+
+commit 52bd7003255509009c6c5685936ba46051cff624
+Author: cristovaoolegario <cristovaoolegario@gmail.com>
+Date:   Thu May 25 00:33:52 2017 -0300
+
+    Criação e correção dos métodos php para a manipulação de dados do BD
+
+commit 9c19ce3248a9a067235779b67b34807819deb2bd
+Author: cristovaoolegario <cristovaoolegario@gmail.com>
+Date:   Wed May 24 22:02:33 2017 -0300
+
+    Auto stash before merge of "master" and "origin/master"
+
+commit fee2cc0c012ba2a9c4083f00d676f95161852911
+Author: Pedro Duarte <pedrolu.duarte@gmail.com>
+Date:   Wed May 24 21:58:30 2017 -0300
+
+    Criação Controllers
+
+commit 5453583e337910bb896256603195c45f6cf63652
+Author: Pedro Duarte <pedrolu.duarte@gmail.com>
+Date:   Wed May 24 21:50:56 2017 -0300
+
+    Função para retornar todos os dados de Marca (MVC)
+
+commit 36a225c2c9921523c42ad62733ce1c55cae44813
+Author: Pedro Duarte <pedrolu.duarte@gmail.com>
+Date:   Wed May 24 18:37:47 2017 -0300
+
+    Restruturação edentação arquivos. Refatoração nomes de pastas e arquivos. Adição netbeans no gitignore. Correção erros php nos modelos.
+
+commit b18918f8d96f23a533ddaa7e18f3e65c020a3f8a
+Author: PC-\Diogo <diogo-lp@hotmail.com.br>
+Date:   Tue May 23 23:32:17 2017 -0300
+
+    Atualização do index com aplicação do angular e desenvolvimento da tela de cadastro
+
+commit 0868c93257387729f7f7271b81a02573490aaf44
+Author: cristovaoolegario <cristovaoolegario@gmail.com>
+Date:   Tue May 23 21:23:45 2017 -0300
+
+    Criação dos diretórios para a organização das Views
+
+commit 1b80ed92062bbf12b4d89ba70e561df3526aac9e
+Author: cristovaoolegario <cristovaoolegario@gmail.com>
+Date:   Tue May 23 21:07:47 2017 -0300
+
+    Criação do diretório para a organização de MVC
+
+commit 37680c4571533983ca5d747f5f6f71f58cc8c1ed
+Author: cristovaoolegario <cristovaoolegario@gmail.com>
+Date:   Tue May 23 20:58:09 2017 -0300
+
+    Adição das Views das Classes php
+
+commit 9b4601bbafa3c228b6ec3654c09c03b1ffa18d57
+Author: cristovaoolegario <cristovaoolegario@gmail.com>
+Date:   Tue May 23 20:52:20 2017 -0300
+
+    Criação da primeira View
+
+commit bfea7d9a0732c4e0d0445f7815fa3740228d00dc
+Author: Franco Birro Godinho <fbirro@br.ibm.com>
+Date:   Tue May 23 17:06:15 2017 -0300
+
+    Mais uma correção de telas
+
+commit 328da5213038512201785f4f9e7c7c167efd92d1
+Author: Franco Birro Godinho <fbirro@br.ibm.com>
+Date:   Tue May 23 10:04:37 2017 -0300
+
+    Ajustes das telas
+    
+    Adicionadas mais transições e correção de escala.
+
+commit d19ecbbea57c91f8bb4137cfc96dd7c1579f6bed
+Author: cristovaoolegario <cristovaoolegario@gmail.com>
+Date:   Mon May 22 22:03:10 2017 -0300
+
+    Adição das classes php de acesso ao banco
+
+commit abdb23caa19960e38ce812fe4f0ac3fe3345888f
+Author: Franco Birro Godinho <fbirro@br.ibm.com>
+Date:   Mon May 22 21:42:11 2017 -0300
+
+    Telas com transição corrigida
+
+commit 831eb9901df0a5e22b1daec1010f1e45b95ac282
+Author: Franco Birro Godinho <fbirro@br.ibm.com>
+Date:   Mon May 22 21:28:11 2017 -0300
+
+    Telas com transição
+
+commit 688578cd770bca0fd4167406f17fbb1e4efe0f74
+Author: Franco Birro Godinho <fbirro@br.ibm.com>
+Date:   Mon May 22 21:26:33 2017 -0300
+
+    Telas com transições
+
+commit 61aa4562867f09bb91e26a5cca5295726691a51d
+Merge: c993129 5b11687
+Author: Pedro Duarte <pedrolu.duarte@gmail.com>
+Date:   Mon May 22 21:00:23 2017 -0300
+
+    Merge branch 'master' of https://github.com/cristovaoolegario/TI_1_2017
+
+commit c9931296b7406ab5245ea8ec94f06370b7872200
+Author: Pedro Duarte <pedrolu.duarte@gmail.com>
+Date:   Mon May 22 20:37:00 2017 -0300
+
+    Inserção Angular JS
+
+commit 5b11687e34b8f9118e183ea90921d1ce010fe4bc
+Author: cristovaoolegario <cristovaoolegario@gmail.com>
+Date:   Sun May 21 23:55:00 2017 -0300
+
+    Correção do nome da variável de identificação do BD na consulta
+
+commit dbaf03febb70b16813351e252f08b24fb4067f7c
+Author: cristovaoolegario <cristovaoolegario@gmail.com>
+Date:   Sun May 21 23:54:25 2017 -0300
+
+    Adição de um novo php para a tela de cadastro de revendedoras
+
+commit fd899ab47913c7a881646f7907a2543ea4e619f7
+Author: cristovaoolegario <cristovaoolegario@gmail.com>
+Date:   Sun May 21 23:35:24 2017 -0300
+
+    Adição dos arquivos phps das telas
+
+commit 076588269d7f4d87a5158dca7b6b624ed1e6ee1e
+Author: cristovaoolegario <cristovaoolegario@gmail.com>
+Date:   Sun May 21 23:34:26 2017 -0300
+
+    Correções nos arquivos de população e criação do BD
+
+commit 866421d91b56dee5257e827fade3077fc80f8436
+Author: cristovaoolegario <cristovaoolegario@gmail.com>
+Date:   Sun May 21 23:33:32 2017 -0300
+
+    Correções na estrutura do modelo lógico
+
+commit b6cdd0fe6e05859484c9303454b8ff790d91ca80
+Author: cristovaoolegario <cristovaoolegario@gmail.com>
+Date:   Sun May 21 23:32:58 2017 -0300
+
+    Arquivos de protótipos das telas V2.0
+
+commit 3f2325488176081694d7e23cc78ca3d287add0b2
+Author: cristovaoolegario <cristovaoolegario@gmail.com>
+Date:   Sun May 21 17:17:02 2017 -0300
+
+    Adição dos arquivos de população de marcas e modelos
+
+commit 9a2831001b3be37e7cbc1579d735e8efba1f10b9
+Author: cristovaoolegario <cristovaoolegario@gmail.com>
+Date:   Sun May 21 17:01:55 2017 -0300
+
+    Adição dos INSERTs para população do BD
+
+commit 4f782bb28ea9189629f091847c58929ee7d3443c
+Author: cristovaoolegario <cristovaoolegario@gmail.com>
+Date:   Sun May 21 17:01:09 2017 -0300
+
+    Adição do diretório de CT para a melhor organização dos códigos
+
+commit 41a0deb7fb5dc52dba4156ea01177bb0af4553a2
+Author: cristovaoolegario <cristovaoolegario@gmail.com>
+Date:   Sun May 21 14:50:07 2017 -0300
+
+    Adição da classe de conexão com o BD
+
+commit 0169067b5858664d5f72db26c98703aadbf5d954
+Author: cristovaoolegario <cristovaoolegario@gmail.com>
+Date:   Sun May 21 14:14:45 2017 -0300
+
+    Criação do diretório BD para o armazenamento dos códigos relacionados ao BD
+
+commit 539b37942e12e2819178b1e3e2d8bc0463bb0f1a
+Author: Pedro Duarte <pedrolu.duarte@gmail.com>
+Date:   Sun May 21 14:09:06 2017 -0300
+
+    Alteração campos de relacionamento das tabelas. Alteração da pasta dos scripts sql
+
+commit 108eae62d685a79ec5fe9b29ca069eae039a6888
+Author: cristovaoolegario <cristovaoolegario@gmail.com>
+Date:   Sat May 20 11:53:05 2017 -0300
+
+    Adição da tag AUTO_INCREMENT nas PKs
+
+commit cd7070b8a4ffc4974290cbf9125c026246afe5bc
+Author: Luyza <luyzasamara5@gmail.com>
+Date:   Fri May 19 20:24:59 2017 -0300
+
+    Mudança de text para  varchar
+    
+    Para manter o padrão
+
+commit 34de71449777edcfa03a9057c2bccae013f2373c
+Author: Luyza <luyzasamara5@gmail.com>
+Date:   Fri May 19 20:23:04 2017 -0300
+
+    Mudança de text para  varchar
+    
+    Para manter o padrão
+
+commit 346f02297b7cf4614a5d67d3a26c2a2e3403c551
+Author: Luyza <luyzasamara5@gmail.com>
+Date:   Fri May 19 20:21:24 2017 -0300
+
+    Mudança de text para  varchar
+    
+    Para manter o padrão
+
+commit 584f90af2b3fa6fca1680c96e910482900dd2405
+Author: Luyza <luyzasamara5@gmail.com>
+Date:   Fri May 19 20:15:51 2017 -0300
+
+    Mudança de text para varchar
+    
+    Para manter o padrão
+
+commit b14554f1a92cc6a8902d4b9bd3d7505089f4b5ea
+Author: Luyza <luyzasamara5@gmail.com>
+Date:   Fri May 19 20:12:16 2017 -0300
+
+    adição de pk e mudança de text para varchar
+    
+    Mudança realizada pra manter o padrão
+
+commit dcdb9be0f7f247ccd5588274a724ffdf9e8e247a
+Author: Luyza <luyzasamara5@gmail.com>
+Date:   Fri May 19 20:09:18 2017 -0300
+
+    Add de primary key e mudança para varchar
+    
+    Mudança realizada para manter um padrão
+
+commit 048eacd76d9443d65d102e40c6e4b977147d6d35
+Author: Luyza <luyzasamara5@gmail.com>
+Date:   Fri May 19 20:06:12 2017 -0300
+
+    Alteração do valor de Varchar no atributo foto
+    
+    Motivo, é um link e não havia valores
+
+commit 62bd844ca57e02a31cce7ae144789e6afd501a82
+Author: Luyza <luyzasamara5@gmail.com>
+Date:   Fri May 19 20:03:08 2017 -0300
+
+    Alteração do tipo do atributo Rg
+    
+    Anterior = int, Atual = varchar = 11 , motivo há letras no rg.
+
+commit f4aaf2c195246008e3400d3057e0d182d2836388
+Author: Cristóvão Olegário <cristovaoolegario@gmail.com>
+Date:   Fri May 19 19:53:42 2017 -0300
+
+    Alteração do valor de VARCHAR do atributo banner
+    
+    Valor antigo = 0; Valor atual = 300, motivo link para imagem
+
+commit 20de08ad27dcf95ce0dc684a28087d3d5a606f60
+Author: cristovaoolegario <cristovaoolegario@gmail.com>
+Date:   Fri May 19 19:44:27 2017 -0300
+
+    Adição do modelo lógico do banco de Dados
+
+commit a774b98124e0a2879a085b34db1b634a41435f07
+Merge: 212424c 705697a
+Author: cristovaoolegario <cristovaoolegario@gmail.com>
+Date:   Fri May 19 18:36:25 2017 -0300
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 705697a26677cfcd09fefbee6422364645afa48f
+Author: Cristóvão Olegário <cristovaoolegario@gmail.com>
+Date:   Fri May 19 08:40:41 2017 -0300
+
+    Adição do arquivo para leitura dos arquivos e inserção de dados no BD
+
+commit f03685fdbe440712214752ff73a1157633a36828
+Author: Cristóvão Olegário <cristovaoolegario@gmail.com>
+Date:   Fri May 19 08:15:14 2017 -0300
+
+    Comandos de criação e extração de dados das tabelas
+
+commit 212424cc40819593d42ea6ee05dd6035d3ff16ec
+Author: cristovaoolegario <cristovaoolegario@gmail.com>
+Date:   Thu May 18 23:01:32 2017 -0300
+
+    Revert "Auto stash before merge of "master" and "origin/master""
+    
+    This reverts commit 3ac693568da9fc92369317e0176c82e26a457faa.
+
+commit 1ad28fde9e5019a8384a151d67e52bdd3123209a
+Merge: 77acc6b 3ac6935
+Author: cristovaoolegario <cristovaoolegario@gmail.com>
+Date:   Thu May 18 23:02:32 2017 -0300
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 77acc6b343e6888068be64d1b97b89babce3178a
+Author: cristovaoolegario <cristovaoolegario@gmail.com>
+Date:   Thu May 18 23:01:32 2017 -0300
+
+    Adição das tabelas de marcas e veículos que serão utilizadas no banco de dados da aplicação.
+
+commit 3ac693568da9fc92369317e0176c82e26a457faa
+Author: cristovaoolegario <cristovaoolegario@gmail.com>
+Date:   Thu May 18 23:01:32 2017 -0300
+
+    Auto stash before merge of "master" and "origin/master"
+    
+    Adição das tabelas de marcas e veículos que serão utilizadas no banco de dados da aplicação.
+
+commit 41f2be3bb95eff04cd7f5260e2949e3a1f33f305
+Author: Pedro Duarte <pedrolu.duarte@gmail.com>
+Date:   Thu May 18 19:46:29 2017 -0300
+
+    Adição plugin font-awesome.  Estruturação index, conforme moqup.
+
+commit 6b3fe369fd3494701ae4e7b22044a96cbb565c44
+Author: Pedro Duarte <pedrolu.duarte@gmail.com>
+Date:   Wed May 17 17:58:07 2017 -0300
+
+    Adição estrutura bootstrap
+
+commit 03368cc1fea5624704bde50759ba87762b4f4712
+Author: Cristóvão Olegário <cristovaoolegario@gmail.com>
+Date:   Tue May 16 07:30:09 2017 -0300
+
+    Set theme jekyll-theme-time-machine
+
+commit cdfcf214f6d606b7c1dbd1f5467573547ae3458d
+Author: Cristóvão Olegário <cristovaoolegario@gmail.com>
+Date:   Mon May 15 22:47:01 2017 -0300
+
+    Initial commit
