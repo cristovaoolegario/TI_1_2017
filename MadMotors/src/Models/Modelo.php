@@ -66,15 +66,29 @@
 
             $mySQL->connect();
 
-            if (!empty($id_Modelo))
-            {
-                $selectModelo .= "WHERE id = ".$id_Modelo." ";
-            }
-
             $result = $mySQL->executeQuery($selectModelo);
             return($result);
         }
 
+        public function selectByMarca($id_Marca, $nomeMarca)
+        {
+            $mySQL = new MySQL;
+            $selectModelo = "SELECT * FROM Modelo ";
+
+            $mySQL->connect();
+
+            if($id_Marca > 0)
+            {
+                $selectModelo .= "WHERE id_Marca = ".$id_Marca." ";
+            }
+            else if(!isEmpty($nomeMarca))
+            {
+                $selectModelo .= "WHERE nomeMarca = '".$nomeMarca."' ";
+            }
+            
+            $result = $mySQL->executeQuery($selectModelo);
+            return($result);
+        }      
     }
 
 ?>

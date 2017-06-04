@@ -26,5 +26,13 @@
             $json = json_encode($array);
             echo $json;
         }
+        
+        public static function selectByMarca($id_Marca, $nomeMarca)
+        {
+            $modelo = new Modelo();
+            $array = $modelo->selectByMarca($id_Marca, $nomeMarca);
+            $json = json_encode($array);
+            echo $json;
+        }
     }
     
