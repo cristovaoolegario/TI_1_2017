@@ -2,6 +2,7 @@ angular.module("madmotors", []);
 angular.module("madmotors").controller("cadastroCtrl", function ($scope, $http)
 {
 
+    //s$scope.cadastro;
     $scope.marcas = [];
     $scope.modelos = [];
     
@@ -72,10 +73,19 @@ angular.module("madmotors").controller("cadastroCtrl", function ($scope, $http)
     };
 
     $scope.cadastrar = function (cadastro) {
-        console.log($scope.cadastro);
+        var date = new Date();
+        $scope.cadastro.dtAnuncio = date.getFullYear()+"-"+(date.getMonth()+1)+"-"+date.getDate();
         delete $scope.cadastro;
-        $scope.cadastroForm.$setPristine();
-
+        $.ajax({
+            type: 'POST',
+            data: cadastro,
+            url: './src/Views/Anuncio/insert.php',
+            success: function(data) 
+            {
+                
+            }
+        });
+        alert("Sucesso");
     }
 
     $scope.carregarMarcas();

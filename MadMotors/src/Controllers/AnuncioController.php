@@ -4,19 +4,18 @@
     class AnuncioController
     {
 
-        public function insert()
+        public static function insert($cadastro)
         {
-            
-        }
-
-        public function update()
-        {
-            
-        }
-
-        public function delete()
-        {
-            
+            $preco = null;
+            if(isset($cadastro['preco']))
+            {
+                $preco = $cadastro['preco'];
+            }
+            $anuncio = new Anuncio($cadastro['estado'],$cadastro['ano'],$cadastro['cor'],$cadastro['numPortas'],
+                    $cadastro['quilometragem'],$cadastro['cambio'],$cadastro['combustivel'],'',
+                    $cadastro['carroceria'],$cadastro['dtAnuncio'],$cadastro['localizacao'],$cadastro['modelo']['id_Modelo'],
+                    $cadastro['id_Usuario'],$preco);
+            $anuncio->insert();
         }
 
         public static function select()

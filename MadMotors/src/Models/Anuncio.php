@@ -56,7 +56,11 @@
         {
             $mySQL = new MySQL;
             $mySQL->connect();
-            $insereAnuncio = $mySQL->executeQuery("INSERT INTO anuncio  (`estadoVeiculo`,`ano`,`cor`,`numeroPortas`,`quilometragem`,`cambio`,`combustivel`,`finalPlaca`,`tipoCarroceria`,`dataAnuncio`,`id_Endereco`,`id_Modelo`,`id_Usuario`,`preco`) VALUES ('".$estado."',".$ano.",'".$cor."',".$numPortas.",".$quilometragem.",'".$cambio."','".$combustivel."','".$finalPlaca."','".$carroceria."',".$dtAnuncio.",".$id_Endereco.",".$id_Modelo.",".$id_Usuario.",".$preco.");");
+            $insereAnuncio = $mySQL->executeQuery("INSERT INTO anuncio  (estadoVeiculo,ano,cor,numeroPortas,"
+                    . "quilometragem,cambio,combustivel,finalPlaca,tipoCarroceria,dataAnuncio,id_Endereco,id_Modelo,"
+                    . "id_Usuario,preco) VALUES ('".$this->estado."','".$this->ano."','".$this->cor."',".$this->numPortas.","
+                    .$this->quilometragem.",'".$this->cambio."','".$this->combustivel."','".$this->finalPlaca."','"
+                    .$this->carroceria."','".$this->dtAnuncio."',".$this->id_Endereco.",".$this->id_Modelo.",".$this->id_Usuario.",".$this->preco.");");
         }
 
         public function update()
