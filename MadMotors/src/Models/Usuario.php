@@ -86,6 +86,17 @@
             $result = $mySQL->executeQuery($selectUsuario);
             return($result);
         }
+              
+        public static function select_by_name($name)
+        {
+            $selectUsuario = "SELECT * FROM Usuario WHERE nomeUsuario = '".$name."'";
+            
+            $mySQL = new MySQL;
+            $mySQL->connect();
+                        
+            $result = $mySQL->executeQuery($selectUsuario);
+            return($result);
+        }
 
         public function creatAnuncio()
         {
@@ -93,5 +104,4 @@
         }
 
     }
-
 ?>
