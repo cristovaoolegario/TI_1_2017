@@ -31,6 +31,7 @@
     <!-- homeCtrl -->
     <script type="text/javascript" src="js/cadastroCtrl.js"></script>
 
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
   </head>
 
   <body ng-controller="cadastroCtrl">
@@ -109,17 +110,15 @@
 								<input type="file" name="imagem"/>
 							</div>
 								<div class="col-md-3" style="margin-top:10px">	
-										<input class="form-control" style="margin-bottom:10px" type="text" ng-model="cadastro.usuarioID" name="usuarioID" placeholder="Usuário ID"/>
-										<select class="form-control" style="margin-bottom:10px" ng-model="cadastro.marca" name="marca" ng-change="carregarModelos(cadastro.marca)">
-										  <option value="">Selecione uma marca</option>
-										  <option ng-repeat="marca in marcas | orderBy:'nome'">{{marca.nomeMarca}}</option>								  
+										<input class="form-control" style="margin-bottom:10px" type="text" ng-model="cadastro.id_Usuario" name="usuarioID" placeholder="Usuário ID"/>
+										<select class="form-control" style="margin-bottom:10px" ng-model="cadastro.marca" ng-options="marca.nomeMarca for marca in marcas" name="marca" ng-change="carregarModelos(cadastro.marca)">
+										  <option value="">Selecione uma marca</option>								  
 										</select>								
-										<select class="form-control" style="margin-bottom:10px" ng-disabled="!cadastro.marca">								
-										  <option value="">Selecione uma modelo</option>								
-										  <option ng-repeat="modelo in modelos | orderBy:'nome'">{{modelo.nomeModelo}}</option>								  
+										<select class="form-control" style="margin-bottom:10px"  ng-model="cadastro.modelo" ng-disabled="!cadastro.marca" ng-options="modelo.nomeModelo for modelo in modelos">								
+										  <option value="">Selecione uma modelo</option>													  
 										</select>								
 										<input class="form-control" style="margin-bottom:10px" type="text" ng-model="cadastro.cor" name="cor" placeholder="Cor"/>								
-										<input class="form-control" style="margin-bottom:10px" type="text" ng-model="cadastro.portas" name="portas" placeholder="Portas"/>								
+										<input class="form-control" style="margin-bottom:10px" type="text" ng-model="cadastro.numPortas" name="portas" placeholder="Portas"/>								
 										 <label class="form-check-label">Estado</label>								
 										<div class="form-check form-check-inline" style="margin-bottom:10px">								
 										  <label class="form-check-label" style="margin-right:10px">								  
@@ -132,7 +131,7 @@
 								</div>
 								<div class="col-md-3" style="margin-top:10px">
 										<input class="form-control" style="margin-bottom:10px" type="text" ng-model="cadastro.ano" name="ano" placeholder="Ano"/>
-										<input class="form-control" style="margin-bottom:10px" type="text" ng-model="cadastro.km" name="km" placeholder="KM"/>
+										<input class="form-control" style="margin-bottom:10px" type="text" ng-model="cadastro.quilometragem" name="km" placeholder="KM"/>
 										<input class="form-control" style="margin-bottom:10px" type="text" ng-model="cadastro.combustivel" name="combustivel" placeholder="Combustivel"/>
 										<input class="form-control" style="margin-bottom:10px" type="text" ng-model="cadastro.localizacao" name="localizacao" placeholder="Localização"/>
 										<select class="form-control" style="margin-bottom:10px" type="text" ng-model="cadastro.cambio" name="cambio" placeholder="Cambio">
