@@ -14,6 +14,7 @@
 
         $logado = $_SESSION['login'];
     ?>
+      
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,9 +23,20 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
-	   <!-- Custom CSS -->
+	   <!-- Customs CSS -->
     <link href="css/modern-business.css" rel="stylesheet">
+    <style>
+    .btn.btn-primary{
+    background-color:#222;
+    border-color:#080808;
+    }
 
+    .btn.btn-primary:hover{
+    background-color:#444;
+    border-color:#666;
+    }
+    </style>
+    
     <!-- AngularJS (obrigatório para utilizar o AngularJS -->
     <script type="text/javascript" src="js/angular.min.js"></script>
 
@@ -151,7 +163,7 @@
 						<div style="text-align: center; margin-top:50px"> 
 						
 							<button class="btn btn-primary" type="submit" ng-click="cadastrar(cadastro)" ng-disabled="!cadastro.marca || !cadastro.modelo || !cadastro.estado || !cadastro.ano || !cadastro.cor || !cadastro.numPortas
-							|| !cadastro.quilometragem || !cadastro.cambio || !cadastro.combustivel || !cadastro.carroceria || !cadastro.localizacao">Cadastrar Anuncio</button>
+							|| !cadastro.quilometragem || !cadastro.cambio || !cadastro.combustivel || !cadastro.carroceria || !cadastro.localizacao || !cadastro.preco">Cadastrar Anuncio</button>
 							
 							<button class="btn btn-primary" type="submit" style="margin-left:150px">Cancelar</button>
 							
