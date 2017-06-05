@@ -11,6 +11,6 @@ angular.module("madmotors").controller("loginCtrl", function($scope, $http)
                     
                 }
             });
-            window.location.href = "http://localhost/TI_1_2017/MadMotors/index.html";
+            window.location.href = "./index.html";
         };
 });
