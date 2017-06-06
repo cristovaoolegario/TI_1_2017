@@ -36,6 +36,11 @@
 			$conn = $this->getConnection()->getConnection();
 			$query = $conn->query('INSERT INTO Usuario(nomeUsuario,sexo,dtNascimento,rg,nacionalidade,naturalidade,email,foto,telefone1,telefone2,id_Endereco) VALUES ("T800","M",1980-01-01,00000,"desconhecida","SKYNET","T800rules@gmail.com",1,0000000,0000000,1)');
 			$query = $conn->query('SELECT * FROM Usuario WHERE nomeUsuario = "T800"'); 
+			/*Erros
+			 * $query = $conn->query('INSERT INTO Usuario(nomeUsuario,sexo,dtNascimento,rg,nacionalidade,naturalidade,email,foto,telefone1,telefone2,id_Endereco) VALUES ("T800","M",1980-01-01,00000,"desconhecida","SKYNET","T800rules@gmail.com",1,0000000,0000000,1000)');
+			 $query = $conn->query('SELECT * FROM Usuario WHERE nomeUsuario = "T800"');
+			 * */
+			 
 			$results = $query->fetchAll(PDO::FETCH_ASSOC);
 			
 			$this->assertEquals('T800', $results[0]['nomeUsuario']); 
@@ -54,11 +59,12 @@
 		public function testdelete()
 		{
 			$conn = $this->getConnection()->getConnection();
-			$query = $conn->query('DELETE FROM Usuario WHERE id_Usuario = 1');
-			$query = $conn->query('SELECT * FROM Usuario WHERE id_Usuario = 1');			
 			/* ERROS
 			 * $query = $conn->query('DELETE FROM Usuario WHERE id_Usuario = 1500');
-			$query = $conn->query('SELECT * FROM Usuario WHERE id_Usuario = 1500');*/			
+			$query = $conn->query('SELECT * FROM Usuario WHERE id_Usuario = 1500');						
+			 * */			
+			$query = $conn->query('DELETE FROM Usuario WHERE id_Usuario = 1');
+			$query = $conn->query('SELECT * FROM Usuario WHERE id_Usuario = 1');
 			$results = $query->fetchAll(PDO::FETCH_ASSOC); 
 			
 			$this->assertEmpty($results);			
@@ -67,6 +73,9 @@
 		public function testselect_by_name()
 		{
 			$conn = $this->getConnection()->getConnection();
+			/*Erros
+			 * $query = $conn->query('SELECT * FROM Usuario WHERE nomeUsuario = "Jackei Boy"');
+			 * */
 			$query = $conn->query('SELECT * FROM Usuario WHERE nomeUsuario = "Dylan Ward"');
 			$results = $query->fetchAll(PDO::FETCH_ASSOC);
 			 
